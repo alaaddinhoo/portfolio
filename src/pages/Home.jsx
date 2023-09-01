@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import logo from "../assets/logo.svg";
 import Projects from "../data/projects.json";
+import { HiArrowSmallRight } from "react-icons/hi2";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -33,7 +34,16 @@ const Home = () => {
             className="mt-[50px] max-w-[1200px]"
             data-aos="fade-up"
           >
-            <img src={project.cover}></img>
+            <div className="project-cover">
+              <img src={project.cover} className="project-cover-image"></img>
+              <div className="project-cover-overlay">
+                <div className="project-cover-overlay-text flex flex-row items-center gap-2">
+                  Visit Website
+                  <HiArrowSmallRight />
+                </div>
+              </div>
+            </div>
+
             <div className="grid grid-rows-2 gap-4 mt-[10px] md:grid-cols-2 md:gap-0">
               <div>
                 <div className="font-medium text-5xl ">{project.title}</div>
