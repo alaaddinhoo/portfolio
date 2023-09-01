@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <div>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -23,7 +23,12 @@ const Home = () => {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a> */}
+
+        <div className="font-[Baskerville] text-6xl mx-[15vw] lg:text-8xl">
+          I build beautiful things, as designer, developer, creator,
+          entrepreneur.
+        </div>
       </header>
 
       <div className="ProjectList flex flex-col gap-4 items-center">
