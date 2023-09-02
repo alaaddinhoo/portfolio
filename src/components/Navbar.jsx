@@ -11,19 +11,15 @@ const Navbar = () => {
       <ul className="h-[100px] max-w-[600px] mx-auto hidden font-Franklin font-medium md:block">
         <li>
           <Link to="/">Projects</Link>
-          <span></span>
         </li>
         <li>
           <Link to="/experience">Experience</Link>
-          <span></span>
         </li>
         <li>
           <Link to="/skills">Skills</Link>
-          <span></span>
         </li>
         <li>
           <Link to="/awards">Awards</Link>
-          <span></span>
         </li>
       </ul>
 
@@ -36,20 +32,16 @@ const Navbar = () => {
           <div>
             <div className="sidenav-section">
               <div className="nav-bar">
-                <a href="#projects">Projects</a>
+                <Link to="/">Projects</Link>
               </div>
               <div className="nav-bar">
-                <a href="https://www.udemy.com/course/the-ultimate-c-beginner-course/?referralCode=482084699099CBBFBF99">
-                  Udemy
-                </a>
+                <Link to="/experience">Experience</Link>
               </div>
               <div className="nav-bar">
-                <a href="https://www.skillshare.com/en/r/profile/Alaaeldin-Mohamed/867765563?gr_tch_ref=on">
-                  Skillshare
-                </a>
+                <Link to="/skills">Skills</Link>
               </div>
               <div className="nav-bar">
-                <a href="https://www.fiverr.com/alaaeldin92">Freelancing</a>
+                <Link to="/awards">Awards</Link>
               </div>
               <div className="nav-bar">
                 <a href="https://codewithalaa.com/wp-content/uploads/2023/06/CV.pdf">
