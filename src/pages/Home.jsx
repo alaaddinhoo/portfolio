@@ -4,6 +4,7 @@ import Projects from "../data/projects.json";
 import { HiArrowSmallRight } from "react-icons/hi2";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { v4 as uuidv4 } from "uuid";
 
 const Home = () => {
   useEffect(() => {
@@ -26,6 +27,7 @@ const Home = () => {
             href={project.link}
             className="mt-[50px] max-w-[1200px]"
             data-aos="fade-up"
+            key={uuidv4()}
           >
             <div className="project-cover">
               <img src={project.cover} className="project-cover-image"></img>
