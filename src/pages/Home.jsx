@@ -23,7 +23,7 @@ const Home = () => {
         {Projects.list.map((project) => (
           <a
             href={project.link}
-            className="mt-[50px] max-w-[1200px]"
+            className="mt-[50px] max-w-[400px] md:max-w-[1200px]"
             data-aos="fade-up"
             key={uuidv4()}
           >

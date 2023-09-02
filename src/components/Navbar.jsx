@@ -11,7 +11,7 @@ const Navbar = () => {
     closeNav();
   }, [location.key]);
   return (
-    <div className="font-Franklin">
+    <div className="font-Franklin mb-[50px] md:mb-0">
       <ul className="h-[100px] max-w-[600px] mx-auto hidden font-medium md:block">
         <li>
           <Link to="/">Projects</Link>
@@ -28,10 +28,10 @@ const Navbar = () => {
       </ul>
 
       <div
-        className="bg-white sticky top-0 z-99 w-full grid grid-cols-2 items-center justify-items-start pt-4 px-12 md:hidden"
+        className="bg-white fixed top-0 z-20 w-full grid grid-cols-2 items-center justify-items-start pt-4 px-12 md:hidden"
         onClick={openNav}
       >
-        <div className="font-medium">Projects</div>
+        <div className="text-[20px] font-medium">Projects</div>
         <HiBars3BottomRight className="text-5xl grid justify-self-end" />
       </div>
 
