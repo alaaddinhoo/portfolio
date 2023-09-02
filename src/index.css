@@ -121,7 +121,7 @@ li {
   display: inline;
 }
 
-li a {
+li * {
   text-decoration: none;
   display: inline-block;
   padding: 10px;
@@ -231,10 +231,4 @@ body {
 
 a {
   /* color: var(--link_color); */
-}
-
-.theme_input {
-  width: 0;
-  height: 0;
-  visibility: hidden;
 }

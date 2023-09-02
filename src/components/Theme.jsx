@@ -1,51 +1,38 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { BsLightningCharge, BsLightningChargeFill } from "react-icons/bs";
 
 const Theme = () => {
+  const [theme, setTheme] = useState(
+    localStorage.getItem("selectedTheme") === "dark" ? "Light" : "Dark"
+  );
+
   const setDarkMode = () => {
     document.querySelector("body").setAttribute("data-theme", "dark");
+    setTheme("Light");
     localStorage.setItem("selectedTheme", "dark");
   };
   const setLightMode = () => {
     document.querySelector("body").setAttribute("data-theme", "light");
+    setTheme("Dark");
     localStorage.setItem("selectedTheme", "light");
   };
 
-  const selectedTheme = localStorage.getItem("selectedTheme");
-  if (selectedTheme === "dark") {
-    setDarkMode();
-  }
+  useEffect(() => {
+    if (theme === "Light") {
+      setDarkMode();
+    }
+  }, []);
 
   const toggleTheme = (e) => {
-    if (e.target.checked) setDarkMode();
-    else setLightMode();
+    console.log(e.target.innerText);
+    if (e.target.innerText === "Light") setLightMode();
+    else setDarkMode();
   };
 
   return (
-    <div className="Theme">
-      <input
-        className="theme_input"
-        type="checkbox"
-        id="darkmode-toggle"
-        onChange={toggleTheme}
-        defaultChecked={selectedTheme === "dark"}
-      />
-      <label className="dark_mode_label" htmlFor="darkmode-toggle">
-        <BsLightningCharge
-          className={
-            selectedTheme === "light"
-              ? "hidden"
-              : "absolute right-[0px] top-[10vh]"
-          }
-        />
-        <BsLightningChargeFill
-          className={
-            selectedTheme === "dark"
-              ? "hidden"
-              : "absolute right-[0px] top-[10vh]"
-          }
-        />
-      </label>
+    <div className="Theme" onClick={toggleTheme}>
+      <div> {theme}</div>
+      {/* <BsLightningCharge /> */}
     </div>
   );
 };

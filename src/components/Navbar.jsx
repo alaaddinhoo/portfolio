@@ -13,7 +13,7 @@ const Navbar = () => {
   }, [location.key]);
   return (
     <div className="font-Franklin h-[100px] mb-[100px] md:mb-0 md:grid md:place-items-center">
-      <ul className="max-w-[600px] mx-auto hidden font-medium md:block">
+      <ul className="max-w-[900px] mx-auto hidden font-medium md:block">
         <li>
           <Link to="/">Projects</Link>
         </li>
@@ -25,6 +25,9 @@ const Navbar = () => {
         </li>
         <li>
           <Link to="/awards">Awards</Link>
+        </li>
+        <li>
+          <Theme />
         </li>
       </ul>
 
@@ -59,6 +62,9 @@ const Navbar = () => {
               </div>
               <div className="nav-bar">
                 <Link to="/awards">Awards</Link>
+              </div>
+              <div className="nav-bar">
+                <Theme />
               </div>
               <div className="nav-bar">
                 <a href="https://codewithalaa.com/wp-content/uploads/2023/06/CV.pdf">
@@ -99,8 +105,6 @@ const Navbar = () => {
                 <FaYoutube />
               </div>
             </div>
-
-            <Theme />
           </div>
         </div>
       </div>
