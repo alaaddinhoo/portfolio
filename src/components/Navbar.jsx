@@ -12,8 +12,8 @@ const Navbar = () => {
     //   <Link to="/awards">Awards</Link>
     // </div>
 
-    <div className="h-[100px] max-w-[600px] mx-auto">
-      <ul className="hidden font-Franklin font-medium md:block">
+    <div>
+      <ul className="h-[100px] max-w-[600px] mx-auto hidden font-Franklin font-medium md:block">
         <li>
           <Link to="/">Projects</Link>
           <span></span>
