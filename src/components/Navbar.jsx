@@ -12,8 +12,8 @@ const Navbar = () => {
     closeNav();
   }, [location.key]);
   return (
-    <div className="font-Franklin mb-[100px] md:mb-0">
-      <ul className="h-[100px] max-w-[600px] mx-auto hidden font-medium md:block">
+    <div className="font-Franklin h-[100px] mb-[100px] md:mb-0 md:grid md:place-items-center">
+      <ul className="max-w-[600px] mx-auto hidden font-medium md:block">
         <li>
           <Link to="/">Projects</Link>
         </li>
@@ -27,8 +27,6 @@ const Navbar = () => {
           <Link to="/awards">Awards</Link>
         </li>
       </ul>
-
-      <Theme />
 
       <div
         className="bg-body_background fixed top-0 z-20 w-full grid grid-cols-2 items-center justify-items-start pt-4 px-12 md:hidden"
@@ -108,6 +106,8 @@ const Navbar = () => {
       </div>
 
       <div id="side-overlay"></div>
+
+      {/* <Theme /> */}
     </div>
   );
 };

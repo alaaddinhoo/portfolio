@@ -12,8 +12,8 @@ const Home = () => {
   }, []);
   return (
     <div>
-      <header className="App-header md:min-h-[500px]">
-        <div className="hidden font-Baskerville text-[34px] leading-[46px] mx-[15vw] md:block md:text-6xl lg:text-7xl">
+      <header className="App-header md:min-h-[46.3vh]">
+        <div className="hidden font-Baskerville text-[34px] leading-[46px] mx-[15vw] md:block md:text-[50px] md:leading-[52px] lg:text-[56px] xl:text-[64px] xl:leading-[64px] 2xl:text-[72px]">
           I build beautiful things, as designer, developer, creator,
           entrepreneur.
         </div>

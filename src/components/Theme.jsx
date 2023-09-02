@@ -22,17 +22,29 @@ const Theme = () => {
   };
 
   return (
-    <div className="dark_mode">
+    <div className="Theme">
       <input
-        className="dark_mode_input"
+        className="theme_input"
         type="checkbox"
         id="darkmode-toggle"
         onChange={toggleTheme}
         defaultChecked={selectedTheme === "dark"}
       />
       <label className="dark_mode_label" htmlFor="darkmode-toggle">
-        <BsLightningCharge />
-        <BsLightningChargeFill />
+        <BsLightningCharge
+          className={
+            selectedTheme === "light"
+              ? "hidden"
+              : "absolute right-[0px] top-[10vh]"
+          }
+        />
+        <BsLightningChargeFill
+          className={
+            selectedTheme === "dark"
+              ? "hidden"
+              : "absolute right-[0px] top-[10vh]"
+          }
+        />
       </label>
     </div>
   );

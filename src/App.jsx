@@ -4,6 +4,7 @@ import Experience from "./pages/Experience";
 import Skills from "./pages/Skills";
 import Awards from "./pages/Awards.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Theme from "./components/Theme";
 
 function App() {
   return (
