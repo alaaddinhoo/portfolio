@@ -4,6 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import { HiBars3BottomRight } from "react-icons/hi2";
 import { FaLinkedin, FaInstagram, FaYoutube } from "react-icons/fa";
 import { openNav, closeNav } from "../index";
+import Theme from "../components/Theme";
 
 const Navbar = () => {
   const location = useLocation();
@@ -27,8 +28,10 @@ const Navbar = () => {
         </li>
       </ul>
 
+      <Theme />
+
       <div
-        className="bg-white fixed top-0 z-20 w-full grid grid-cols-2 items-center justify-items-start pt-4 px-12 md:hidden"
+        className="bg-body_background fixed top-0 z-20 w-full grid grid-cols-2 items-center justify-items-start pt-4 px-12 md:hidden"
         onClick={openNav}
       >
         <div className="text-[20px] font-medium">
@@ -98,6 +101,8 @@ const Navbar = () => {
                 <FaYoutube />
               </div>
             </div>
+
+            <Theme />
           </div>
         </div>
       </div>
