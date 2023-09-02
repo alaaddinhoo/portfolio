@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../assets/my-logo.png";
 import { Link } from "react-router-dom";
 import { HiBars3BottomRight } from "react-icons/hi2";
+import { FaLinkedin, FaInstagram, FaYoutube } from "react-icons/fa";
 import { openNav, closeNav } from "../index";
 
 const Navbar = () => {
@@ -67,7 +68,7 @@ const Navbar = () => {
                 className="sidenav-sm-logo"
               >
                 <a href="https://www.linkedin.com/in/alaaeldin-mohamed-487911278/">
-                  <i className="fa-brands fa-linkedin"></i>
+                  <FaLinkedin />
                 </a>
               </div>
               <div
@@ -76,7 +77,7 @@ const Navbar = () => {
                 }}
                 className="sidenav-sm-logo"
               >
-                <i className="fa-brands fa-instagram"></i>
+                <FaInstagram />
               </div>
               <div
                 onClick={() => {
@@ -86,7 +87,7 @@ const Navbar = () => {
                 }}
                 className="sidenav-sm-logo"
               >
-                <i className="fa-brands fa-youtube"></i>
+                <FaYoutube />
               </div>
             </div>
           </div>
