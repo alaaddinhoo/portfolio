@@ -11,8 +11,8 @@ const Navbar = () => {
     closeNav();
   }, [location.key]);
   return (
-    <div>
-      <ul className="h-[100px] max-w-[600px] mx-auto hidden font-Franklin font-medium md:block">
+    <div className="font-Franklin">
+      <ul className="h-[100px] max-w-[600px] mx-auto hidden font-medium md:block">
         <li>
           <Link to="/">Projects</Link>
         </li>
@@ -27,8 +27,12 @@ const Navbar = () => {
         </li>
       </ul>
 
-      <div className="flex justify-end mt-4 mr-12 md:hidden">
-        <HiBars3BottomRight onClick={openNav} className="text-5xl" />
+      <div
+        className="bg-white sticky top-0 z-99 w-full grid grid-cols-2 items-center justify-items-start pt-4 px-12 md:hidden"
+        onClick={openNav}
+      >
+        <div className="font-medium">Projects</div>
+        <HiBars3BottomRight className="text-5xl grid justify-self-end" />
       </div>
 
       <div id="side-menu" className="sidenav">

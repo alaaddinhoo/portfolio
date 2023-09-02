@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <div>
       <header className="App-header md:min-h-[500px]">
-        <div className="font-Baskerville text-[34px] leading-[46px] mx-[15vw] hidden sm:text-5xl md:block md:text-6xl lg:text-7xl">
+        <div className="hidden font-Baskerville text-[34px] leading-[46px] mx-[15vw] md:block md:text-6xl lg:text-7xl">
           I build beautiful things, as designer, developer, creator,
           entrepreneur.
         </div>
