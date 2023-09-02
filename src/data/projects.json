@@ -5,24 +5,21 @@
       "subtitle": "2019 - Present • Co-founder / Developer",
       "link": "https://www.tryconfetti.io/",
       "description": "Confetti is a habit tracker designed to celebrate your everyday accomplishments. Originally designed by Dan Sapio, I partnered with him to develop the app in React / React Native and bring it to life.",
-      "cover": "http://localhost:3002/confetti.webp",
-      "id": 1
+      "cover": "http://localhost:3002/confetti.webp"
+    },
+    {
+      "title": "Compound Savings",
+      "subtitle": "2019 • Developer",
+      "link": "https://github.com/wilsonplau/compound",
+      "description": "Compound Savings is an interface that allows users to visualize and interact with their Compound DAI balances, inspired by popular roboadvisors. I built the proof-of-concept using React / Web3.js on Ethereum (Kovan).",
+      "cover": "http://localhost:3002/compound.webp"
     },
     {
       "title": "Confetti",
       "subtitle": "2019 - Present • Co-founder / Developer",
       "link": "https://www.tryconfetti.io/",
       "description": "Confetti is a habit tracker designed to celebrate your everyday accomplishments. Originally designed by Dan Sapio, I partnered with him to develop the app in React / React Native and bring it to life.",
-      "cover": "http://localhost:3002/confetti.webp",
-      "id": 2
-    },
-    {
-      "title": "Confetti",
-      "subtitle": "2019 - Present • Co-founder / Developer",
-      "link": "https://www.tryconfetti.io/",
-      "description": "Confetti is a habit tracker designed to celebrate your everyday accomplishments. Originally designed by Dan Sapio, I partnered with him to develop the app in React / React Native and bring it to life.",
-      "cover": "http://localhost:3002/confetti.webp",
-      "id": 3
+      "cover": "http://localhost:3002/confetti.webp"
     }
   ]
 }

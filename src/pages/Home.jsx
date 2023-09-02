@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import logo from "../assets/logo.svg";
+
 import Projects from "../data/projects.json";
 import { HiArrowSmallRight } from "react-icons/hi2";
 import AOS from "aos";
@@ -12,22 +12,11 @@ const Home = () => {
   return (
     <div>
       <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a> */}
-
-        <div className="font-[Baskerville] text-6xl mx-[15vw] lg:text-8xl">
+        <div className="font-Baskerville text-4xl mx-[15vw] sm:text-5xl md:text-6xl lg:text-7xl">
           I build beautiful things, as designer, developer, creator,
           entrepreneur.
+          {/* Alaaeldin Mohamed <br />
+          Full Stack Mern Web Developer */}
         </div>
       </header>
 
@@ -35,7 +24,6 @@ const Home = () => {
         {Projects.list.map((project) => (
           <a
             href={project.link}
-            key={project.id}
             className="mt-[50px] max-w-[1200px]"
             data-aos="fade-up"
           >
