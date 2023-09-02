@@ -15,19 +15,19 @@ const Navbar = () => {
     <div className="h-[100px] max-w-[600px] mx-auto">
       <ul className="hidden font-Franklin font-medium md:block">
         <li>
-          <a href="#">Projects</a>
+          <Link to="/">Projects</Link>
           <span></span>
         </li>
         <li>
-          <a href="#">Experience</a>
+          <Link to="/experience">Experience</Link>
           <span></span>
         </li>
         <li>
-          <a href="#">Skills</a>
+          <Link to="/skills">Skills</Link>
           <span></span>
         </li>
         <li>
-          <a href="#">Awards</a>
+          <Link to="/awards">Awards</Link>
           <span></span>
         </li>
       </ul>

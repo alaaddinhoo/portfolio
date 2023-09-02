@@ -14,7 +14,7 @@ const Home = () => {
     <div>
       <header className="App-header">
         <div className="font-Baskerville text-4xl mx-[15vw] sm:text-5xl md:text-6xl lg:text-7xl">
-          I don't build beautiful things, as designer, developer, creator,
+          I build beautiful things, as designer, developer, creator,
           entrepreneur.
           {/* Alaaeldin Mohamed <br />
           Full Stack Mern Web Developer */}
