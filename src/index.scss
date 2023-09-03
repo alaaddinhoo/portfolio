@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 /* fonts */
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Libre+Franklin:wght@300;400;500;600;700;800;900&display=swap");
@@ -17,10 +17,6 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
-
-.App {
-  text-align: center;
 }
 
 .App-logo {
@@ -58,12 +54,6 @@ code {
   }
 }
 
-.ProjectList {
-  font-family: "Libre Franklin", sans-serif;
-  text-align: left;
-  padding: 0 2.5% 50px;
-}
-
 /* ======================= Image Fade Overlay ======================= */
 
 .project-cover {
@@ -86,7 +76,6 @@ code {
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
-  /* background-color: #008cba; */
   background-color: #000000;
 }
 

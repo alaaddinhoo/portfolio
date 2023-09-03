@@ -13,13 +13,13 @@ const Home = () => {
   return (
     <div>
       <header className="App-header md:min-h-[46.3vh]">
-        <div className="hidden font-Baskerville text-[34px] leading-[46px] mx-[15vw] md:block md:text-[50px] md:leading-[52px] lg:text-[56px] xl:text-[60px] xl:leading-[64px] 2xl:text-[72px]">
+        <div className="hidden text-center font-Baskerville text-[34px] leading-[46px] mx-[15vw] md:block md:text-[50px] md:leading-[52px] lg:text-[56px] xl:text-[60px] xl:leading-[64px] 2xl:text-[72px] 2xl:leading-[76px]">
           I build beautiful things, as designer, developer, creator,
           entrepreneur.
         </div>
       </header>
 
-      <div className="ProjectList flex flex-col gap-4 items-center">
+      <div className="px-[2.5%] pb-[50px] font-Franklin flex flex-col gap-4 items-center md:gap-24">
         {Projects.list.map((project) => (
           <a
             href={project.link}
@@ -37,7 +37,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="grid grid-rows-2 gap-4 mt-[10px] md:grid-cols-2 md:gap-0">
+            <div className="grid grid-rows-2 gap-4 mt-[10px] md:grid-rows-none md:grid-cols-2 md:gap-0">
               <div>
                 <div className="font-medium text-5xl ">{project.title}</div>
                 <div className="pt-2 text-[18px]">{project.subtitle}</div>

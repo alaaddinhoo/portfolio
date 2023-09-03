@@ -30,7 +30,7 @@ const Theme = () => {
   };
 
   return (
-    <div className="Theme" onClick={toggleTheme}>
+    <div className="Theme hover:cursor-pointer" onClick={toggleTheme}>
       {theme}
       {/* <BsLightningCharge /> */}
     </div>
