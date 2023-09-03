@@ -19,7 +19,7 @@ const Home = () => {
         </div>
       </header>
 
-      <div className="px-[2.5%] pb-[50px] font-Franklin flex flex-col gap-4 items-center md:gap-24">
+      <div className="px-[2.5%] pb-[50px] font-Franklin flex flex-col gap-12 items-center md:gap-24">
         {Projects.list.map((project) => (
           <a
             href={project.link}
@@ -37,7 +37,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="grid grid-rows-2 gap-4 mt-[10px] md:grid-rows-none md:grid-cols-2 md:gap-0">
+            <div className="grid auto-rows-auto gap-4 mt-[10px] md:grid-rows-none md:grid-cols-2 md:gap-0">
               <div>
                 <div className="font-medium text-5xl ">{project.title}</div>
                 <div className="pt-2 text-[18px]">{project.subtitle}</div>
@@ -45,6 +45,17 @@ const Home = () => {
               <div className="text-[12px] md:text-[16px] md:mt-[5px] md:text-right">
                 {project.description}
               </div>
+            </div>
+
+            <div className="mt-[10px] flex gap-4">
+              <div className="bg-gray-300 p-2 rounded text-gray-800">
+                Frontend
+              </div>
+              {project.backend && (
+                <div className="bg-gray-300 p-2 rounded text-gray-800">
+                  Backend
+                </div>
+              )}
             </div>
           </a>
         ))}
