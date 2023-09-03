@@ -47,7 +47,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="mt-[10px] flex gap-4">
+            <div className="hidden mt-[10px] gap-4 md:flex">
               <div className="bg-gray-300 p-2 rounded text-gray-800">
                 Frontend
               </div>
