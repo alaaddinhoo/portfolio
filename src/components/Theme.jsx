@@ -31,7 +31,7 @@ const Theme = () => {
 
   return (
     <div className="Theme" onClick={toggleTheme}>
-      <div> {theme}</div>
+      {theme}
       {/* <BsLightningCharge /> */}
     </div>
   );
