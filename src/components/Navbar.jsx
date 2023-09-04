@@ -12,7 +12,7 @@ const Navbar = () => {
     closeNav();
   }, [location.key]);
   return (
-    <div className="font-Franklin h-[100px] md:grid md:place-items-center">
+    <div className="h-[100px] md:grid md:place-items-center">
       <ul className="max-w-[900px] mx-auto hidden font-medium md:block">
         <li>
           <Link to="/">Projects</Link>

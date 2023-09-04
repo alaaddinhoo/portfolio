@@ -203,6 +203,7 @@ li a:hover ~ span {
 :root {
   --body_background: white;
   --body_color: black;
+  --body_border: #222;
   /* --link_color: navy; */
 }
 
@@ -210,12 +211,14 @@ li a:hover ~ span {
   --body_background: #282c34;
   /* --body_background: black; */
   --body_color: white;
+  --body_border: white;
   /* --link_color: cyan; */
 }
 
 body {
   background-color: var(--body_background);
   color: var(--body_color);
+  font-family: "Libre Franklin", "sans-serif";
 }
 
 a {

@@ -19,7 +19,7 @@ const Home = () => {
         </div>
       </header>
 
-      <div className="px-[2.5%] pb-[50px] font-Franklin flex flex-col gap-12 items-center md:gap-24">
+      <div className="px-[2.5%] pb-[50px] flex flex-col gap-12 items-center md:gap-24">
         {Projects.list.map((project) => (
           <a
             href={project.link}

@@ -19,6 +19,7 @@ module.exports = {
       colors: {
         body_background: "var(--body_background)",
         body_color: "var(--body_color)",
+        body_border: "var(--body_border)",
         link_color: "var(--link_color)",
       },
     },
