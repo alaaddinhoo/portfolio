@@ -3,6 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Experiences from "../data/experience.json";
 import { v4 as uuidv4 } from "uuid";
+import { HiLocationMarker } from "react-icons/hi";
 
 const Experience = () => {
   useEffect(() => {
@@ -20,13 +21,21 @@ const Experience = () => {
             {experience.title}
           </div>
 
-          <div>{experience.duration}</div>
+          <div className="flex gap-4 items-center">
+            {experience.duration}
+            {/* {experience.location && (
+              <div className="flex gap-2 items-center">
+                <HiLocationMarker />
+                <div>{experience.location}</div>
+              </div>
+            )} */}
+          </div>
 
           <div className="text-[24px] leading-[28px] font-Baskerville md:text-[16px]">
             {experience.role}
           </div>
 
-          <div className="hidden gap-4 md:flex md:mt-[10px]">
+          <div className="hidden gap-4 md:flex md:hidden md:mt-[10px]">
             {experience.stack.map((stack) => (
               <div
                 className="bg-gray-300 p-2 rounded text-gray-600"

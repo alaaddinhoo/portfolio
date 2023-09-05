@@ -1,6 +1,15 @@
 {
   "list": [
     {
+      "title": "Hasanati",
+      "subtitle": "2023 - Present • Founder / Developer",
+      "link": "https://hasanati.com/",
+      "description": "Hasanati allows Muslims to track their progress in terms of Prayer, Quran, and more. The app offers stunning UI&UX designs and powerful API integrations.",
+      "cover": "https://codewithalaa.netlify.app/hasanati.png",
+      "backend": true,
+      "mobile": false
+    },
+    {
       "title": "Confetti",
       "subtitle": "2019 - Present • Co-founder / Developer",
       "link": "https://www.tryconfetti.io/",
@@ -19,12 +28,12 @@
       "mobile": false
     },
     {
-      "title": "Confetti",
-      "subtitle": "2019 - Present • Co-founder / Developer",
-      "link": "https://www.tryconfetti.io/",
-      "description": "Confetti is a habit tracker designed to celebrate your everyday accomplishments. Originally designed by Dan Sapio, I partnered with him to develop the app in React / React Native and bring it to life.",
+      "title": "Zomato Clone",
+      "subtitle": "August 2023 • Practice Project",
+      "link": "https://zomato-frontend-clone.netlify.app/",
+      "description": "Zomato is an online food service platform where users can search and discover restaurants. This clone project was built to test my React frontend skills. Includes sliders, responsive design, skeleton loading, and more.",
       "cover": "https://codewithalaa.netlify.app/zomato.png",
-      "backend": true,
+      "backend": false,
       "mobile": false
     }
   ]
