@@ -2,9 +2,9 @@
   "list": [
     {
       "title": "Hasanati",
-      "subtitle": "2023 - Present • Founder / Developer",
+      "subtitle": "June 2023 • Founder & Developer",
       "link": "https://hasanati.com/",
-      "description": "Hasanati allows Muslims to track their progress in terms of Prayer, Quran, and more. The app offers stunning UI&UX designs and powerful API integrations.",
+      "description": "Hasanati is a habit tracker web app for Muslims. It allows users to track their progress in terms of Prayer, Quran, and more. The app offers stunning UI&UX designs and powerful API integrations.",
       "cover": "https://codewithalaa.netlify.app/hasanati.png",
       "backend": true,
       "mobile": false
