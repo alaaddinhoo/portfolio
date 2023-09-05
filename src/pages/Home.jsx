@@ -28,10 +28,7 @@ const Home = () => {
             key={uuidv4()}
           >
             <div className="project-cover">
-              <img
-                src={project.cover}
-                className="project-cover-image object-none"
-              ></img>
+              <img src={project.cover} className="project-cover-image"></img>
               <div className="project-cover-overlay">
                 <div className="project-cover-overlay-text flex flex-row items-center gap-2">
                   Visit Website
