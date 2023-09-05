@@ -29,7 +29,7 @@ const Experience = () => {
           <div className="hidden gap-4 md:flex md:mt-[10px]">
             {experience.stack.map((stack) => (
               <div
-                className="bg-gray-300 p-2 rounded text-gray-500"
+                className="bg-gray-300 p-2 rounded text-gray-600"
                 key={uuidv4()}
               >
                 {stack}
