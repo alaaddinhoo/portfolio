@@ -14,7 +14,7 @@ const Home = () => {
     <div>
       <header className="App-header md:min-h-[46.3vh]">
         <div className="hidden text-center font-Baskerville text-[34px] leading-[46px] mx-[15vw] md:block md:text-[50px] md:leading-[52px] lg:text-[56px] xl:text-[60px] xl:leading-[64px] 2xl:text-[72px] 2xl:leading-[76px]">
-          I build beautiful things, as designer, developer, creator,
+          I build beautiful things as designer, developer, creator,
           entrepreneur.
         </div>
       </header>
