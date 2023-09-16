@@ -63,7 +63,9 @@ code {
 .project-cover-image {
   display: block;
   width: 100%;
-  height: auto;
+  height: 442px;
+  object-fit: cover;
+  object-position: 50% 10%;
 }
 
 .project-cover-overlay {
