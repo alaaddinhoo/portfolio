@@ -66,9 +66,7 @@ const Navbar = () => {
                 <Theme />
               </div>
               <div className="nav-bar">
-                <a href="https://codewithalaa.com/wp-content/uploads/2023/06/CV.pdf">
-                  Resume
-                </a>
+                <a href="/assets/Portfolio.pdf">Resume</a>
               </div>
             </div>
 
