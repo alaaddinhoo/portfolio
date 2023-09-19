@@ -48,11 +48,11 @@ const Home = () => {
             </div>
 
             <div className="hidden mt-[10px] gap-4 md:flex">
-              <div className="bg-gray-300 p-2 rounded text-gray-800">
+              <div className="bg-gray-300 text-gray-800  dark:bg-[#10141c] dark:text-white p-2 rounded ">
                 Frontend
               </div>
               {project.backend && (
-                <div className="bg-gray-300 p-2 rounded text-gray-800">
+                <div className="bg-gray-300 text-gray-800  dark:bg-[#10141c] dark:text-white p-2 rounded">
                   Backend
                 </div>
               )}

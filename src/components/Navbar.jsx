@@ -1,18 +1,33 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { HiBars3BottomRight } from "react-icons/hi2";
 import { FaLinkedin, FaInstagram, FaYoutube } from "react-icons/fa";
-import { openNav, closeNav } from "../index";
+import { openNav, closeNav } from "../scripts/navbar";
 import Theme from "../components/Theme";
 
 const Navbar = () => {
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    window.onscroll = function () {
+      if (window.scrollY > 10) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+  }, []);
+
   const location = useLocation();
   useEffect(() => {
     closeNav();
   }, [location.key]);
   return (
-    <div className="h-[100px] md:grid md:place-items-center">
-      <ul className="max-w-[900px] mx-auto hidden font-medium md:block">
+    <div
+      className={`h-[85px] text-base sticky top-0 z-[1000] bg-body_background ${
+        scrolled ? "drop-shadow-md" : ""
+      }`}
+    >
+      {/* <ul className="sticky top-0 bg-body_background z-[1000] max-w-[900px] mx-auto hidden font-medium md:block">
         <li>
           <Link to="/">Projects</Link>
         </li>
@@ -26,9 +41,17 @@ const Navbar = () => {
           <Link to="/awards">Awards</Link>
         </li>
         <li>
-          <Theme />
+          <Theme from={"desktop"} />
         </li>
-      </ul>
+      </ul> */}
+
+      <div className="h-[85px] max-w-[600px] mx-auto hidden font-medium md:grid md:grid-flow-col md:place-items-center">
+        <Link to="/">Projects</Link>
+        <Link to="/experience">Experience</Link>
+        <Link to="/skills">Skills</Link>
+        <Link to="/awards">Awards</Link>
+        <Theme />
+      </div>
 
       <div
         className="bg-body_background fixed top-0 z-20 w-full grid grid-cols-2 items-center justify-items-start pt-4 px-12 md:hidden"
@@ -63,10 +86,10 @@ const Navbar = () => {
                 <Link to="/awards">Awards</Link>
               </div>
               <div className="nav-bar">
-                <Theme />
-              </div>
-              <div className="nav-bar">
                 <a href="/assets/Portfolio.pdf">Resume</a>
+              </div>
+              <div className="nav-bar" onClick={closeNav}>
+                <Theme />
               </div>
             </div>
 
@@ -77,7 +100,7 @@ const Navbar = () => {
                     "https://www.linkedin.com/in/alaaeldin-mohamed-487911278/"
                   );
                 }}
-                className="sidenav-sm-logo"
+                className="sidenav-sm-logo dark:bg-[#202938]"
               >
                 <a href="https://www.linkedin.com/in/alaaeldin-mohamed-487911278/">
                   <FaLinkedin />
@@ -87,7 +110,7 @@ const Navbar = () => {
                 onClick={() => {
                   window.open("https://www.instagram.com/codewithalaa/");
                 }}
-                className="sidenav-sm-logo"
+                className="sidenav-sm-logo dark:bg-[#202938]"
               >
                 <FaInstagram />
               </div>
@@ -97,7 +120,7 @@ const Navbar = () => {
                     "https://www.youtube.com/channel/UCehiVKabFJeT4i3PhQDQW5A"
                   );
                 }}
-                className="sidenav-sm-logo"
+                className="sidenav-sm-logo dark:bg-[#202938]"
               >
                 <FaYoutube />
               </div>
@@ -107,8 +130,6 @@ const Navbar = () => {
       </div>
 
       <div id="side-overlay"></div>
-
-      {/* <Theme /> */}
     </div>
   );
 };
