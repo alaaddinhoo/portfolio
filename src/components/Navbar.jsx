@@ -86,7 +86,7 @@ const Navbar = () => {
                 <Link to="/awards">Awards</Link>
               </div>
               <div className="nav-bar">
-                <a href="/assets/Portfolio.pdf">Resume</a>
+                <a href="/Portfolio.pdf">Resume</a>
               </div>
               <div className="nav-bar" onClick={closeNav}>
                 <Theme />
