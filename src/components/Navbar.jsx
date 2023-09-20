@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef, useCallback } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { HiBars3BottomRight } from "react-icons/hi2";
 import { FaLinkedin, FaInstagram, FaYoutube } from "react-icons/fa";
 import { openNav, closeNav } from "../scripts/navbar";
 import Theme from "../components/Theme";
 
-const Navbar = () => {
+const Navbar = ({ visibleSection }) => {
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
     window.onscroll = function () {
@@ -21,35 +21,41 @@ const Navbar = () => {
   useEffect(() => {
     closeNav();
   }, [location.key]);
+
   return (
     <div
       className={`h-[85px] text-base sticky top-0 z-[1000] bg-body_background ${
         scrolled ? "drop-shadow-md" : ""
       }`}
     >
-      {/* <ul className="sticky top-0 bg-body_background z-[1000] max-w-[900px] mx-auto hidden font-medium md:block">
-        <li>
-          <Link to="/">Projects</Link>
-        </li>
-        <li>
-          <Link to="/experience">Experience</Link>
-        </li>
-        <li>
-          <Link to="/skills">Skills</Link>
-        </li>
-        <li>
-          <Link to="/awards">Awards</Link>
-        </li>
-        <li>
-          <Theme from={"desktop"} />
-        </li>
-      </ul> */}
+      {/* <header 
+        className="h-[85px] max-w-[600px] mx-auto hidden font-medium md:grid md:grid-flow-col md:place-items-center"
+      >
+        <nav>
+          <ul>
+            <li className={visibleSection === "projects" ? "active" : ""}>
+              <a href="#projects">Projects</a>
+            </li>
+            <li className={visibleSection === "experience" ? "active" : ""}>
+              <a href="#experience">Experience</a>
+            </li>
+            <li className={visibleSection === "skills" ? "active" : ""}>
+              <a href="#skills">Skills</a>
+            </li>
+            <li className={visibleSection === "awards" ? "active" : ""}>
+              <a href="#awards">Awards</a>
+            </li>
+            <Theme />
+            <li></li>
+          </ul>
+        </nav>
+      </header> */}
 
       <div className="h-[85px] max-w-[600px] mx-auto hidden font-medium md:grid md:grid-flow-col md:place-items-center">
-        <Link to="/">Projects</Link>
-        <Link to="/experience">Experience</Link>
-        <Link to="/skills">Skills</Link>
-        <Link to="/awards">Awards</Link>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#awards">Awards</a>
         <Theme />
       </div>
 

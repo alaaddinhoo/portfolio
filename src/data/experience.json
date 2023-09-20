@@ -1,34 +1,28 @@
 {
   "list": [
     {
-      "title": "Hasanati ∙ Founder",
-      "role": "A web application that allows Muslims to track their progress in terms of Prayer, Quran, and more. The app offers stunning UI&UX designs and powerful API integrations.",
-      "duration": "February 2023 - June 2023",
-      "stack": ["PHP", "SQL", "Wordpress", "JS"]
-    },
-    {
       "title": "Media Verse ∙ Internship",
       "role": "Handled documentation of a Real Estate website describing everything from features, functionalities, and user guide. Also, helped new interns set up their Wordpress and supervised them.",
-      "duration": "December 2022 - January 2023",
+      "duration": "Dec 22 - Jan 23",
       "stack": ["Elementor", "PHP", "SQL", "Wordpress", "JS"],
       "location": "Dubai, UAE"
     },
     {
       "title": "Media Verse ∙ Internship",
       "role": "I was responsible for building a multi vendor food delivery web application similar to Talabat where users can view restuarants, browse menus, and place an order.",
-      "duration": "May 2022 - July 2022",
+      "duration": "May 22 - July 22",
       "stack": ["HTML", "CSS", "JS", "AJAX", "PHP", "SQL", "Wordpress"]
     },
     {
       "title": "American University of Sharjah ∙ BSc",
       "role": "I received my Computer Engineering degree with a 3.3 CGPA.",
-      "duration": "June 2018 - June 2023",
+      "duration": "Jun 18 - Jun 23",
       "stack": ["C++", "Java", "SQL", "Android", "Firebase"]
     },
     {
       "title": "International School of Choueifat ∙ HS Diploma",
       "role": "I received my Highschool diploma with a 91% total average.",
-      "duration": "June 2018",
+      "duration": "Jun 18",
       "stack": ["Computer Science", "Chemistry", "Physics", "Calculus"]
     }
   ]
