@@ -39,9 +39,9 @@ const Theme = () => {
 
         <div className="Theme" ref={iconRef}>
           {theme === "Light" ? (
-            <BsSun className="fi-sun text-[20px] md:text-[20px]" />
+            <BsSun className="fi-sun text-[20px] " />
           ) : (
-            <BsMoonStars className="fi-moon text-[20px] md:text-[20px]" />
+            <BsMoonStars className="fi-moon text-[20px] " />
           )}
         </div>
       </div>

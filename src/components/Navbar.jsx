@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef, useCallback } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { HiBars3BottomRight } from "react-icons/hi2";
 import { FaLinkedin, FaInstagram, FaYoutube } from "react-icons/fa";
+import { BsDownload } from "react-icons/bs";
 import { openNav, closeNav } from "../scripts/navbar";
 import Theme from "../components/Theme";
 
@@ -55,7 +56,14 @@ const Navbar = ({ visibleSection }) => {
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
-        <a href="#awards">Awards</a>
+        <a
+          href="/Portfolio.pdf"
+          download="Alaaeldin_CV"
+          className="flex gap-[10px]"
+        >
+          <div>Resume</div>
+          <BsDownload className="text-[20px]" />
+        </a>
         <Theme />
       </div>
 
