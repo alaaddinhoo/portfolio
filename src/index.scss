@@ -236,13 +236,13 @@ a {
 //   opacity: 100%;
 // }
 
-// .active {
-//   border-bottom: 2px solid var(--body_color);
-// }
+.active {
+  line-height: 60px;
+  border-bottom: 2px solid var(--body_color);
+}
 
 /* ======================= Scroll Margin ======================= */
 
-header,
-section {
-  scroll-margin-top: 75px;
+.observableSection {
+  scroll-margin-top: 85px;
 }

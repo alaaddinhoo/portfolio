@@ -30,28 +30,28 @@ const Navbar = ({ visibleSection }) => {
       }`}
     >
       <header className="h-[85px] max-w-[600px] mx-auto hidden font-medium md:grid md:grid-flow-col md:place-items-center">
-        <nav>
-          <ul>
-            <li className={visibleSection === "Projects" ? "active" : ""}>
-              <a href="#projects">Projects</a>
-            </li>
-            <li className={visibleSection === "Experience" ? "active" : ""}>
-              <a href="#experience">Experience</a>
-            </li>
-            <li className={visibleSection === "Skills" ? "active" : ""}>
-              <a href="#skills">Skills</a>
-            </li>
-            <a
-              href="/Portfolio.pdf"
-              download="Alaaeldin_CV"
-              className="flex gap-[10px]"
-            >
-              <div>Resume</div>
-              <BsDownload className="text-[20px]" />
-            </a>
-            <Theme />
-          </ul>
-        </nav>
+        <li className={visibleSection === "Projects" ? "active" : ""}>
+          <a href="#Projects">Projects</a>
+        </li>
+        <li className={visibleSection === "Experience" ? "active" : ""}>
+          <a href="#Experience">Experience</a>
+        </li>
+        <li className={visibleSection === "Skills" ? "active" : ""}>
+          <a href="#Skills">Skills</a>
+        </li>
+        <li>
+          <a
+            href="/Portfolio.pdf"
+            download="Alaaeldin_CV"
+            className="flex gap-[10px]"
+          >
+            <div>Resume</div>
+            <BsDownload className="text-[20px]" />
+          </a>
+        </li>
+        <li>
+          <Theme />
+        </li>
       </header>
 
       {/* <div className="h-[85px] max-w-[600px] mx-auto hidden font-medium md:grid md:grid-flow-col md:place-items-center">
