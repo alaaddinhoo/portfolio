@@ -236,7 +236,8 @@ ul li.active {
   opacity: 100%;
 }
 
-// Skills animation
+/* ======================= Skills Animation ======================= */
+
 @keyframes move {
   0% {
     left: 0%;
@@ -263,9 +264,9 @@ ul li.active {
 
 .habitBubble {
   position: absolute;
-  padding: 15px 25px;
-  border-radius: 50px;
-  background-color: #eaf0fa;
+  // padding: 15px 25px;
+  // border-radius: 50px;
+  // background-color: #eaf0fa;
   font-size: 18px;
   display: flex;
   flex-direction: row;
@@ -284,7 +285,7 @@ ul li.active {
 }
 
 .habitBubble[data-option="1"] {
-  animation: move 25s linear 2s infinite,
+  animation: move 40s linear 2s infinite,
     jiggle cubic-bezier(0.37, 0, 0.63, 1) 2s infinite;
 }
 
@@ -310,7 +311,7 @@ ul li.active {
 
 .indexAnimation__container {
   height: 500px;
-  width: 1600px;
+  width: 100% !important;
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
@@ -334,6 +335,6 @@ ul li.active {
   background: radial-gradient(
     circle at center,
     rgba(255, 255, 255, 0) 20%,
-    white 75%
+    var(--body_background) 75%
   );
 }
