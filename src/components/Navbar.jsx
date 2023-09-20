@@ -29,30 +29,32 @@ const Navbar = ({ visibleSection }) => {
         scrolled ? "drop-shadow-md" : ""
       }`}
     >
-      {/* <header 
-        className="h-[85px] max-w-[600px] mx-auto hidden font-medium md:grid md:grid-flow-col md:place-items-center"
-      >
+      <header className="h-[85px] max-w-[600px] mx-auto hidden font-medium md:grid md:grid-flow-col md:place-items-center">
         <nav>
           <ul>
-            <li className={visibleSection === "projects" ? "active" : ""}>
+            <li className={visibleSection === "Projects" ? "active" : ""}>
               <a href="#projects">Projects</a>
             </li>
-            <li className={visibleSection === "experience" ? "active" : ""}>
+            <li className={visibleSection === "Experience" ? "active" : ""}>
               <a href="#experience">Experience</a>
             </li>
-            <li className={visibleSection === "skills" ? "active" : ""}>
+            <li className={visibleSection === "Skills" ? "active" : ""}>
               <a href="#skills">Skills</a>
             </li>
-            <li className={visibleSection === "awards" ? "active" : ""}>
-              <a href="#awards">Awards</a>
-            </li>
+            <a
+              href="/Portfolio.pdf"
+              download="Alaaeldin_CV"
+              className="flex gap-[10px]"
+            >
+              <div>Resume</div>
+              <BsDownload className="text-[20px]" />
+            </a>
             <Theme />
-            <li></li>
           </ul>
         </nav>
-      </header> */}
+      </header>
 
-      <div className="h-[85px] max-w-[600px] mx-auto hidden font-medium md:grid md:grid-flow-col md:place-items-center">
+      {/* <div className="h-[85px] max-w-[600px] mx-auto hidden font-medium md:grid md:grid-flow-col md:place-items-center">
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
@@ -65,20 +67,21 @@ const Navbar = ({ visibleSection }) => {
           <BsDownload className="text-[20px]" />
         </a>
         <Theme />
-      </div>
+      </div> */}
 
       <div
         className="bg-body_background fixed top-0 z-20 w-full grid grid-cols-2 items-center justify-items-start pt-4 px-12 md:hidden"
         onClick={openNav}
       >
         <div className="text-[20px] font-medium">
-          {window.location.pathname === "/"
+          {visibleSection}
+          {/* {window.location.pathname === "/"
             ? "Projects"
             : window.location.pathname
                 .replace("/", "")
                 .charAt(0)
                 .toUpperCase() +
-              window.location.pathname.replace("/", "").slice(1)}
+              window.location.pathname.replace("/", "").slice(1)} */}
         </div>
         <HiBars3BottomRight className="text-5xl grid justify-self-end" />
       </div>
