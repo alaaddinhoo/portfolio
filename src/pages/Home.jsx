@@ -105,7 +105,7 @@ const Home = () => {
       </section>
       <div className="my-[150px]"></div>
       <header className="App-header md:min-h-[46.3vh]">
-        <div className="hidden text-center font-Baskerville text-[34px] leading-[46px] mx-[15vw] md:block md:text-[50px] md:leading-[52px] lg:text-[56px] xl:text-[60px] xl:leading-[70px] 2xl:text-[72px] 2xl:leading-[76px]">
+        <div className="text-center font-Baskerville text-[34px] leading-[46px] mx-[15vw] md:block md:text-[50px] md:leading-[52px] lg:text-[56px] xl:text-[60px] xl:leading-[70px] 2xl:text-[72px] 2xl:leading-[76px]">
           I've had the pleasure working and getting experience in software
           development.
         </div>
@@ -136,7 +136,7 @@ const Home = () => {
         </div>
       </section>
       <header className="App-header md:min-h-[46.3vh]">
-        <div className="hidden text-center font-Baskerville text-[34px] leading-[46px] mx-[15vw] md:block md:text-[50px] md:leading-[52px] lg:text-[56px] xl:text-[60px] xl:leading-[64px] 2xl:text-[72px] 2xl:leading-[76px]">
+        <div className="text-center font-Baskerville text-[34px] leading-[46px] mx-[15vw] md:block md:text-[50px] md:leading-[52px] lg:text-[56px] xl:text-[60px] xl:leading-[64px] 2xl:text-[72px] 2xl:leading-[76px]">
           There are many skills I've learned during my humble journey.
         </div>
       </header>
