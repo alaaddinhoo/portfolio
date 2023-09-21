@@ -161,21 +161,22 @@ const Home = () => {
         </section>
       </div>
 
-      <div className="my-[150px]"></div>
-
-      <div className="observableSection" id="Experience">
+      <div
+        className="observableSection bg-gray-100 dark:bg-[#10141c] py-[40px]"
+        id="Experience"
+      >
         <header className="App-header md:min-h-[46.3vh]">
           <div className="hidden text-center font-Baskerville text-[34px] leading-[46px] mx-[15vw] md:block md:text-[50px] md:leading-[52px] lg:text-[56px] xl:text-[60px] xl:leading-[70px] 2xl:text-[72px] 2xl:leading-[76px]">
             I've worked and earned some experience in software development.
           </div>
         </header>
         <section className="max-w-[900px] mx-auto my-[50px] px-[10%] md:px-[7.5%]  md:text-lg scroll-my-[150px]">
-          <div className="border-l-[2px] grid gap-16 border-gray-300 dark:border-[#10141c]">
+          <div className="border-l-[2px] grid gap-16 border-gray-300 dark:border-[#1e2534]">
             {Experiences.list.map((experience) => (
               <div data-aos="fade-left" className="ml-[5vw]">
-                <div className="relative right-[calc(5vw+8px)] top-[15px] w-[15px] h-[15px] z-10 rounded-full bg-gray-300 dark:bg-[#080b0f]"></div>
+                <div className="relative right-[calc(5vw+8px)] top-[15px] w-[15px] h-[15px] z-10 rounded-full bg-gray-300 dark:bg-[#1e2534]"></div>
 
-                <div className="relative top-0 grid gap-6 drop-shadow-xl rounded-lg p-[30px] bg-gray-200 dark:bg-[#10141c]">
+                <div className="relative top-0 grid gap-6 shadow-xl rounded-lg p-[30px] bg-gray-300 dark:bg-[#1e2534]">
                   <div className="grid gap-4">
                     <div className="font-Baskerville font-medium md:text-2xl">
                       {experience.title}
