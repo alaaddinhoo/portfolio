@@ -5,8 +5,11 @@ import { FaLinkedin, FaInstagram, FaYoutube } from "react-icons/fa";
 import { BsDownload } from "react-icons/bs";
 import { openNav, closeNav } from "../scripts/navbar";
 import Theme from "../components/Theme";
+import useScrollDirection from "../functions/useScrollDirection";
 
 const Navbar = ({ visibleSection }) => {
+  // const scrollDirection = useScrollDirection();
+
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
     window.onscroll = function () {
