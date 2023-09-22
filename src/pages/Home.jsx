@@ -12,6 +12,7 @@ import ProgressBar from "@ramonak/react-progress-bar";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/splide/dist/css/splide.min.css";
+import { BiLogoLinkedin, BiLogoInstagram, BiLogoYoutube } from "react-icons/bi";
 
 const Home = () => {
   useEffect(() => {
@@ -50,7 +51,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="mb-[100px]">
+    <div>
       <Navbar visibleSection={visibleSection} />
 
       <div className="observableSection" id="Projects">
@@ -102,22 +103,19 @@ const Home = () => {
           ))}
         </section>
 
-        <section className="md:hidden text-left">
+        <section className="md:hidden max-w-screen">
           <Splide
             options={{
-              drag: "free",
+              // drag: "free",
               arrows: false,
               pagination: false,
-              perPage: 1.5,
+              // perPage: 1.5,
+              // gap: 20,
             }}
           >
             {Projects.list.map((project) => (
               <SplideSlide>
-                <a
-                  href={project.link}
-                  className="max-w-[400px] md:max-w-[1200px] md:mt-[50px]"
-                  key={uuidv4()}
-                >
+                <a href={project.link} key={uuidv4()}>
                   <div className="project-cover">
                     <img
                       src={project.cover}
@@ -246,6 +244,23 @@ const Home = () => {
           </Splide>
         </div>
       </div>
+
+      {/* <div className="w-full grid gap-12 place-items-center bg-gray-100 dark:bg-[#10141c] py-[80px]">
+        <div className="grid grid-flow-col gap-10">
+          <a href="https://www.linkedin.com/in/alaae-mohd/">
+            <BiLogoLinkedin size={32} />
+          </a>
+          <a href="https://github.com/alaaeldin-92">
+            <BiLogoInstagram size={32} />
+          </a>
+          <a href="https://github.com/alaaeldin-92">
+            <BiLogoYoutube size={32} />
+          </a>
+
+          <a href="https://github.com/alaaeldin-92"></a>
+        </div>
+        <div>© 2023 Alaaeldin Mohamed. All rights reserved.</div>
+      </div> */}
     </div>
   );
 };
