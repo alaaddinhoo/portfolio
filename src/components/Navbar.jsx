@@ -28,7 +28,7 @@ const Navbar = ({ visibleSection }) => {
 
   return (
     <div
-      className={`h-[85px] text-base sticky top-0 z-[1000] bg-body_background ${
+      className={`h-[85px] text-base sticky top-0 z-[1000] sm:w-screen bg-body_background ${
         scrolled ? "drop-shadow-md" : ""
       }`}
     >

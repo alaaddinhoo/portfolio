@@ -235,7 +235,7 @@ const Home = () => {
                 }}
                 className="bg-top bg-no-repeat grid items-end w-[180px] shadow-2xl rounded-xl"
               >
-                <div className="grid gap-4 pt-[200px] pb-[40px] md:px-8">
+                <div className="grid gap-4 pt-[160px] md:pt-[200px] md:pb-[40px] md:px-8">
                   <div>{skill.name}</div>
 
                   <ProgressBar
