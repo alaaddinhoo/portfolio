@@ -73,7 +73,7 @@ const Navbar = ({ visibleSection }) => {
       </div> */}
 
       <div
-        className="bg-body_background fixed top-0 left-0 m-0 z-20 w-full grid grid-cols-2 items-center justify-items-start pt-4 px-8 md:hidden"
+        className="bg-body_background fixed top-0 z-20 w-full grid grid-cols-2 items-center justify-items-start pt-4 px-8 md:hidden"
         onClick={openNav}
       >
         <div className="text-[20px] font-medium">
@@ -94,17 +94,15 @@ const Navbar = ({ visibleSection }) => {
           <div>
             <div className="sidenav-section">
               <div className="nav-bar">
-                <Link to="/">Projects</Link>
+                <a href="#Projects">Projects</a>
               </div>
               <div className="nav-bar">
-                <Link to="/experience">Experience</Link>
+                <a href="#Experience">Experience</a>
               </div>
               <div className="nav-bar">
-                <Link to="/skills">Skills</Link>
+                <a href="#Skills">Skills</a>
               </div>
-              <div className="nav-bar">
-                <Link to="/awards">Awards</Link>
-              </div>
+
               <div className="nav-bar">
                 <a href="/Portfolio.pdf">Resume</a>
               </div>
