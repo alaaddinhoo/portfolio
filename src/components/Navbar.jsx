@@ -73,7 +73,7 @@ const Navbar = ({ visibleSection }) => {
       </div> */}
 
       <div
-        className="bg-body_background fixed top-0 z-20 w-full grid grid-cols-2 items-center justify-items-start pt-4 px-12 md:hidden"
+        className="bg-body_background fixed top-0 left-0 m-0 z-20 w-full grid grid-cols-2 items-center justify-items-start pt-4 px-8 md:hidden"
         onClick={openNav}
       >
         <div className="text-[20px] font-medium">

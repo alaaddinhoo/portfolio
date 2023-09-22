@@ -103,14 +103,15 @@ const Home = () => {
           ))}
         </section>
 
-        <section className="md:hidden max-w-screen">
+        <section className="md:hidden">
           <Splide
             options={{
-              // drag: "free",
+              drag: "free",
               arrows: false,
               pagination: false,
-              // perPage: 1.5,
+              perPage: 1,
               // gap: 20,
+              padding: { right: 110 },
             }}
           >
             {Projects.list.map((project) => (
@@ -120,7 +121,7 @@ const Home = () => {
                     <img
                       src={project.cover}
                       className="project-cover-image rounded-2xl"
-                      style={{ height: "300px" }}
+                      style={{ height: "300px", objectPosition: "20% 10%" }}
                     ></img>
                     <div className="project-cover-overlay">
                       <div className="project-cover-overlay-text flex flex-row items-center gap-2">
@@ -131,15 +132,15 @@ const Home = () => {
                   </div>
 
                   <div className="grid auto-rows-auto gap-4 mt-[10px] md:grid-rows-none md:grid-cols-2 md:gap-0">
-                    <div>
-                      <div className="font-medium text-5xl ">
+                    <div className="text-left">
+                      <div className="font-medium text-3xl ">
                         {project.title}
                       </div>
-                      <div className="pt-2 text-[18px]">{project.subtitle}</div>
+                      <div className="pt-2 text-lg">{project.subtitle}</div>
                     </div>
-                    <div className="text-[12px] md:text-[16px] md:mt-[5px] md:text-right">
+                    {/* <div className="text-[12px] md:text-[16px] md:mt-[5px] md:text-right">
                       {project.description}
-                    </div>
+                    </div> */}
                   </div>
 
                   <div className="hidden mt-[10px] gap-4 2xl:flex">
