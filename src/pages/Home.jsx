@@ -234,9 +234,9 @@ const Home = () => {
                   backgroundSize: "contain",
                   backgroundImage: `url('${skill.svg}')`,
                 }}
-                className="bg-top bg-no-repeat grid items-end w-[180px] shadow-2xl rounded-xl"
+                className="bg-top bg-no-repeat grid items-end justify-items-center w-[180px] shadow-2xl rounded-xl"
               >
-                <div className="grid gap-4 pt-[160px] md:pt-[200px] md:pb-[40px] md:px-8">
+                <div className="grid gap-4 pt-[160px] w-[80%] md:pt-[200px] md:pb-[40px] md:px-8">
                   <div>{skill.name}</div>
 
                   <ProgressBar
