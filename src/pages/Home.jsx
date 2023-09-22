@@ -107,6 +107,7 @@ const Home = () => {
           <Splide
             options={{
               drag: "free",
+              type: "loop",
               arrows: false,
               pagination: false,
               perPage: 1,
