@@ -103,7 +103,7 @@ const Home = () => {
           ))}
         </section>
 
-        <section className="md:hidden">
+        <section className="md:hidden mt-[30px]">
           <Splide
             options={{
               drag: "free",

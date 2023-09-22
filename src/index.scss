@@ -255,10 +255,12 @@ a {
 
 // NEVER SET SCROLL MARGIN WHEN USING OBSERVER INTERSCTION
 
-// .observableSection {
-//   scroll-margin-top: 30px;
-// }
-
 .observableSection {
-  margin-bottom: 150px;
+  margin-bottom: 0;
+  @media (min-width: 240px) {
+    margin-bottom: 60px;
+  }
+  @media (min-width: 768px) {
+    margin-bottom: 150px;
+  }
 }
