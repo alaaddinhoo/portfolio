@@ -209,47 +209,37 @@ const Home = () => {
               drag: "free",
               arrows: false,
               pagination: false,
-
+              perPage: 3,
               autoScroll: {
                 pauseOnHover: false,
                 pauseOnFocus: false,
                 rewind: false,
                 speed: 1,
               },
-              breakpoints: {
-                2000: {
-                  perPage: 3,
-                },
-                200: {
-                  perPage: 2,
-                },
-              },
             }}
             extensions={{ AutoScroll }}
           >
             {Skills.list.map((skill) => (
-              <SplideSlide>
-                <div
-                  style={{
-                    backgroundImage: `${skill.name}`,
-                    backgroundSize: "contain",
-                    backgroundImage: `url('${skill.svg}')`,
-                  }}
-                  className="bg-top bg-no-repeat grid items-end shadow-2xl rounded-xl "
-                >
-                  <div className="pt-[100px] w-[80%] md:pt-[200px] md:pb-[40px] grid gap-4 mx-auto">
-                    <div>{skill.name}</div>
+              <SplideSlide
+                style={{
+                  backgroundImage: `${skill.name}`,
+                  backgroundSize: "contain",
+                  backgroundImage: `url('${skill.svg}')`,
+                }}
+                className="bg-top bg-no-repeat shadow-2xl rounded-xl "
+              >
+                <div className="grid gap-4 max-w-[80%] mx-auto pt-[100px] md:pt-[200px] md:pb-[40px] text-center">
+                  <div>{skill.name}</div>
 
-                    <ProgressBar
-                      completed={skill.percent}
-                      isLabelVisible={false}
-                      transitionDuration="1s"
-                      // animateOnRender={true}
-                      borderRadius="100px"
-                      height="7px"
-                      bgColor={skill.color}
-                    />
-                  </div>
+                  <ProgressBar
+                    completed={skill.percent}
+                    isLabelVisible={false}
+                    transitionDuration="1s"
+                    // animateOnRender={true}
+                    borderRadius="100px"
+                    height="7px"
+                    bgColor={skill.color}
+                  />
                 </div>
               </SplideSlide>
             ))}
