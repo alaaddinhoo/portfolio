@@ -210,12 +210,12 @@ const Home = () => {
               arrows: false,
               pagination: false,
 
-              // autoScroll: {
-              //   pauseOnHover: false,
-              //   pauseOnFocus: false,
-              //   rewind: false,
-              //   speed: 1,
-              // },
+              autoScroll: {
+                pauseOnHover: false,
+                pauseOnFocus: false,
+                rewind: false,
+                speed: 1,
+              },
               breakpoints: {
                 2000: {
                   perPage: 3,
@@ -225,7 +225,7 @@ const Home = () => {
                 },
               },
             }}
-            // extensions={{ AutoScroll }}
+            extensions={{ AutoScroll }}
           >
             {Skills.list.map((skill) => (
               <SplideSlide>
