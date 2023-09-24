@@ -76,9 +76,9 @@ const Home = () => {
       <Navbar visibleSection={visibleSection} />
 
       <div className="observableSection relative" id="Projects">
-        <Lottie
+        {/* <Lottie
           options={linesDefaultOptions}
-          speed={0.3}
+          speed={0.5}
           height={400}
           width={400}
           style={{
@@ -87,10 +87,10 @@ const Home = () => {
             zIndex: "-20",
             opacity: "20%",
             width: "100%",
-            fill: "red",
-            backgroundBlendMode: "screen",
+            // fill: "red",
+            backgroundBlendMode: "multiply",
           }}
-        />
+        /> */}
 
         <header className="App-header md:min-h-[46.3vh]">
           <div className="hidden text-center font-Baskerville text-[34px] leading-[46px] mx-[15vw] md:block md:text-[50px] md:leading-[52px] lg:text-[56px] xl:text-[60px] xl:leading-[64px] 2xl:text-[72px] 2xl:leading-[76px]">
