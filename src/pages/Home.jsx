@@ -13,11 +13,32 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/splide/dist/css/splide.min.css";
 import { BiLogoLinkedin, BiLogoInstagram, BiLogoYoutube } from "react-icons/bi";
+import Lottie from "react-lottie";
+import linesAnimationData from "../lotties/animation_lmxmvnbf.json";
+import circlesAnimationData from "../lotties/circles.json";
 
 const Home = () => {
   useEffect(() => {
     AOS.init();
   }, []);
+
+  //lottie
+  const linesDefaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: linesAnimationData,
+    // rendererSettings: {
+    //   preserveAspectRatio: "xMidYMid slice",
+    // },
+  };
+  const circleDefaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: circlesAnimationData,
+    // rendererSettings: {
+    //   preserveAspectRatio: "xMidYMid slice",
+    // },
+  };
 
   // observer intersection
   const [visibleSection, setVisibleSection] = useState("projects");
@@ -54,7 +75,23 @@ const Home = () => {
     <div>
       <Navbar visibleSection={visibleSection} />
 
-      <div className="observableSection" id="Projects">
+      <div className="observableSection relative" id="Projects">
+        <Lottie
+          options={linesDefaultOptions}
+          speed={0.3}
+          height={400}
+          width={400}
+          style={{
+            position: "absolute",
+            top: "0",
+            zIndex: "-20",
+            opacity: "20%",
+            width: "100%",
+            fill: "red",
+            backgroundBlendMode: "screen",
+          }}
+        />
+
         <header className="App-header md:min-h-[46.3vh]">
           <div className="hidden text-center font-Baskerville text-[34px] leading-[46px] mx-[15vw] md:block md:text-[50px] md:leading-[52px] lg:text-[56px] xl:text-[60px] xl:leading-[64px] 2xl:text-[72px] 2xl:leading-[76px]">
             I build beautiful things as designer, developer, creator,
@@ -175,6 +212,20 @@ const Home = () => {
             {Experiences.list.map((experience) => (
               <div data-aos="fade-left" className="ml-[5vw]">
                 <div className="relative right-[calc(5vw+8px)] top-[15px] w-[15px] h-[15px] z-10 rounded-full bg-gray-300 dark:bg-[#1e2534]"></div>
+                {/* <div className="relative right-[calc(5vw+25px)] top-[15px] w-[50px] z-10 ">
+                  <Lottie
+                    options={circleDefaultOptions}
+                    speed={0.5}
+                    height={50}
+                    width={50}
+                    style={{
+                      position: "absolute",
+                      top: "0",
+                      width: "100%",
+                      opacity: "50%",
+                    }}
+                  />
+                </div> */}
 
                 <div className="relative top-0 grid gap-6 shadow-xl rounded-lg p-[30px] bg-gray-300 dark:bg-[#1e2534]">
                   <div className="grid gap-4">
