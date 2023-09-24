@@ -93,13 +93,13 @@ const Navbar = ({ visibleSection }) => {
         <div className="h-[100%] w-[100%]">
           <div>
             <div className="sidenav-section">
-              <div className="nav-bar">
+              <div className="nav-bar" onClick={closeNav}>
                 <a href="#Projects">Projects</a>
               </div>
-              <div className="nav-bar">
+              <div className="nav-bar" onClick={closeNav}>
                 <a href="#Experience">Experience</a>
               </div>
-              <div className="nav-bar">
+              <div className="nav-bar" onClick={closeNav}>
                 <a href="#Skills">Skills</a>
               </div>
 
