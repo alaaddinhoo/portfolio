@@ -1,7 +1,34 @@
 {
   "list": [
     {
-      "title": "Zomato Clone",
+      "title": "Hasanati (Mobile)",
+      "subtitle": "Dec 2023 • Founder & Developer",
+      "link": "https://hasanati.com/",
+      "description": "Hasanati is a habit tracker web app for Muslims. It allows users to track their progress in terms of Prayer, Quran, and more. The app offers stunning UI&UX designs and powerful API integrations.",
+      "cover": "https://codewithalaa.netlify.app/hasanati.png",
+      "backend": true,
+      "mobile": false
+    },
+    {
+      "title": "Uber Eats Clone (Mobile)",
+      "subtitle": "Oct 2023 • Practice",
+      "link": "https://vox-cinema.netlify.app/admin",
+      "description": "Vox is the cinema arm of Majid Al Futtaim, the leading shopping malls, communities, retail and leisure pioneer across the Middle East. This MERN project offers a dashboard for VOX admins to perform CRUD operations. These operations are also reflected on the user page.",
+      "cover": "https://codewithalaa.netlify.app/vox-2.png",
+      "backend": true,
+      "mobile": true
+    },
+    {
+      "title": "Vox Dashboard (Web)",
+      "subtitle": "Aug 2023 • Practice",
+      "link": "https://vox-cinema.netlify.app/admin",
+      "description": "Vox is the cinema arm of Majid Al Futtaim, the leading shopping malls, communities, retail and leisure pioneer across the Middle East. This MERN project offers a dashboard for VOX admins to perform CRUD operations. These operations are also reflected on the user page.",
+      "cover": "https://codewithalaa.netlify.app/vox-2.png",
+      "backend": true,
+      "mobile": false
+    },
+    {
+      "title": "Zomato Clone (Web)",
       "subtitle": "Sep 2023 • Practice Project",
       "link": "https://zomato-frontend-clone.netlify.app/",
       "description": "Zomato is an online food service platform where users can search and discover restaurants. This clone project was built to test my React frontend skills. Includes sliders, responsive design, skeleton loading, and more.",
@@ -10,16 +37,7 @@
       "mobile": false
     },
     {
-      "title": "Vox Dashboard",
-      "subtitle": "Aug 2023 • Founder & Developer",
-      "link": "https://vox-cinema.netlify.app/admin",
-      "description": "Vox is the cinema arm of Majid Al Futtaim, the leading shopping malls, communities, retail and leisure pioneer across the Middle East. This MERN project offers a dashboard for VOX admins to perform CRUD operations. These operations are also reflected on the user page.",
-      "cover": "https://codewithalaa.netlify.app/vox-2.png",
-      "backend": true,
-      "mobile": false
-    },
-    {
-      "title": "Hasanati",
+      "title": "Hasanati (Web)",
       "subtitle": "Jun 2023 • Founder & Developer",
       "link": "https://hasanati.com/",
       "description": "Hasanati is a habit tracker web app for Muslims. It allows users to track their progress in terms of Prayer, Quran, and more. The app offers stunning UI&UX designs and powerful API integrations.",
