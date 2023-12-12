@@ -36,9 +36,9 @@ const Navbar = ({ visibleSection }) => {
         <li className={visibleSection === "Projects" ? "active" : ""}>
           <a href="#Projects">Projects</a>
         </li>
-        {/* <li className={visibleSection === "Experience" ? "active" : ""}>
+        <li className={visibleSection === "Experience" ? "active" : ""}>
           <a href="#Experience">Experience</a>
-        </li> */}
+        </li>
         <li className={visibleSection === "Skills" ? "active" : ""}>
           <a href="#Skills">Skills</a>
         </li>
