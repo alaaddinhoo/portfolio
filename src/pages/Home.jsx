@@ -288,12 +288,7 @@ const Home = () => {
           </Splide>
         </div>
       </div>
-      {/* https://www.udemy.com/user/alaaeldin-mohamed-6/ */}
-      <header className="App-header-other md:min-h-[46.3vh]">
-        <div className="hidden text-center font-Baskerville text-[34px] leading-[46px] mx-[15vw] md:block md:text-[50px] md:leading-[52px] lg:text-[56px] xl:text-[60px] xl:leading-[64px] 2xl:text-[72px] 2xl:leading-[76px]">
-          In my freetime,
-        </div>
-      </header>
+
       {/* <div className="w-full grid gap-12 place-items-center bg-gray-100 dark:bg-[#10141c] py-[80px]">
         <div className="grid grid-flow-col gap-10">
           <a href="https://www.linkedin.com/in/alaae-mohd/">
