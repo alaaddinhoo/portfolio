@@ -36,11 +36,14 @@ const Navbar = ({ visibleSection }) => {
         <li className={visibleSection === "Projects" ? "active" : ""}>
           <a href="#Projects">Projects</a>
         </li>
-        <li className={visibleSection === "Experience" ? "active" : ""}>
+        {/* <li className={visibleSection === "Experience" ? "active" : ""}>
           <a href="#Experience">Experience</a>
-        </li>
+        </li> */}
         <li className={visibleSection === "Skills" ? "active" : ""}>
           <a href="#Skills">Skills</a>
+        </li>
+        <li>
+          <a href="https://www.udemy.com/user/alaaeldin-mohamed-6/">Courses</a>
         </li>
         <li>
           <a
@@ -96,13 +99,17 @@ const Navbar = ({ visibleSection }) => {
               <div className="nav-bar" onClick={closeNav}>
                 <a href="#Projects">Projects</a>
               </div>
-              <div className="nav-bar" onClick={closeNav}>
+              {/* <div className="nav-bar" onClick={closeNav}>
                 <a href="#Experience">Experience</a>
-              </div>
+              </div> */}
               <div className="nav-bar" onClick={closeNav}>
                 <a href="#Skills">Skills</a>
               </div>
-
+              <div className="nav-bar">
+                <a href="https://www.udemy.com/user/alaaeldin-mohamed-6/">
+                  Courses
+                </a>
+              </div>
               <div className="nav-bar">
                 <a href="/Portfolio.pdf">Resume</a>
               </div>
