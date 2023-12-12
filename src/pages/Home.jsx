@@ -93,13 +93,13 @@ const Home = () => {
         /> */}
 
         <header className="App-header md:min-h-[46.3vh]">
-          <div className=" hidden text-left font-Baskerville text-[34px] leading-[46px] mx-[15vw] md:block md:text-[50px] md:leading-[52px] lg:text-[56px] xl:text-[60px] xl:leading-[64px] 2xl:text-[72px] 2xl:leading-[76px]">
+          <div className=" hidden text-left font-Baskerville text-[34px] leading-[46px] ml-[15vw] md:block md:text-[50px] md:leading-[52px] lg:text-[56px] xl:text-[60px] xl:leading-[64px] 2xl:text-[72px] 2xl:leading-[76px]">
             I build beautiful things as developer, creator, and entrepreneur.
           </div>
           <div className="mr-[15vw]">
             <img
               src="https://codewithalaa.netlify.app/profile.jpg"
-              className="rounded-[20px]"
+              className="rounded-full scale-[70%]"
             />
           </div>
         </header>
@@ -238,7 +238,7 @@ const Home = () => {
       </div> */}
 
       <div className="observableSection" id="Skills">
-        <header className="App-header md:min-h-[46.3vh]">
+        <header className="App-header-other md:min-h-[46.3vh]">
           <div className="hidden text-center font-Baskerville text-[34px] leading-[46px] mx-[15vw] md:block md:text-[50px] md:leading-[52px] lg:text-[56px] xl:text-[60px] xl:leading-[64px] 2xl:text-[72px] 2xl:leading-[76px]">
             My personal tech stack to create apps
           </div>
