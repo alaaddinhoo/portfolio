@@ -4,7 +4,7 @@
       "title": "Hasanati",
       "subtitle": "Dec 2023 • Founder & Developer",
       "link": "https://hasanati.com/",
-      "description": "Hasanati is a habit tracker web app for Muslims. It allows users to track their progress in terms of Prayer, Quran, and more. The app offers stunning UI&UX designs and powerful API integrations.",
+      "description": "Hasanati is a habit tracker web app for Muslims. It allows users to track their progress in terms of Prayer, Quran, and more. This app was built using Flutterflow and offers stunning UI&UX designs and powerful API integrations. It is currently in test mode before production.",
       "cover": "https://codewithalaa.netlify.app/hasanati-mobile.png",
       "backend": true,
       "mobile": false
@@ -12,9 +12,9 @@
     {
       "title": "Uber Eats Clone",
       "subtitle": "Oct 2023 • Practice",
-      "link": "https://vox-cinema.netlify.app/admin",
-      "description": "Vox is the cinema arm of Majid Al Futtaim, the leading shopping malls, communities, retail and leisure pioneer across the Middle East. This MERN project offers a dashboard for VOX admins to perform CRUD operations. These operations are also reflected on the user page.",
-      "cover": "https://codewithalaa.netlify.app/vox-2.png",
+      "link": "https://app.flutterflow.io/run/O3NqEcbLp0BLUJyOh9Ry",
+      "description": "Uber Eats is an online food ordering and delivery platform. This Flutterflow clone includes Auth, Geolocation, SMS code verification, search, categories, recent searches, custom filters, and cart system implemented.",
+      "cover": "https://codewithalaa.netlify.app/uber.png",
       "backend": true,
       "mobile": true
     },
