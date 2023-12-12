@@ -62,6 +62,13 @@
       "svg": "https://codewithalaa.netlify.app/flutter.svg",
       "percent": "100",
       "backgroundSize": "50"
+    },
+    {
+      "name": "Firebase",
+      "color": "#fac000",
+      "svg": "https://codewithalaa.netlify.app/firebase.svg",
+      "percent": "80",
+      "backgroundSize": "50"
     }
   ]
 }
