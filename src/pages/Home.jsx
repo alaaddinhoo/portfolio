@@ -240,7 +240,9 @@ const Home = () => {
       <div className="observableSection" id="Skills">
         <header className="App-header-other md:min-h-[46.3vh]">
           <div className="hidden text-center font-Baskerville text-[34px] leading-[46px] mx-[15vw] md:block md:text-[50px] md:leading-[52px] lg:text-[56px] xl:text-[60px] xl:leading-[64px] 2xl:text-[72px] 2xl:leading-[76px]">
-            My personal tech stack to create apps
+            My personal tech stack
+            <br />
+            to create apps
           </div>
         </header>
 
