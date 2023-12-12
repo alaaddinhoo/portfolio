@@ -1,16 +1,16 @@
 {
   "list": [
     {
-      "title": "Hasanati (Mobile)",
+      "title": "Hasanati",
       "subtitle": "Dec 2023 • Founder & Developer",
       "link": "https://hasanati.com/",
       "description": "Hasanati is a habit tracker web app for Muslims. It allows users to track their progress in terms of Prayer, Quran, and more. The app offers stunning UI&UX designs and powerful API integrations.",
-      "cover": "https://codewithalaa.netlify.app/hasanati.png",
+      "cover": "https://codewithalaa.netlify.app/frame.png",
       "backend": true,
       "mobile": false
     },
     {
-      "title": "Uber Eats Clone (Mobile)",
+      "title": "Uber Eats Clone",
       "subtitle": "Oct 2023 • Practice",
       "link": "https://vox-cinema.netlify.app/admin",
       "description": "Vox is the cinema arm of Majid Al Futtaim, the leading shopping malls, communities, retail and leisure pioneer across the Middle East. This MERN project offers a dashboard for VOX admins to perform CRUD operations. These operations are also reflected on the user page.",
@@ -19,7 +19,7 @@
       "mobile": true
     },
     {
-      "title": "Vox Dashboard (Web)",
+      "title": "Vox Dashboard",
       "subtitle": "Aug 2023 • Practice",
       "link": "https://vox-cinema.netlify.app/admin",
       "description": "Vox is the cinema arm of Majid Al Futtaim, the leading shopping malls, communities, retail and leisure pioneer across the Middle East. This MERN project offers a dashboard for VOX admins to perform CRUD operations. These operations are also reflected on the user page.",
