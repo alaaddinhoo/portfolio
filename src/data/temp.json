@@ -1,0 +1,36 @@
+{
+  "cover_url": "https://kjmtitngaqgvqcbcaypg.supabase.co/storage/v1/object/sign/images/bc274c1d929754e4f2476e991668641a.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWFnZXMvYmMyNzRjMWQ5Mjk3NTRlNGYyNDc2ZTk5MTY2ODY0MWEuanBnIiwiaWF0IjoxNjk2MDIwMTQ1LCJleHAiOjE3Mjc1NTYxNDV9.7ag014dk-DUqBwu1F7b7c7P6HXdGYl4vcxKrN3FeNrQ&t=2023-09-29T20%3A42%3A25.635Z",
+  "name": "Adenine Kitchen",
+  "rating": 4.1,
+  "delivery_fee": "$0.29",
+  "delivery_time": "10-25 min",
+  "category": ["Pizza", "Deals"],
+  "path": "restaurants/x52nihPO5pkPkxi5Qb2n",
+  "lastmodified": 1697128854175,
+  "rewards": "500",
+  "objectID": "x52nihPO5pkPkxi5Qb2n",
+  "_highlightResult": {
+    "name": {
+      "value": "Adenine Kitchen",
+      "matchLevel": "none",
+      "matchedWords": []
+    },
+    "rating": {
+      "value": "4.1",
+      "matchLevel": "none",
+      "matchedWords": []
+    },
+    "category": [
+      {
+        "value": "Pizza",
+        "matchLevel": "none",
+        "matchedWords": []
+      },
+      {
+        "value": "Deals",
+        "matchLevel": "none",
+        "matchedWords": []
+      }
+    ]
+  }
+}

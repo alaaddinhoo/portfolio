@@ -93,9 +93,14 @@ const Home = () => {
         /> */}
 
         <header className="App-header md:min-h-[46.3vh]">
-          <div className="hidden text-center font-Baskerville text-[34px] leading-[46px] mx-[15vw] md:block md:text-[50px] md:leading-[52px] lg:text-[56px] xl:text-[60px] xl:leading-[64px] 2xl:text-[72px] 2xl:leading-[76px]">
-            I build beautiful things as designer, developer, creator,
-            entrepreneur.
+          <div className="hidden text-left font-Baskerville text-[34px] leading-[46px] mx-[15vw] md:block md:text-[50px] md:leading-[52px] lg:text-[56px] xl:text-[60px] xl:leading-[64px] 2xl:text-[72px] 2xl:leading-[76px]">
+            I build beautiful things as developer, creator, and entrepreneur.
+          </div>
+          <div>
+            <img
+              src="https://codewithalaa.netlify.app/profile.jpg"
+              className="rounded"
+            />
           </div>
         </header>
         <section className="hidden px-[2.5%] md:flex flex-col gap-12 items-center md:gap-24">
@@ -198,7 +203,7 @@ const Home = () => {
         </section>
       </div>
 
-      <div
+      {/* <div
         className="observableSection bg-gray-100 dark:bg-[#10141c] py-[40px]"
         id="Experience"
       >
@@ -212,20 +217,7 @@ const Home = () => {
             {Experiences.list.map((experience) => (
               <div data-aos="fade-left" className="ml-[5vw]">
                 <div className="relative right-[calc(5vw+8px)] top-[15px] w-[15px] h-[15px] z-10 rounded-full bg-gray-300 dark:bg-[#1e2534]"></div>
-                {/* <div className="relative right-[calc(5vw+25px)] top-[15px] w-[50px] z-10 ">
-                  <Lottie
-                    options={circleDefaultOptions}
-                    speed={0.5}
-                    height={50}
-                    width={50}
-                    style={{
-                      position: "absolute",
-                      top: "0",
-                      width: "100%",
-                      opacity: "50%",
-                    }}
-                  />
-                </div> */}
+                 
 
                 <div className="relative top-0 grid gap-6 shadow-xl rounded-lg p-[30px] bg-gray-300 dark:bg-[#1e2534]">
                   <div className="grid gap-4">
@@ -243,12 +235,12 @@ const Home = () => {
             ))}
           </div>
         </section>
-      </div>
+      </div> */}
 
       <div className="observableSection" id="Skills">
         <header className="App-header md:min-h-[46.3vh]">
           <div className="hidden text-center font-Baskerville text-[34px] leading-[46px] mx-[15vw] md:block md:text-[50px] md:leading-[52px] lg:text-[56px] xl:text-[60px] xl:leading-[64px] 2xl:text-[72px] 2xl:leading-[76px]">
-            There are many skills I've learned during my coding journey.
+            My personal tech stack to create apps
           </div>
         </header>
 
