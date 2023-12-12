@@ -99,7 +99,7 @@ const Home = () => {
           <div>
             <img
               src="https://codewithalaa.netlify.app/profile.jpg"
-              className="rounded"
+              className="rounded-full"
             />
           </div>
         </header>
