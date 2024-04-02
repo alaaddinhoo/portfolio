@@ -3,11 +3,10 @@ import React, { useEffect, useState, useRef, useCallback } from "react";
 import Projects from "../data/projects.json";
 import { HiArrowSmallRight } from "react-icons/hi2";
 import { TbMenu } from "react-icons/tb";
-
+import { AnimatePresence, motion } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { v4 as uuidv4 } from "uuid";
-import Navbar from "../components/Navbar"; 
 import { Splide, SplideSlide } from "@splidejs/react-splide"; 
 import "@splidejs/splide/dist/css/splide.min.css";
 import { BiLogoLinkedin, BiLogoInstagram, BiLogoYoutube } from "react-icons/bi";
@@ -20,7 +19,55 @@ const Home = () => {
     AOS.init();
   }, []);
 
- 
+
+  // navbar stuff
+  const navLinks = [
+  { title: "WORK", href: "/" },
+  { title: "RESUME", href: "/" },
+  { title: "SERVICES", href: "/" },
+  { title: "ABOUT", href: "/" },
+];
+    const [open, setOpen] = useState(false);
+  const toggleMenu = () => {
+    setOpen((prevOpen) => !prevOpen);
+  };
+  const menuVars = {
+    initial: {
+      scaleY: 0,
+    },
+    animate: {
+      scaleY: 1,
+      transition: {
+        duration: 0.5,
+        ease: [0.12, 0, 0.39, 0],
+      },
+    },
+    exit: {
+      scaleY: 0,
+      transition: {
+        delay: 0.5,
+        duration: 0.5,
+        ease: [0.22, 1, 0.36, 1],
+      },
+    },
+  };
+  const containerVars = {
+    initial: {
+      transition: {
+        staggerChildren: 0.09,
+        staggerDirection: -1,
+      },
+    },
+    open: {
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.09,
+        staggerDirection: 1,
+      },
+    },
+  };
+
+  
   // observer intersection
   const [visibleSection, setVisibleSection] = useState("projects");
   const sectionsRef = useRef([]);
@@ -55,13 +102,56 @@ const Home = () => {
   return (
     <div>
 
+        <AnimatePresence>
+        {open && (
+          <motion.div
+            variants={menuVars}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            className="fixed z-[400] left-0 top-0 w-full h-screen origin-top bg-white text-black p-10"
+          >
+            <div className="flex h-full flex-col">
+              <div className="flex justify-between">
+                <h1 className="text-lg text-black">Portfolio</h1>
+                <p
+                  className="cursor-pointer text-md text-black"
+                  onClick={toggleMenu}
+                >
+                  Close
+                </p>
+              </div>
+              <motion.div
+                variants={containerVars}
+                initial="initial"
+                animate="open"
+                exit="initial"
+                className="flex flex-col h-full justify-center font-lora items-center gap-4 "
+              >
+                {navLinks.map((link, index) => {
+                  return (
+                    <div className="overflow-hidden">
+                      <MobileNavLink
+                        key={index}
+                        title={link.title}
+                        href={link.href}
+                      />
+                    </div>
+                  );
+                })}
+              </motion.div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
         {/*  mobile navbar  */}
         <div className="w-full px-[10vw] sticky top-0 h-[100px] bg-white z-[399] flex justify-between items-center sm:hidden">
             <div className="w-[20px] h-[20px] rounded-full border-[2px] border-black"></div>
             
             <div>
                  <div className="rounded-full">
-                    <TbMenu className="p-[15px] text-6xl "/>
+                    <TbMenu className="p-[15px] text-6xl cursor-pointer" onClick={toggleMenu}/>
                  </div>
             </div>
       </div>
@@ -133,3 +223,30 @@ const Home = () => {
 };
 
 export default Home;
+
+const mobileLinkVars = {
+  initial: {
+    y: "30vh",
+    transition: {
+      duration: 0.5,
+      ease: [0.37, 0, 0.63, 1],
+    },
+  },
+  open: {
+    y: 0,
+    transition: {
+      ease: [0, 0.55, 0.45, 1],
+      duration: 0.7,
+    },
+  },
+};
+const MobileNavLink = ({ title, href }) => {
+  return (
+    <motion.div
+      variants={mobileLinkVars}
+      className="text-5xl uppercase text-black"
+    >
+      <a href={href}>{title}</a>
+    </motion.div>
+  );
+};
