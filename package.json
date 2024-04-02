@@ -47,7 +47,8 @@
     ]
   },
   "devDependencies": {
-    "tailwindcss": "^3.3.3"
+    "tailwindcss": "^3.3.3",
+    "ts-interface-checker": "^1.0.2"
   },
   "overrides": {
     "react-lottie": {
