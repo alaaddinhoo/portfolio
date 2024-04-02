@@ -67,7 +67,7 @@ const Home = () => {
       </div>
 
 
-    <div className="w-[80vw] 2xl:w-[60vw] flex flex-col gap-[calc(125px-0.75vh)] mt-[80px] items-center mx-auto">
+    <div className="w-[80vw] 2xl:w-[60vw] flex flex-col gap-[calc(125px-0.2vh)] mt-[80px] items-center mx-auto">
 
       <div className="w-full justify-between items-center hidden sm:flex">
             <div className="w-[20px] h-[20px] rounded-full border-[2px] border-black"></div>
@@ -78,7 +78,7 @@ const Home = () => {
             </div>
       </div>
       
-      <div className="font-light text-center text-[calc(28px+2vw)]">
+      <div className="font-light text-center text-[calc(28px+1.5vw)]">
             I help startups launch their online business using low-code tools. 
         </div>
       
