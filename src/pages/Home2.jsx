@@ -113,7 +113,7 @@ const Home = () => {
           >
             <div className="flex h-full flex-col">
               <div className="flex justify-between">
-                <h1 className="text-lg text-black">Portfolio</h1>
+                <h1 className="text-lg text-black" onClick={event =>  window.location.href='/'}>Home</h1>
                 <p
                   className="cursor-pointer text-md text-black"
                   onClick={toggleMenu}
