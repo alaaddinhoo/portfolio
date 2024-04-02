@@ -145,7 +145,7 @@ const Home = () => {
         )}
       </AnimatePresence>
 
-        {/*  mobile navbar  */}
+        {/*  mobile fixed top navbar  */}
         <div className="w-full px-[10vw] sticky top-0 h-[100px] bg-white z-[399] flex justify-between items-center sm:hidden">
             <div className="w-[20px] h-[20px] rounded-full border-[2px] border-black"></div>
             
@@ -168,8 +168,12 @@ const Home = () => {
             </div>
       </div>
       
-      <div className="font-light text-center text-[calc(28px+1.75vw)]">
+      <div className="font-light text-center text-[calc(28px+1.75vw)] hidden sm:block">
             I help startups launch their online business using low-code tools. 
+        </div>
+
+        <div className="font-normal text-center text-[calc(22px+1.75vw)] block sm:hidden">
+            I DEVELOP APPS YOUR CUSTOMERS WILL LOVE 
         </div>
       
       <div className="observableSection" id="Projects">
