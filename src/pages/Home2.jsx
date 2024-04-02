@@ -78,7 +78,7 @@ const Home = () => {
             </div>
       </div>
       
-      <div className="font-light text-center text-[calc(28px+1.5vw)]">
+      <div className="font-light text-center text-[calc(28px+1.75vw)]">
             I help startups launch their online business using low-code tools. 
         </div>
       
