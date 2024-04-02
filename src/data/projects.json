@@ -9,6 +9,7 @@
       "description": "Hasanati is a habit tracker web app for Muslims. It allows users to track their progress in terms of Prayer, Quran, and more. This app was built using Flutterflow and offers stunning UI&UX designs and powerful API integrations. It is currently in test mode before production.",
       "cover": "https://codewithalaa.netlify.app/Frame5.png",
       "coverMobile": "https://codewithalaa.netlify.app/Frame4b.png",
+      "backgroundMobile": "#60a5fa",
       "location": "US, CA",
       "backend": true,
       "mobile": false
@@ -22,6 +23,7 @@
       "description": "Uber Eats is an online food ordering and delivery platform. This Flutterflow clone includes Auth, Geolocation, SMS code verification, search, categories, recent searches, custom filters, and cart system implemented.",
       "cover": "https://codewithalaa.netlify.app/uber.png",
       "coverMobile": "https://codewithalaa.netlify.app/Frame4b.png",
+      "backgroundMobile": "#F9D46A",
 
       "location": "US, CA",
 
@@ -37,6 +39,7 @@
       "description": "Vox is the cinema arm of Majid Al Futtaim, the leading shopping malls, communities, retail and leisure pioneer across the Middle East. This MERN project offers a dashboard for VOX admins to perform CRUD operations. These operations are also reflected on the user page.",
       "cover": "https://codewithalaa.netlify.app/vox-2.png",
       "coverMobile": "https://codewithalaa.netlify.app/Frame4b.png",
+      "backgroundMobile": "#60a5fa",
 
       "location": "US, CA",
 
@@ -52,6 +55,7 @@
       "description": "Zomato is an online food service platform where users can search and discover restaurants. This clone project was built to test my React frontend skills. Includes sliders, responsive design, skeleton loading, and more.",
       "cover": "https://codewithalaa.netlify.app/zomato.png",
       "coverMobile": "https://codewithalaa.netlify.app/Frame4b.png",
+      "backgroundMobile": "#60a5fa",
 
       "location": "US, CA",
 
@@ -67,6 +71,7 @@
       "description": "Hasanati is a habit tracker web app for Muslims. It allows users to track their progress in terms of Prayer, Quran, and more. The app offers stunning UI&UX designs and powerful API integrations. I'm currently re-writing the website using the latest technologies (next, react, etc..)",
       "cover": "https://codewithalaa.netlify.app/hasanati.png",
       "coverMobile": "https://codewithalaa.netlify.app/Frame4b.png",
+      "backgroundMobile": "#60a5fa",
 
       "location": "US, CA",
 
