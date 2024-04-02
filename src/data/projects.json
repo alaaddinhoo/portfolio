@@ -2,46 +2,65 @@
   "list": [
     {
       "title": "Hasanati",
+         "type": "Mobile App",
+      "year": "2024",
       "subtitle": "Dec 2023 • Founder & Developer",
       "link": "https://hasanati.com/",
       "description": "Hasanati is a habit tracker web app for Muslims. It allows users to track their progress in terms of Prayer, Quran, and more. This app was built using Flutterflow and offers stunning UI&UX designs and powerful API integrations. It is currently in test mode before production.",
       "cover": "https://codewithalaa.netlify.app/Frame5.png",
+      "location": "US, CA",
       "backend": true,
       "mobile": false
     },
     {
       "title": "Uber Eats Clone",
+         "type": "Mobile App",
+      "year": "2024",
       "subtitle": "Oct 2023 • Practice",
       "link": "https://app.flutterflow.io/run/O3NqEcbLp0BLUJyOh9Ry",
       "description": "Uber Eats is an online food ordering and delivery platform. This Flutterflow clone includes Auth, Geolocation, SMS code verification, search, categories, recent searches, custom filters, and cart system implemented.",
       "cover": "https://codewithalaa.netlify.app/uber.png",
+      "location": "US, CA",
+
       "backend": true,
       "mobile": true
     },
     {
       "title": "Vox Dashboard",
+         "type": "Mobile App",
+      "year": "2024",
       "subtitle": "Aug 2023 • Practice",
       "link": "https://vox-cinema.netlify.app/admin",
       "description": "Vox is the cinema arm of Majid Al Futtaim, the leading shopping malls, communities, retail and leisure pioneer across the Middle East. This MERN project offers a dashboard for VOX admins to perform CRUD operations. These operations are also reflected on the user page.",
       "cover": "https://codewithalaa.netlify.app/vox-2.png",
+      "location": "US, CA",
+
       "backend": true,
       "mobile": false
     },
     {
       "title": "Zomato Clone (Web)",
+         "type": "Mobile App",
+      "year": "2024",
       "subtitle": "Sep 2023 • Practice Project",
       "link": "https://zomato-frontend-clone.netlify.app/",
       "description": "Zomato is an online food service platform where users can search and discover restaurants. This clone project was built to test my React frontend skills. Includes sliders, responsive design, skeleton loading, and more.",
       "cover": "https://codewithalaa.netlify.app/zomato.png",
+      "location": "US, CA",
+
       "backend": false,
       "mobile": false
     },
     {
       "title": "Hasanati (Web)",
+      "type": "Mobile App",
+      "year": "2024",
       "subtitle": "Jun 2023 • Founder & Developer",
       "link": "https://hasanati.com/",
       "description": "Hasanati is a habit tracker web app for Muslims. It allows users to track their progress in terms of Prayer, Quran, and more. The app offers stunning UI&UX designs and powerful API integrations. I'm currently re-writing the website using the latest technologies (next, react, etc..)",
       "cover": "https://codewithalaa.netlify.app/hasanati.png",
+      "location": "US, CA",
+
       "backend": true,
       "mobile": false
     }

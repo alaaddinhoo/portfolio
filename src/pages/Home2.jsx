@@ -85,26 +85,21 @@ const Home = () => {
                 </div>
               </div>
 
-              <div className="grid auto-rows-auto gap-4 mt-[10px] md:grid-rows-none md:grid-cols-2 md:gap-0">
-                <div>
-                  <div className="font-medium text-5xl ">{project.title}</div>
-                  <div className="pt-2 text-[18px]">{project.subtitle}</div>
-                </div>
-                <div className="text-[12px] md:text-[16px] md:mt-[5px] md:text-right">
-                  {project.description}
-                </div>
-              </div>
-
-              <div className="hidden mt-[10px] gap-4 2xl:flex">
-                <div className="bg-gray-300 text-gray-800  dark:bg-[#10141c] dark:text-white p-2 rounded ">
-                  Frontend
-                </div>
-                {project.backend && (
-                  <div className="bg-gray-300 text-gray-800  dark:bg-[#10141c] dark:text-white p-2 rounded">
-                    Backend
+              <div className="pt-[15px] flex flex-col gap-[10px]">
+                  <div className="flex justify-between">
+                    <div className="text-[32px] uppercase">{project.title}</div>
+                    <div className="text-[32px] uppercase">{project.location}</div>
                   </div>
-                )}
-              </div>
+                  
+                  <div className="w-full h-[1px] bg-[#dcdcdc]"></div>
+ 
+
+                <div className="flex justify-between">                  
+                    <div className="text-[20px]">{project.type}</div>
+                    <div className="text-[20px]">{project.year}</div>
+                  </div>
+
+                </div>
             </a>
           ))}
         </section>
