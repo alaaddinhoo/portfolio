@@ -84,7 +84,7 @@ const Home = () => {
       
       <div className="observableSection" id="Projects">
           
-        <section className="flex flex-col gap-24 items-center">
+        <section className="flex flex-col gap-24 items-center bg-blue-400">
           {Projects.list.map((project) => (
             <a
               href={project.link}
@@ -92,7 +92,8 @@ const Home = () => {
               key={uuidv4()}
             >
               <div className="project-cover">
-                <img src={project.cover} className="project-cover-image"></img>
+                <img src={project.cover} className="project-cover-image hidden sm:block"></img>
+                <img src={project.coverMobile} className="project-cover-image block sm:hidden"></img>
                 <div className="project-cover-overlay">
                   <div className="project-cover-overlay-text flex flex-row items-center gap-2">
                     Visit Website
