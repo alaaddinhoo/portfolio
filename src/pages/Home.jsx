@@ -102,7 +102,7 @@ const Home = () => {
             />
           </div>
         </header>
-        <section className="hidden px-[2.5%] md:flex flex-col gap-12 items-center md:gap-24">
+        <section className="flex px-[2.5%] flex-col gap-12 items-center md:gap-24">
           {Projects.list.map((project) => (
             <a
               href={project.link}
@@ -144,62 +144,7 @@ const Home = () => {
           ))}
         </section>
 
-        <section className="md:hidden mt-[30px]">
-          <Splide
-            options={{
-              drag: "free",
-              type: "loop",
-              arrows: false,
-              pagination: false,
-              perPage: 1,
-              // gap: 20,
-              padding: { right: 110 },
-            }}
-          >
-            {Projects.list.map((project) => (
-              <SplideSlide>
-                <a href={project.link} key={uuidv4()}>
-                  <div className="project-cover">
-                    <img
-                      src={project.cover}
-                      className="project-cover-image rounded-2xl"
-                      style={{ height: "300px", objectPosition: "20% 10%" }}
-                    ></img>
-                    <div className="project-cover-overlay">
-                      <div className="project-cover-overlay-text flex flex-row items-center gap-2">
-                        Visit Website
-                        <HiArrowSmallRight />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="grid auto-rows-auto gap-4 mt-[10px] md:grid-rows-none md:grid-cols-2 md:gap-0">
-                    <div className="text-left">
-                      <div className="font-medium text-3xl ">
-                        {project.title}
-                      </div>
-                      <div className="pt-2 text-lg">{project.subtitle}</div>
-                    </div>
-                    {/* <div className="text-[12px] md:text-[16px] md:mt-[5px] md:text-right">
-                      {project.description}
-                    </div> */}
-                  </div>
-
-                  <div className="hidden mt-[10px] gap-4 2xl:flex">
-                    <div className="bg-gray-300 text-gray-800  dark:bg-[#10141c] dark:text-white p-2 rounded ">
-                      Frontend
-                    </div>
-                    {project.backend && (
-                      <div className="bg-gray-300 text-gray-800  dark:bg-[#10141c] dark:text-white p-2 rounded">
-                        Backend
-                      </div>
-                    )}
-                  </div>
-                </a>
-              </SplideSlide>
-            ))}
-          </Splide>
-        </section>
+     
       </div>
       {/* <div
         className="observableSection bg-gray-100 dark:bg-[#10141c] py-[40px]"

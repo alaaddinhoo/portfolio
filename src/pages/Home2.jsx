@@ -2,6 +2,8 @@ import React, { useEffect, useState, useRef, useCallback } from "react";
 
 import Projects from "../data/projects.json";
 import { HiArrowSmallRight } from "react-icons/hi2";
+import { TbMenu } from "react-icons/tb";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { v4 as uuidv4 } from "uuid";
@@ -51,24 +53,37 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="w-[80vw] mt-[80px] 2xl:w-[60vw] flex flex-col gap-[125px] items-center mx-auto">
+    <div>
 
-      <div className="w-full flex justify-between">
+        <div className="w-full px-[10vw] sticky top-0 h-[100px] bg-white z-[399] flex justify-between items-center sm:hidden">
             <div className="w-[20px] h-[20px] rounded-full border-[2px] border-black"></div>
-            <div className="text-[20px] flex flex-row gap-12">
+            
+            <div>
+                 <div className="rounded-full">
+                    <TbMenu className="p-[15px] text-6xl "/>
+                 </div>
+            </div>
+      </div>
+
+
+    <div className="w-[80vw] sm:w-[60vw] flex flex-col gap-[125px] mt-[80px] items-center mx-auto">
+
+      <div className="w-full justify-between items-center hidden sm:flex">
+            <div className="w-[20px] h-[20px] rounded-full border-[2px] border-black"></div>
+            <div className="hidden sm:flex text-[20px] flex-row gap-12">
                 <div>Work</div>
                 <div>Services</div>
                 <div>Resume</div>
             </div>
       </div>
       
-      <div className="font-light text-center text-[34px] leading-[46px] md:text-[50px] md:leading-[52px] lg:text-[56px] xl:text-[60px] xl:leading-[64px] 2xl:text-[72px] 2xl:leading-[110%]">
+      <div className="font-light text-center text-[calc(28px+2vw)]">
             I help startups launch their online business using low-code tools. 
         </div>
       
       <div className="observableSection" id="Projects">
           
-        <section className="hidden md:flex flex-col gap-12 items-center md:gap-24">
+        <section className="flex flex-col gap-24 items-center">
           {Projects.list.map((project) => (
             <a
               href={project.link}
@@ -87,16 +102,16 @@ const Home = () => {
 
               <div className="pt-[15px] flex flex-col gap-[10px]">
                   <div className="flex justify-between">
-                    <div className="text-[32px] uppercase">{project.title}</div>
-                    <div className="text-[32px] uppercase">{project.location}</div>
+                    <div className="text-[calc(18px+1vw)] uppercase">{project.title}</div>
+                    <div className="text-[calc(18px+1vw)] uppercase">{project.location}</div>
                   </div>
                   
                   <div className="w-full h-[1px] bg-[#dcdcdc]"></div>
  
 
                 <div className="flex justify-between">                  
-                    <div className="text-[20px]">{project.type}</div>
-                    <div className="text-[20px]">{project.year}</div>
+                    <div className="text-[calc(12px+0.75vw)]">{project.type}</div>
+                    <div className="text-[calc(12px+0.75vw)]">{project.year}</div>
                   </div>
 
                 </div>
@@ -104,64 +119,12 @@ const Home = () => {
           ))}
         </section>
 
-        <section className="md:hidden mt-[30px]">
-          <Splide
-            options={{
-              drag: "free",
-              type: "loop",
-              arrows: false,
-              pagination: false,
-              perPage: 1,
-              // gap: 20,
-              padding: { right: 110 },
-            }}
-          >
-            {Projects.list.map((project) => (
-              <SplideSlide>
-                <a href={project.link} key={uuidv4()}>
-                  <div className="project-cover">
-                    <img
-                      src={project.cover}
-                      className="project-cover-image rounded-2xl"
-                      style={{ height: "300px", objectPosition: "20% 10%" }}
-                    ></img>
-                    <div className="project-cover-overlay">
-                      <div className="project-cover-overlay-text flex flex-row items-center gap-2">
-                        Visit Website
-                        <HiArrowSmallRight />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="grid auto-rows-auto gap-4 mt-[10px] md:grid-rows-none md:grid-cols-2 md:gap-0">
-                    <div className="text-left">
-                      <div className="font-medium text-3xl ">
-                        {project.title}
-                      </div>
-                      <div className="pt-2 text-lg">{project.subtitle}</div>
-                    </div>
-                    {/* <div className="text-[12px] md:text-[16px] md:mt-[5px] md:text-right">
-                      {project.description}
-                    </div> */}
-                  </div>
-
-                  <div className="hidden mt-[10px] gap-4 2xl:flex">
-                    <div className="bg-gray-300 text-gray-800  dark:bg-[#10141c] dark:text-white p-2 rounded ">
-                      Frontend
-                    </div>
-                    {project.backend && (
-                      <div className="bg-gray-300 text-gray-800  dark:bg-[#10141c] dark:text-white p-2 rounded">
-                        Backend
-                      </div>
-                    )}
-                  </div>
-                </a>
-              </SplideSlide>
-            ))}
-          </Splide>
-        </section>
+        
       </div>
     </div>
+
+</div>
+     
   );
 };
 
