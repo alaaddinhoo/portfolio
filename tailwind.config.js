@@ -16,6 +16,7 @@ module.exports = {
       fontFamily: {
         Baskerville: ["Libre Baskerville", "sans-serif"],
         Franklin: ["Libre Franklin", "sans-serif"],
+        Mono: ["DM Mono", "sans-serif"],
       },
       colors: {
         body_background: "var(--body_background)",

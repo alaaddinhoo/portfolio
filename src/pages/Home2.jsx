@@ -51,29 +51,27 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <div className="w-[80vw] mt-[80px] 2xl:w-[60vw] flex flex-col gap-[125px] items-center mx-auto">
 
-      <div className="flex flex-row items-center">
-            <div className="w-[20px] h-[20px] rounded border border-black"></div>
-            <div className="flex flex-row gap-12">
+      <div className="w-full flex justify-between">
+            <div className="w-[20px] h-[20px] rounded-full border-[2px] border-black"></div>
+            <div className="text-[20px] flex flex-row gap-12">
                 <div>Work</div>
                 <div>Services</div>
                 <div>Resume</div>
             </div>
       </div>
-      <div className="observableSection relative" id="Projects">
-         
-        <header className="App-header md:min-h-[46.3vh]">
-          <div className=" hidden text-left font-Baskerville text-[34px] leading-[46px] ml-[15vw] md:block md:text-[50px] md:leading-[52px] lg:text-[56px] xl:text-[60px] xl:leading-[64px] 2xl:text-[72px] 2xl:leading-[76px]">
-            I build beautiful things as developer, creator, and entrepreneur.
-          </div>
-           
-        </header>
-        <section className="hidden px-[2.5%] md:flex flex-col gap-12 items-center md:gap-24">
+      
+      <div className="font-light text-center text-[34px] leading-[46px] md:text-[50px] md:leading-[52px] lg:text-[56px] xl:text-[60px] xl:leading-[64px] 2xl:text-[72px] 2xl:leading-[110%]">
+            I help startups launch their online business using low-code tools. 
+        </div>
+      
+      <div className="observableSection" id="Projects">
+          
+        <section className="hidden md:flex flex-col gap-12 items-center md:gap-24">
           {Projects.list.map((project) => (
             <a
               href={project.link}
-              className="max-w-[400px] md:max-w-[1200px] md:mt-[50px]"
               data-aos="fade-up"
               key={uuidv4()}
             >
@@ -168,9 +166,6 @@ const Home = () => {
           </Splide>
         </section>
       </div>
-     
-  
- 
     </div>
   );
 };
