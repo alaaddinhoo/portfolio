@@ -55,6 +55,7 @@ const Home = () => {
   return (
     <div>
 
+        {/*  mobile navbar  */}
         <div className="w-full px-[10vw] sticky top-0 h-[100px] bg-white z-[399] flex justify-between items-center sm:hidden">
             <div className="w-[20px] h-[20px] rounded-full border-[2px] border-black"></div>
             
@@ -66,7 +67,7 @@ const Home = () => {
       </div>
 
 
-    <div className="w-[80vw] sm:w-[60vw] flex flex-col gap-[125px] mt-[80px] items-center mx-auto">
+    <div className="w-[80vw] sm:w-[60vw] flex flex-col gap-[calc(125px-0.75vh)] mt-[80px] items-center mx-auto">
 
       <div className="w-full justify-between items-center hidden sm:flex">
             <div className="w-[20px] h-[20px] rounded-full border-[2px] border-black"></div>
