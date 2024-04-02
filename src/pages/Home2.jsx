@@ -67,7 +67,7 @@ const Home = () => {
       </div>
 
 
-    <div className="w-[80vw] 2xl:w-[60vw] flex flex-col gap-[calc(125px-0.2vh)] mt-[80px] items-center mx-auto">
+    <div className="w-[80vw] xl:w-[75vw] 2xl:w-[60vw] flex flex-col gap-[calc(125px-3vh)] 2xl:gap-[125px] mt-[80px] items-center mx-auto">
 
       <div className="w-full justify-between items-center hidden sm:flex">
             <div className="w-[20px] h-[20px] rounded-full border-[2px] border-black"></div>
