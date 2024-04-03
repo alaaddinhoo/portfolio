@@ -4,7 +4,7 @@ import { HiBars3BottomRight } from "react-icons/hi2";
 import { FaLinkedin, FaInstagram, FaYoutube } from "react-icons/fa";
 import { BsDownload } from "react-icons/bs";
 import { openNav, closeNav } from "../scripts/navbar";
-import Theme from "../components/Theme";
+import Theme from "./Theme";
 import useScrollDirection from "../functions/useScrollDirection";
 
 const Navbar = ({ visibleSection }) => {

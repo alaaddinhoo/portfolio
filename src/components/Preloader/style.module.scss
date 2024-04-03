@@ -1,0 +1,41 @@
+.introduction{
+    height: 100vh;
+    width: 100vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 799;
+    background-color: #F5EFE7;
+    svg{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: calc(100% + 300px);
+        path{
+            fill: #F5EFE7;
+        }
+    }
+    p{
+        display: flex;
+        color: #D7492B;
+        font-size: 42px;
+        align-items: center;
+        justify-items: center;
+        position: absolute;
+        z-index: 1;
+        span{
+            display: block;
+            width: 10px;
+            height: 10px;
+            background-color: #D7492B;
+            border-radius: 50%; 
+             position: absolute;
+            top: 120%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        } 
+    }
+}
