@@ -9,10 +9,11 @@ import Navbar from "../components/Navbar/Navbar";
 const ChildProject = React.memo(({ skill }) => {
   return (
     <div data-aos="fade-up" key={uuidv4()}>
-      <div className="project-cover">
-        <div className="hidden sm:block">
-          <img src={skill.cover} className="project-cover-image" />
-        </div>
+      <div
+        className="w-full h-[300px] flex items-center justify-center"
+        style={{ backgroundColor: `${skill.color}` }}
+      >
+        <img src={skill.cover} className="w-[200px] h-[200px]" />
       </div>
       <div className="pt-[15px] flex flex-col gap-[10px]">
         <div className="flex justify-between">
@@ -48,7 +49,7 @@ const Skills = () => {
           I DEVELOP APPS YOUR CUSTOMERS WILL LOVE
         </div>
 
-        <section className="flex flex-col gap-24 items-center">
+        <section className="flex flex-col gap-24 w-full">
           {SkillsJSON.list.map((skill) => (
             <ChildProject key={skill.name} skill={skill} />
           ))}

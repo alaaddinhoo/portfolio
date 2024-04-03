@@ -25,7 +25,10 @@ const Navbar = () => {
     <div>
       {/*  mobile fixed top navbar  */}
       <div className="w-full px-[10vw] sticky top-0 h-[100px] bg-white z-[399] flex justify-between items-center sm:hidden">
-        <div className="w-[20px] h-[20px] rounded-full border-[2px] border-black"></div>
+        <a
+          className="w-[20px] h-[20px] cursor-pointer rounded-full border-[2px] border-black"
+          href="/"
+        ></a>
 
         <div>
           <div className="rounded-full">
@@ -39,7 +42,10 @@ const Navbar = () => {
 
       {/* web nav bar  */}
       <div className="mx-auto mb-[calc(125px-3vh)] 2xl:mb-[gap-[125px]] sticky top-0 z-[399] h-[100px] bg-white w-[80vw] xl:w-[75vw] 2xl:w-[65vw] justify-between items-center hidden sm:flex">
-        <div className="w-[20px] h-[20px] rounded-full border-[2px] border-black"></div>
+        <a
+          className="w-[20px] h-[20px] rounded-full border-[2px] border-black"
+          href="/"
+        ></a>
         {/* <div className="hidden sm:flex text-[20px] flex-row gap-12">
                 <div>Work</div>
                 <div>Services</div>

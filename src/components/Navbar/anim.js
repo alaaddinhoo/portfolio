@@ -1,4 +1,4 @@
-const menuVars = {
+export const menuVars = {
   initial: {
     scaleY: 0,
   },
@@ -18,7 +18,8 @@ const menuVars = {
     },
   },
 };
-const containerVars = {
+
+export const containerVars = {
   initial: {
     transition: {
       staggerChildren: 0.09,
@@ -34,7 +35,7 @@ const containerVars = {
   },
 };
 
-const mobileLinkVars = {
+export const mobileLinkVars = {
   initial: {
     y: "30vh",
     transition: {
