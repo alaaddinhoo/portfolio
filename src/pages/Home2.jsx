@@ -21,12 +21,6 @@ const Home = () => {
 
 
   // navbar stuff
-  const navLinks = [
-  { title: "WORK", href: "/" },
-  { title: "RESUME", href: "/" },
-  { title: "SERVICES", href: "/" },
-  { title: "ABOUT", href: "/" },
-];
     const [open, setOpen] = useState(false);
   const toggleMenu = () => {
     setOpen((prevOpen) => !prevOpen);
@@ -128,17 +122,36 @@ const Home = () => {
                 exit="initial"
                 className="flex flex-col h-full justify-center font-lora items-center gap-4 "
               >
-                {navLinks.map((link, index) => {
-                  return (
-                    <div className="overflow-hidden">
-                      <MobileNavLink
-                        key={index}
-                        title={link.title}
-                        href={link.href}
-                      />
-                    </div>
-                  );
-                })}
+                <div className="overflow-hidden">
+                         <motion.div
+                        variants={mobileLinkVars}
+                        className="text-5xl uppercase text-black"
+                        >
+                        <a href="/">WORK</a>
+                        </motion.div>
+
+                           <motion.div
+                            variants={mobileLinkVars}
+                            className="text-5xl uppercase text-black"
+                            >
+                            <a href="/Portfolio.pdf" download="Alaaeldin_CV">RESUME</a>
+                            </motion.div>
+
+                            <motion.div
+                            variants={mobileLinkVars}
+                            className="text-5xl uppercase text-black"
+                            >
+                            <a href="/">SERVICES</a>
+                            </motion.div>
+
+
+                            <motion.div
+                            variants={mobileLinkVars}
+                            className="text-5xl uppercase text-black"
+                            >
+                            <a href="/">ABOUT</a>
+                            </motion.div>
+                </div>
 
               </motion.div>
 
@@ -260,13 +273,4 @@ const mobileLinkVars = {
     },
   },
 };
-const MobileNavLink = ({ title, href }) => {
-  return (
-    <motion.div
-      variants={mobileLinkVars}
-      className="text-5xl uppercase text-black"
-    >
-      <a href={href}>{title}</a>
-    </motion.div>
-  );
-};
+ 
