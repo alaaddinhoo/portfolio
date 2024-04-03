@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef, useCallback } from "react";
-import Skills from "../data/skills.json";
+import SkillsJSON from "../data/skills.json";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { v4 as uuidv4 } from "uuid";
@@ -49,7 +49,7 @@ const Skills = () => {
         </div>
 
         <section className="flex flex-col gap-24 items-center">
-          {Skills.list.map((skill) => (
+          {SkillsJSON.list.map((skill) => (
             <ChildProject key={skill.name} skill={skill} />
           ))}
         </section>
