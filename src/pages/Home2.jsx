@@ -11,8 +11,6 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
 import { BiLogoLinkedin, BiLogoInstagram, BiLogoYoutube } from "react-icons/bi";
  
-import linesAnimationData from "../lotties/animation_lmxmvnbf.json";
-import circlesAnimationData from "../lotties/circles.json";
 
 const safeDocument = typeof document !== 'undefined' ? document : {};
 
@@ -22,8 +20,8 @@ const Home = () => {
   }, []);
 
 
-// scroll block stuff
- const scrollBlocked = useRef();
+  // block scroll stuff
+    const scrollBlocked = useRef();
   const html = safeDocument.documentElement;
   const { body } = safeDocument;
 
@@ -175,13 +173,19 @@ const Home = () => {
                         >
                         <a href="/">WORK</a>
                         </motion.div>
+                </div>
 
+                <div className="overflow-hidden">
+                
                            <motion.div
                             variants={mobileLinkVars}
                             className="text-5xl uppercase text-black"
                             >
-                            <a href="/Portfolio.pdf" download="Alaaeldin_CV">RESUME</a>
+                            <a href="/Portfolio.pdf">RESUME</a>
                             </motion.div>
+                </div>
+
+                <div className="overflow-hidden">
 
                             <motion.div
                             variants={mobileLinkVars}
@@ -189,7 +193,10 @@ const Home = () => {
                             >
                             <a href="/">SERVICES</a>
                             </motion.div>
+                </div>
+                
 
+                <div className="overflow-hidden">
 
                             <motion.div
                             variants={mobileLinkVars}
