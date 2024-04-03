@@ -10,11 +10,8 @@ import { v4 as uuidv4 } from "uuid";
 import { Splide, SplideSlide } from "@splidejs/react-splide"; 
 import "@splidejs/splide/dist/css/splide.min.css";
 import { BiLogoLinkedin, BiLogoInstagram, BiLogoYoutube } from "react-icons/bi";
- 
-
-const safeDocument = typeof document !== 'undefined' ? document : {};
-
-
+  
+// using memo to avoid re-rendering
 const ChildProject = React.memo(({ project }) => {
   return (
     <a href={project.link} data-aos="fade-up" key={uuidv4()}>
@@ -55,54 +52,19 @@ const Home = () => {
   }, []);
 
 
+
   // block scroll stuff
-    const scrollBlocked = useRef();
-  const html = safeDocument.documentElement;
-  const { body } = safeDocument;
-
-  const blockScroll = () => {
-    if (!body || !body.style || scrollBlocked.current) return;
-
-    const scrollBarWidth = window.innerWidth - html.clientWidth;
-    const bodyPaddingRight =
-      parseInt(window.getComputedStyle(body).getPropertyValue("padding-right")) || 0;
-
-    /**
-     * 1. Fixes a bug in iOS and desktop Safari whereby setting
-     *    `overflow: hidden` on the html/body does not prevent scrolling.
-     * 2. Fixes a bug in desktop Safari where `overflowY` does not prevent
-     *    scroll if an `overflow-x` style is also applied to the body.
-     */
-    html.style.position = 'relative'; /* [1] */
-    html.style.overflow = 'hidden'; /* [2] */
-    body.style.position = 'relative'; /* [1] */
-    body.style.overflow = 'hidden'; /* [2] */
-    body.style.paddingRight = `${bodyPaddingRight + scrollBarWidth}px`;
-
-    scrollBlocked.current = true;
-  };
-
-  const allowScroll = () => {
-    if (!body || !body.style || !scrollBlocked.current) return;
-
-    html.style.position = '';
-    html.style.overflow = '';
-    body.style.position = '';
-    body.style.overflow = '';
-    body.style.paddingRight = '';
-
-    scrollBlocked.current = false;
+   const scrollBlocked = useRef(false);
+  const toggleScroll = () => {
+    scrollBlocked.current = !scrollBlocked.current;
+    document.documentElement.classList.toggle('no-scroll', scrollBlocked.current);
   };
 
   // navbar stuff
     const [open, setOpen] = useState(false);
   const toggleMenu = useCallback(() => {
   setOpen(prevOpen => !prevOpen);
-  if (open) {
-    allowScroll();
-  } else {
-    blockScroll();
-  }
+  toggleScroll();
 }, [open]); 
   const menuVars = {
     initial: {
@@ -155,7 +117,7 @@ const Home = () => {
           >
             <div className="flex h-full flex-col">
               <div className="flex justify-between">
-                <h1 className="text-lg text-black" onClick={event =>  window.location.href='/'}>Home</h1>
+                <h1 className="text-lg cursor-pointer text-black" onClick={event =>  window.location.href='/'}>Home</h1>
                 <p
                   className="cursor-pointer text-md text-black"
                   onClick={toggleMenu}
