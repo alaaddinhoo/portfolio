@@ -1,14 +1,15 @@
 import React, { useEffect, useState, useRef, useCallback } from "react";
 import SkillsJSON from "../data/skills.json";
+import { AnimatePresence } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { v4 as uuidv4 } from "uuid";
 import Navbar from "../components/Navbar/Navbar";
+import Preloader from "../components/Preloader";
 
 // using memo to avoid re-rendering
 const ChildProject = React.memo(({ skill }) => {
   return (
-    <div data-aos="fade-up" key={uuidv4()}>
+    <div data-aos="fade-up" key={skill.name}>
       <div
         className="w-full h-[300px] flex items-center justify-center"
         style={{ backgroundColor: `${skill.color}` }}
@@ -36,8 +37,37 @@ const Skills = () => {
     AOS.init();
   }, []);
 
+  // preloader stuff
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    (async () => {
+      setTimeout(() => {
+        setIsLoading(false);
+        document.body.style.cursor = "default";
+        window.scrollTo(0, 0);
+      }, 2000);
+    })();
+  }, []);
+
   return (
     <div>
+      <AnimatePresence mode="wait">
+        {isLoading && (
+          <Preloader
+            words={[
+              "Skills",
+              "Compétences",
+              "Competenze",
+              "Habilidades",
+              "スキル",
+              "Färdigheter",
+              "Fähigkeiten",
+              "Vaardigheden",
+            ]}
+          />
+        )}
+      </AnimatePresence>
+
       <Navbar />
 
       <div className="w-[80vw] xl:w-[75vw] 2xl:w-[65vw] flex flex-col gap-[calc(125px-3vh)] 2xl:gap-[125px] mt-[20px] mb-[100px] items-center mx-auto">

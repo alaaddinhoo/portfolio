@@ -5,7 +5,6 @@ import { HiArrowSmallRight } from "react-icons/hi2";
 import { AnimatePresence } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { v4 as uuidv4 } from "uuid";
 import "@splidejs/splide/dist/css/splide.min.css";
 import Preloader from "../components/Preloader";
 import Navbar from "../components/Navbar/Navbar";
@@ -13,7 +12,7 @@ import Navbar from "../components/Navbar/Navbar";
 // using memo to avoid re-rendering
 const ChildProject = React.memo(({ project }) => {
   return (
-    <a href={project.link} data-aos="fade-up" key={uuidv4()}>
+    <a href={project.link} data-aos="fade-up" key={project.link}>
       <div className="project-cover">
         <div className="hidden sm:block">
           <img src={project.cover} className="project-cover-image" />
@@ -72,7 +71,20 @@ const Home = () => {
   return (
     <div>
       <AnimatePresence mode="wait">
-        {isLoading && <Preloader />}
+        {isLoading && (
+          <Preloader
+            words={[
+              "Hello",
+              "Bonjour",
+              "Ciao",
+              "Olà",
+              "やあ",
+              "Hallå",
+              "Guten tag",
+              "Hallo",
+            ]}
+          />
+        )}
       </AnimatePresence>
 
       <Navbar />
