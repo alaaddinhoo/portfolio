@@ -139,6 +139,22 @@ const Home = () => {
                     </div>
                   );
                 })}
+
+              </motion.div>
+
+              <motion.div
+                 variants={containerVars}
+                initial="initial"
+                animate="open"
+                exit="initial">
+                    <div className="overflow-hidden">
+                       <motion.div
+                        variants={mobileLinkVars}
+                        className="font-lora text-center underline underline-offset-4"
+                        >
+                        <a href="mailto:alaaeldin.92@outlook.com">alaaeldin.92@outlook.com</a>
+                        </motion.div>
+                    </div>
               </motion.div>
             </div>
           </motion.div>
@@ -172,7 +188,7 @@ const Home = () => {
             I help startups launch their online business using low-code tools. 
         </div>
 
-        <div className="font-normal text-center text-[calc(22px+1.75vw)] block sm:hidden">
+        <div className="font-normal text-center text-[calc(26px+1.75vw)] block sm:hidden">
             I DEVELOP APPS YOUR CUSTOMERS WILL LOVE 
         </div>
       
