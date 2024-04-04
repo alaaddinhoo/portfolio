@@ -14,6 +14,10 @@ const Navbar = () => {
     );
   };
 
+  // get extension
+  const currentPageExtension = window.location.pathname.split(".").pop();
+  console.log(currentPageExtension);
+
   // navbar stuff
   const [open, setOpen] = useState(false);
   const toggleMenu = useCallback(() => {
@@ -63,15 +67,12 @@ const Navbar = () => {
             <div className="flex h-full flex-col">
               <div className="flex justify-between">
                 <h1
-                  className="text-lg cursor-pointer text-black"
+                  className="text-lg cursor-pointer"
                   onClick={(event) => (window.location.href = "/")}
                 >
                   Home
                 </h1>
-                <p
-                  className="cursor-pointer text-md text-black"
-                  onClick={toggleMenu}
-                >
+                <p className="text-md cursor-pointer" onClick={toggleMenu}>
                   Close
                 </p>
               </div>
@@ -80,41 +81,65 @@ const Navbar = () => {
                 initial="initial"
                 animate="open"
                 exit="initial"
-                className="flex flex-col h-full justify-center font-lora items-center gap-4 "
+                className="flex flex-col h-full justify-center font-lora text-5xl uppercase items-center gap-4 "
               >
                 <div className="overflow-hidden">
-                  <motion.div
-                    variants={mobileLinkVars}
-                    className="text-5xl uppercase text-black"
-                  >
-                    <a href="/">WORK</a>
+                  <motion.div variants={mobileLinkVars}>
+                    <a
+                      href="/"
+                      style={{
+                        color: `${
+                          currentPageExtension == "/" ? "black" : "gray"
+                        }`,
+                      }}
+                    >
+                      WORK
+                    </a>
                   </motion.div>
                 </div>
 
                 <div className="overflow-hidden">
-                  <motion.div
-                    variants={mobileLinkVars}
-                    className="text-5xl uppercase text-black"
-                  >
-                    <a href="/Portfolio.pdf">RESUME</a>
+                  <motion.div variants={mobileLinkVars}>
+                    <a
+                      href="/resume"
+                      style={{
+                        color: `${
+                          currentPageExtension == "/resume" ? "black" : "gray"
+                        }`,
+                      }}
+                    >
+                      RESUME
+                    </a>
                   </motion.div>
                 </div>
 
                 <div className="overflow-hidden">
-                  <motion.div
-                    variants={mobileLinkVars}
-                    className="text-5xl uppercase text-black"
-                  >
-                    <a href="/skills">SKILLS</a>
+                  <motion.div variants={mobileLinkVars}>
+                    <a
+                      href="/skills"
+                      style={{
+                        color: `${
+                          currentPageExtension == "/skills" ? "black" : "gray"
+                        }`,
+                      }}
+                    >
+                      SKILLS
+                    </a>
                   </motion.div>
                 </div>
 
                 <div className="overflow-hidden">
-                  <motion.div
-                    variants={mobileLinkVars}
-                    className="text-5xl uppercase text-black"
-                  >
-                    <a href="/about">ABOUT</a>
+                  <motion.div variants={mobileLinkVars}>
+                    <a
+                      href="/about"
+                      style={{
+                        color: `${
+                          currentPageExtension == "/about" ? "black" : "gray"
+                        }`,
+                      }}
+                    >
+                      ABOUT
+                    </a>
                   </motion.div>
                 </div>
               </motion.div>
