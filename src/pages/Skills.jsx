@@ -68,15 +68,15 @@ const Skills = () => {
         )}
       </AnimatePresence>
 
-      <div className="w-[80vw] xl:w-[75vw] 2xl:w-[65vw] flex flex-col gap-[calc(125px-2.5vh)] sm:items-center mx-auto">
+      <div className="w-[80vw] xl:w-[75vw] 2xl:w-[65vw] flex flex-col gap-[calc(80px-5vh)] md:gap-[calc(100px-2.5vh)] 2xl:gap-[150px] sm:items-center mx-auto">
         <Navbar />
 
-        <div className="uppercase font-light text-center text-[calc(24px+1.75vw)] hidden sm:block">
-          Up-to date with the latest technologies for app development
+        <div className="max-w-[60vw] text-light font-Baskerville text-center text-[calc(32px+1.5vw)] leading-[1.4em] hidden sm:block">
+          Up-to date with the latest technologies in app development
         </div>
 
         <div className="font-normal text-center text-[calc(26px+1.75vw)] block sm:hidden">
-          I HAVE EXPERIENCES WITH MANY TOOLS
+          TOOLS I USE TO CREATE APPS
         </div>
 
         <section className="flex flex-col gap-24 w-full items-stretch py-[30px]">

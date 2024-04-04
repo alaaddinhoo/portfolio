@@ -2,6 +2,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import React, { useEffect, useState, useRef, useCallback } from "react";
 import { TbMenu } from "react-icons/tb";
 import { menuVars, containerVars, mobileLinkVars } from "./anim";
+import Magnetic from "../../common/Magnetic";
 
 const Navbar = () => {
   // block scroll stuff
@@ -16,7 +17,7 @@ const Navbar = () => {
 
   // get extension
   const currentPageExtension = window.location.pathname.split(".").pop();
-  console.log(currentPageExtension);
+  // console.log(currentPageExtension);
 
   // navbar stuff
   const [open, setOpen] = useState(false);
@@ -35,9 +36,7 @@ const Navbar = () => {
         ></a>
 
         <div>
-          <div className="rounded-full">
-            <TbMenu className="text-3xl cursor-pointer" onClick={toggleMenu} />
-          </div>
+          <TbMenu className="text-3xl cursor-pointer" onClick={toggleMenu} />
         </div>
       </div>
 
@@ -83,65 +82,73 @@ const Navbar = () => {
                 exit="initial"
                 className="flex flex-col h-full justify-center font-lora text-5xl uppercase items-center gap-4 "
               >
-                <div className="overflow-hidden">
-                  <motion.div variants={mobileLinkVars}>
-                    <a
-                      href="/"
-                      style={{
-                        color: `${
-                          currentPageExtension == "/" ? "black" : "gray"
-                        }`,
-                      }}
-                    >
-                      WORK
-                    </a>
-                  </motion.div>
-                </div>
+                <Magnetic>
+                  <div className="overflow-hidden">
+                    <motion.div variants={mobileLinkVars}>
+                      <a
+                        href="/"
+                        style={{
+                          color: `${
+                            currentPageExtension == "/" ? "black" : "gray"
+                          }`,
+                        }}
+                      >
+                        WORK
+                      </a>
+                    </motion.div>
+                  </div>
+                </Magnetic>
 
-                <div className="overflow-hidden">
-                  <motion.div variants={mobileLinkVars}>
-                    <a
-                      href="/resume"
-                      style={{
-                        color: `${
-                          currentPageExtension == "/resume" ? "black" : "gray"
-                        }`,
-                      }}
-                    >
-                      RESUME
-                    </a>
-                  </motion.div>
-                </div>
+                <Magnetic>
+                  <div className="overflow-hidden">
+                    <motion.div variants={mobileLinkVars}>
+                      <a
+                        href="/resume"
+                        style={{
+                          color: `${
+                            currentPageExtension == "/resume" ? "black" : "gray"
+                          }`,
+                        }}
+                      >
+                        RESUME
+                      </a>
+                    </motion.div>
+                  </div>
+                </Magnetic>
 
-                <div className="overflow-hidden">
-                  <motion.div variants={mobileLinkVars}>
-                    <a
-                      href="/skills"
-                      style={{
-                        color: `${
-                          currentPageExtension == "/skills" ? "black" : "gray"
-                        }`,
-                      }}
-                    >
-                      SKILLS
-                    </a>
-                  </motion.div>
-                </div>
+                <Magnetic>
+                  <div className="overflow-hidden">
+                    <motion.div variants={mobileLinkVars}>
+                      <a
+                        href="/skills"
+                        style={{
+                          color: `${
+                            currentPageExtension == "/skills" ? "black" : "gray"
+                          }`,
+                        }}
+                      >
+                        SKILLS
+                      </a>
+                    </motion.div>
+                  </div>
+                </Magnetic>
 
-                <div className="overflow-hidden">
-                  <motion.div variants={mobileLinkVars}>
-                    <a
-                      href="/about"
-                      style={{
-                        color: `${
-                          currentPageExtension == "/about" ? "black" : "gray"
-                        }`,
-                      }}
-                    >
-                      ABOUT
-                    </a>
-                  </motion.div>
-                </div>
+                <Magnetic>
+                  <div className="overflow-hidden">
+                    <motion.div variants={mobileLinkVars}>
+                      <a
+                        href="/about"
+                        style={{
+                          color: `${
+                            currentPageExtension == "/about" ? "black" : "gray"
+                          }`,
+                        }}
+                      >
+                        ABOUT
+                      </a>
+                    </motion.div>
+                  </div>
+                </Magnetic>
               </motion.div>
 
               <motion.div
