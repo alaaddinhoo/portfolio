@@ -25,12 +25,6 @@ const ChildProject = React.memo(({ project }) => {
             className="project-cover-image block sm:hidden"
           />
         </div>
-        <div className="project-cover-overlay">
-          <div className="project-cover-overlay-text flex flex-row items-center gap-2">
-            Visit Website
-            <HiArrowSmallRight />
-          </div>
-        </div>
       </div>
       <div className="pt-[15px] flex flex-col gap-[10px]">
         <div className="flex justify-between">
@@ -89,8 +83,9 @@ const Home = () => {
       <div className="w-[80vw] xl:w-[75vw] 2xl:w-[65vw] flex flex-col gap-[calc(100px-2.5vh)] 2xl:gap-[150px] sm: items-center mx-auto">
         <Navbar />
 
-        <div className="max-w-[60vw] uppercase text-center text-[calc(24px+1.5vw)] leading-[1.4em] hidden sm:block">
-          I help startups launch their online business using low-code tools.
+        <div className="max-w-[60vw] text-light font-Baskerville text-center text-[calc(32px+1.5vw)] leading-[1.4em] hidden sm:block">
+          I build beautiful things as designer, developer, creator,
+          entrepreneur.
         </div>
 
         <div className="font-normal text-center text-[calc(26px+1.75vw)] block sm:hidden">
