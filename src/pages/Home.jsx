@@ -11,7 +11,7 @@ import Navbar from "../components/Navbar/Navbar";
 // using memo to avoid re-rendering
 const ChildProject = React.memo(({ project }) => {
   return (
-    <a href={project.link} data-aos="fade-up" key={project.link}>
+    <a href="/hasta" data-aos="fade-up" key={project.link}>
       <div className="project-cover">
         <div className="hidden sm:block">
           <img src={project.cover} className="project-cover-image" />
@@ -41,8 +41,8 @@ const ChildProject = React.memo(({ project }) => {
         </div>
         <div className="w-full h-[1px] bg-[#dcdcdc]"></div>
         <div className="flex justify-between">
-          <div className="text-[calc(12px+0.75vw)]">{project.type}</div>
-          <div className="text-[calc(12px+0.75vw)]">{project.year}</div>
+          <div className="text-[calc(12px+0.7vw)]">{project.type}</div>
+          <div className="text-[calc(12px+0.7vw)]">{project.year}</div>
         </div>
       </div>
     </a>
@@ -86,10 +86,10 @@ const Home = () => {
         )}
       </AnimatePresence>
 
-      <Navbar />
+      <div className="w-[80vw] xl:w-[75vw] 2xl:w-[65vw] flex flex-col gap-[calc(125px-2.5vh)] sm: items-center mx-auto">
+        <Navbar />
 
-      <div className="w-[80vw] xl:w-[75vw] 2xl:w-[65vw] flex flex-col gap-[calc(125px-3vh)] 2xl:gap-[125px] mt-[20px] mb-[100px] items-center mx-auto">
-        <div className="uppercase font-light text-center text-[calc(24px+1.75vw)] hidden sm:block">
+        <div className="max-w-[60vw] uppercase text-center text-[calc(24px+1.5vw)] leading-[1.4em] hidden sm:block">
           I help startups launch their online business using low-code tools.
         </div>
 
@@ -97,7 +97,7 @@ const Home = () => {
           I DEVELOP APPS YOUR CUSTOMERS WILL LOVE
         </div>
 
-        <section className="flex flex-col gap-24 items-center">
+        <section className="flex flex-col gap-24 items-stretch w-full py-[30px]">
           {Projects.list.map((project) => (
             <ChildProject key={project.title} project={project} />
           ))}

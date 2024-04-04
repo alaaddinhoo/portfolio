@@ -23,8 +23,8 @@ const ChildProject = React.memo(({ skill }) => {
         </div>
         <div className="w-full h-[1px] bg-[#dcdcdc]"></div>
         <div className="flex justify-between">
-          <div className="text-[calc(12px+0.75vw)]">{skill.description}</div>
-          <div className="text-[calc(12px+0.75vw)]">{skill.date}</div>
+          <div className="text-[calc(12px+0.5vw)]">{skill.description}</div>
+          <div className="text-[calc(12px+0.5vw)]">{skill.date}</div>
         </div>
       </div>
     </div>
@@ -68,18 +68,18 @@ const Skills = () => {
         )}
       </AnimatePresence>
 
-      <Navbar />
+      <div className="w-[80vw] xl:w-[75vw] 2xl:w-[65vw] flex flex-col gap-[calc(125px-2.5vh)] sm:items-center mx-auto">
+        <Navbar />
 
-      <div className="w-[80vw] xl:w-[75vw] 2xl:w-[65vw] flex flex-col gap-[calc(125px-3vh)] 2xl:gap-[125px] mt-[20px] mb-[100px] items-center mx-auto">
         <div className="uppercase font-light text-center text-[calc(24px+1.75vw)] hidden sm:block">
-          I help startups launch their online business using low-code tools.
+          The tech stack I use to create apps
         </div>
 
         <div className="font-normal text-center text-[calc(26px+1.75vw)] block sm:hidden">
           I DEVELOP APPS YOUR CUSTOMERS WILL LOVE
         </div>
 
-        <section className="flex flex-col gap-24 w-full">
+        <section className="flex flex-col gap-24 w-full items-stretch py-[30px]">
           {SkillsJSON.list.map((skill) => (
             <ChildProject key={skill.name} skill={skill} />
           ))}

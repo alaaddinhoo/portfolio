@@ -22,26 +22,23 @@ const Navbar = () => {
   }, [open]);
 
   return (
-    <div>
+    <div className="sticky top-0 z-[399] h-[100px] bg-white w-full mx-auto">
       {/*  mobile fixed top navbar  */}
-      <div className="w-full px-[10vw] sticky top-0 h-[100px] bg-white z-[399] flex justify-between items-center sm:hidden">
+      <div className="h-[100px] justify-between items-center flex sm:hidden">
         <a
-          className="w-[20px] h-[20px] cursor-pointer rounded-full border-[2px] border-black"
+          className=" w-[20px] h-[20px] cursor-pointer rounded-full border-[2px] border-black"
           href="/"
         ></a>
 
         <div>
           <div className="rounded-full">
-            <TbMenu
-              className="p-[15px] text-6xl cursor-pointer"
-              onClick={toggleMenu}
-            />
+            <TbMenu className="text-3xl cursor-pointer" onClick={toggleMenu} />
           </div>
         </div>
       </div>
 
       {/* web nav bar  */}
-      <div className=" sticky top-0 z-[399] h-[100px] mx-auto mb-[calc(125px-3vh)] 2xl:mb-[gap-[125px]] bg-white w-[80vw] xl:w-[75vw] 2xl:w-[65vw] justify-between items-center hidden sm:flex">
+      <div className="h-[100px] justify-between items-center hidden sm:flex">
         <a
           className="w-[20px] h-[20px] rounded-full border-[2px] border-black"
           href="/"
@@ -51,10 +48,7 @@ const Navbar = () => {
                 <div>Services</div>
                 <div>Resume</div>
             </div> */}
-        <TbMenu
-          className="p-[15px] text-6xl cursor-pointer"
-          onClick={toggleMenu}
-        />
+        <TbMenu className="text-4xl cursor-pointer" onClick={toggleMenu} />
       </div>
 
       <AnimatePresence>
