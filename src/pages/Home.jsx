@@ -5,7 +5,6 @@ import { HiArrowSmallRight } from "react-icons/hi2";
 import { AnimatePresence } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "@splidejs/splide/dist/css/splide.min.css";
 import Preloader from "../components/Preloader";
 import Navbar from "../components/Navbar/Navbar";
 

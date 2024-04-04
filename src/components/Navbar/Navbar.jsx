@@ -41,7 +41,7 @@ const Navbar = () => {
       </div>
 
       {/* web nav bar  */}
-      <div className="mx-auto mb-[calc(125px-3vh)] 2xl:mb-[gap-[125px]] sticky top-0 z-[399] h-[100px] bg-white w-[80vw] xl:w-[75vw] 2xl:w-[65vw] justify-between items-center hidden sm:flex">
+      <div className=" sticky top-0 z-[399] h-[100px] mx-auto mb-[calc(125px-3vh)] 2xl:mb-[gap-[125px]] bg-white w-[80vw] xl:w-[75vw] 2xl:w-[65vw] justify-between items-center hidden sm:flex">
         <a
           className="w-[20px] h-[20px] rounded-full border-[2px] border-black"
           href="/"
@@ -120,7 +120,7 @@ const Navbar = () => {
                     variants={mobileLinkVars}
                     className="text-5xl uppercase text-black"
                   >
-                    <a href="/">ABOUT</a>
+                    <a href="/about">ABOUT</a>
                   </motion.div>
                 </div>
               </motion.div>

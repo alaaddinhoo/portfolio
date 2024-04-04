@@ -1,4 +1,5 @@
-import Home2 from "./pages/Home.jsx";
+import Home from "./pages/Home.jsx";
+import About from "./pages/About.jsx";
 import Skills from "./pages/Skills.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -7,8 +8,9 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Routes>
-          <Route path="*" element={<Home2 />} />
+          <Route path="*" element={<Home />} />
           <Route path="/skills" element={<Skills />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </div>
     </BrowserRouter>
