@@ -72,11 +72,11 @@ const Skills = () => {
         <Navbar />
 
         <div className="uppercase font-light text-center text-[calc(24px+1.75vw)] hidden sm:block">
-          The tech stack I use to create apps
+          Up-to date with the latest technologies for app development
         </div>
 
         <div className="font-normal text-center text-[calc(26px+1.75vw)] block sm:hidden">
-          I DEVELOP APPS YOUR CUSTOMERS WILL LOVE
+          I HAVE EXPERIENCES WITH MANY TOOLS
         </div>
 
         <section className="flex flex-col gap-24 w-full items-stretch py-[30px]">

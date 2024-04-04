@@ -86,7 +86,7 @@ const Home = () => {
         )}
       </AnimatePresence>
 
-      <div className="w-[80vw] xl:w-[75vw] 2xl:w-[65vw] flex flex-col gap-[calc(125px-2.5vh)] sm: items-center mx-auto">
+      <div className="w-[80vw] xl:w-[75vw] 2xl:w-[65vw] flex flex-col gap-[calc(100px-2.5vh)] 2xl:gap-[150px] sm: items-center mx-auto">
         <Navbar />
 
         <div className="max-w-[60vw] uppercase text-center text-[calc(24px+1.5vw)] leading-[1.4em] hidden sm:block">

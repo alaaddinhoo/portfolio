@@ -1,8 +1,8 @@
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import Skills from "./pages/Skills.jsx";
-import Hasta from "./pages/Hasta.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Hasta from "./pages/Hasta.jsx";
 
 function App() {
   return (
