@@ -15,6 +15,30 @@
       "percent": "90/100",
       "description": "Low Code Mobile App Builder",
       "date": "2023-2024"
+    },
+    {
+      "name": "OneSignal",
+      "color": "#97C4FF",
+      "cover": "https://codewithalaa.netlify.app/firebase.jpg",
+      "percent": "90/100",
+      "description": "Low Code Mobile App Builder",
+      "date": "2023-2024"
+    },
+    {
+      "name": "Algolia",
+      "color": "#C9D6FF",
+      "cover": "https://codewithalaa.netlify.app/algolia.jpg",
+      "percent": "80/100",
+      "description": "Advanced Search Query API",
+      "date": "2023-2024"
+    },
+    {
+      "name": "Twilio",
+      "color": "#FFDBDF",
+      "cover": "https://codewithalaa.netlify.app/algolia.jpg",
+      "percent": "80/100",
+      "description": "Powerful Messaging API Tool",
+      "date": "2023-2024"
     }
   ]
 }
