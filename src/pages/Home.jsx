@@ -8,39 +8,44 @@ import "aos/dist/aos.css";
 import Preloader from "../components/Preloader";
 import Navbar from "../components/Navbar/Navbar";
 import Overlay from "../components/Overlay";
+import HoverBox from "../components/HoverBox";
 
 // using memo to avoid re-rendering
 const ChildProject = React.memo(({ project, toggleOverlay }) => {
   return (
-    <div data-aos="fade-up" key={project.link} onClick={toggleOverlay}>
-      <div className="project-cover">
-        <div className="hidden sm:block">
-          <img src={project.cover} className="project-cover-image" />
-        </div>
-        <div
-          className="block sm:hidden"
-          style={{ backgroundColor: `${project.backgroundMobile}` }}
-        >
-          <img
-            src={project.coverMobile}
-            className="project-cover-image block sm:hidden"
-          />
-        </div>
-      </div>
-      <div className="pt-[15px] flex flex-col gap-[10px]">
-        <div className="flex justify-between">
-          <div className="text-[calc(18px+1vw)] uppercase">{project.title}</div>
-          <div className="text-[calc(18px+1vw)] uppercase">
-            {project.location}
+    <HoverBox key={project.title}>
+      <div data-aos="fade-up" key={project.link} onClick={toggleOverlay}>
+        <div className="project-cover">
+          <div className="hidden sm:block">
+            <img src={project.cover} className="project-cover-image" />
+          </div>
+          <div
+            className="block sm:hidden"
+            style={{ backgroundColor: `${project.backgroundMobile}` }}
+          >
+            <img
+              src={project.coverMobile}
+              className="project-cover-image block sm:hidden"
+            />
           </div>
         </div>
-        <div className="w-full h-[1px] bg-[#dcdcdc]"></div>
-        <div className="flex justify-between">
-          <div className="text-[calc(12px+0.7vw)]">{project.type}</div>
-          <div className="text-[calc(12px+0.7vw)]">{project.year}</div>
+        <div className="pt-[15px] flex flex-col gap-[10px]">
+          <div className="flex justify-between">
+            <div className="text-[calc(18px+1vw)] uppercase">
+              {project.title}
+            </div>
+            <div className="text-[calc(18px+1vw)] uppercase">
+              {project.location}
+            </div>
+          </div>
+          <div className="w-full h-[1px] bg-[#dcdcdc]"></div>
+          <div className="flex justify-between">
+            <div className="text-[calc(12px+0.7vw)]">{project.type}</div>
+            <div className="text-[calc(12px+0.7vw)]">{project.year}</div>
+          </div>
         </div>
       </div>
-    </div>
+    </HoverBox>
   );
 });
 
