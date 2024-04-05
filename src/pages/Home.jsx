@@ -105,12 +105,21 @@ const Home = () => {
       </AnimatePresence>
 
       <Overlay isOpen={isOpen} onClose={toggleOverlay}>
-        <h1>Hasanati</h1>
+        <div className="flex flex-row items-stretch">
+          <h1>Hasanati</h1>
+          <div onClick={toggleOverlay}>x</div>
+        </div>
         <img
           // width={400}
           // height={400}
-          src="https://www.upwork.com/att/download/portfolio/persons/uid/1704673487481532416/profile/projects/files/b1968cd0-74e4-46bb-b0e2-50eac88bb3d6"
+          className="w-full"
+          src="/hasanati-1.png"
         ></img>
+
+        <div className="w-full flex justify-end">
+          <div className="bg-[#464646]">1 of 20</div>
+        </div>
+
         <div>Skills and deliverables</div>
       </Overlay>
 

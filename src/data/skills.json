@@ -18,7 +18,7 @@
     },
     {
       "name": "OneSignal",
-      "color": "#97C4FF",
+      "color": "#DDDDDD",
       "cover": "https://codewithalaa.netlify.app/onesignal.png",
       "percent": "90/100",
       "description": "Low Code Mobile App Builder",
