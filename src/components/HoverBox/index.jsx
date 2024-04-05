@@ -7,8 +7,8 @@ const HoverBox = ({ children }) => {
   const containerRef = React.useRef(null);
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
-  const springX = useSpring(mouseX, { stiffness: 150, damping: 15 });
-  const springY = useSpring(mouseY, { stiffness: 150, damping: 15 });
+  const springX = useSpring(mouseX, { stiffness: 100, damping: 20 });
+  const springY = useSpring(mouseY, { stiffness: 100, damping: 20 });
 
   const handleMouseMove = (event) => {
     const containerRect = containerRef.current.getBoundingClientRect();
