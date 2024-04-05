@@ -7,11 +7,12 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Preloader from "../components/Preloader";
 import Navbar from "../components/Navbar/Navbar";
+import Overlay from "../components/Overlay";
 
 // using memo to avoid re-rendering
-const ChildProject = React.memo(({ project }) => {
+const ChildProject = React.memo(({ project, toggleOverlay }) => {
   return (
-    <a href="/hasta" data-aos="fade-up" key={project.link}>
+    <div data-aos="fade-up" key={project.link} onClick={toggleOverlay}>
       <div className="project-cover">
         <div className="hidden sm:block">
           <img src={project.cover} className="project-cover-image" />
@@ -39,7 +40,7 @@ const ChildProject = React.memo(({ project }) => {
           <div className="text-[calc(12px+0.7vw)]">{project.year}</div>
         </div>
       </div>
-    </a>
+    </div>
   );
 });
 
@@ -48,6 +49,24 @@ const Home = () => {
   useEffect(() => {
     AOS.init();
   }, []);
+
+  // block scroll stuff
+  const scrollBlocked = useRef(false);
+  const toggleScroll = () => {
+    scrollBlocked.current = !scrollBlocked.current;
+    document.documentElement.classList.toggle(
+      "no-scroll",
+      scrollBlocked.current
+    );
+  };
+
+  // overlay
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleOverlay = () => {
+    setIsOpen(!isOpen);
+    toggleScroll();
+  };
 
   // preloader stuff
   const [isLoading, setIsLoading] = useState(true);
@@ -80,6 +99,16 @@ const Home = () => {
         )}
       </AnimatePresence>
 
+      <Overlay isOpen={isOpen} onClose={toggleOverlay}>
+        <h1>Hasanati</h1>
+        <img
+          // width={400}
+          // height={400}
+          src="https://www.upwork.com/att/download/portfolio/persons/uid/1704673487481532416/profile/projects/files/b1968cd0-74e4-46bb-b0e2-50eac88bb3d6"
+        ></img>
+        <div>Skills and deliverables</div>
+      </Overlay>
+
       <div className="w-[80vw] xl:w-[75vw] 2xl:w-[65vw] flex flex-col gap-[calc(80px-5vh)] md:gap-[calc(100px-2.5vh)] 2xl:gap-[150px] sm: items-center mx-auto">
         <Navbar />
 
@@ -94,7 +123,11 @@ const Home = () => {
 
         <section className="flex flex-col gap-24 items-stretch w-full py-[30px]">
           {Projects.list.map((project) => (
-            <ChildProject key={project.title} project={project} />
+            <ChildProject
+              key={project.title}
+              project={project}
+              toggleOverlay={toggleOverlay}
+            />
           ))}
         </section>
       </div>
