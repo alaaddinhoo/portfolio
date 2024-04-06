@@ -40,7 +40,7 @@ export function Overlay({ isOpen, onClose, project }) {
               {project && project.images && (
                 <div>
                   <img
-                    className="w-full h-[auto] xl:h-[450px] object-contain bg-[#99a4af]"
+                    className="w-full h-[500px] object-cover md:object-contain bg-[#99a4af]"
                     src={project.images[currentImageIndex]}
                     alt={project.title}
                   />
