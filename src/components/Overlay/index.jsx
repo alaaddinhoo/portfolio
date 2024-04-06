@@ -30,37 +30,56 @@ export function Overlay({ isOpen, onClose, project }) {
       {isOpen && (
         <div className="overlay">
           <div className="overlay__background" onClick={onClose} />
-          <div className="overlay__container">
-            <div className="overlay__content">
-              <div className="overlay__header">
-                <div className="overlay__title">{project?.title}</div>
-                <div className="overlay__close" onClick={onClose}>
-                  Close
-                </div>
+          <div className="overlay__container w-[90vw] h-[80vh] p-[15px] xl:w-[65vw] xl:h-[90vh] xl:p-[30px]">
+            <div className="flex flex-col gap-[35px]">
+              <div className="flex flex-row justify-between items-center">
+                <div className="text-[22px] font-medium">{project?.title}</div>
+                <div onClick={onClose}>Close</div>
               </div>
-              <div className="overlay__image-container">
-                {project && project.images && (
+
+              {project && project.images && (
+                <div>
                   <img
-                    className="overlay__image"
+                    className="w-full h-[auto] xl:h-[450px] object-contain bg-[#99a4af]"
                     src={project.images[currentImageIndex]}
                     alt={project.title}
                   />
-                )}
-                <div className="overlay__controls">
-                  <MdOutlineKeyboardArrowLeft
-                    className="overlay__control"
-                    onClick={handlePrevImage}
-                  />
-                  <div className="overlay__counter">
-                    {currentImageIndex + 1} of {project?.images?.length}
+
+                  <div className="relative bottom-[22px] w-[130px] h-[22px] flex flex-row gap-[5px] items-center ml-auto bg-[#464646] text-[14px] text-white">
+                    <MdOutlineKeyboardArrowLeft
+                      onClick={handlePrevImage}
+                      className="grow"
+                    />
+                    <div>
+                      {currentImageIndex + 1} of {project?.images?.length}
+                    </div>
+                    <MdOutlineKeyboardArrowRight
+                      onClick={handleNextImage}
+                      className="grow"
+                    />
                   </div>
-                  <MdOutlineKeyboardArrowRight
-                    className="overlay__control"
-                    onClick={handleNextImage}
-                  />
+                </div>
+              )}
+
+              <div className="flex flex-col gap-[12px]">
+                <div className="font-medium text-[22px] ">
+                  Skills & Deliverables
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  <div className="skills__and__deliverables">
+                    App Development
+                  </div>
+                  <div className="skills__and__deliverables">Mobile App</div>
+                  <div className="skills__and__deliverables">iOS</div>
+                  <div className="skills__and__deliverables">Android</div>
                 </div>
               </div>
-              <div className="overlay__footer">Skills and deliverables</div>
+              <div className="flex flex-col gap-[12px]">
+                <div className="font-medium text-[22px] ">
+                  Project Description
+                </div>
+                <div>{project.description}</div>
+              </div>
             </div>
           </div>
         </div>

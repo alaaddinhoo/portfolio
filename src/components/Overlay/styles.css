@@ -18,27 +18,5 @@
   left: 0;
   margin: auto;
   z-index: 1000;
-  /* padding: 150px; */
-  /* width: fit-content; */
-  /* height: fit-content; */
-  width: 65vw;
-  height: 80vh;
-  padding: 20px 80px;
   overflow: auto;
-
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.overlay__close:after {
-  display: inline-block;
-  content: "\00d7";
-}
-
-.overlay__close {
-  border: none;
-  background-color: transparent;
-  font-size: 36px;
-  cursor: pointer;
 }
