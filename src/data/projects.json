@@ -37,6 +37,45 @@
       ]
     },
     {
+      "title": "Juggle",
+      "type": "Mobile App",
+      "year": "2024",
+      "subtitle": "Jun 2023 • Founder & Developer",
+      "link": "https://hasanati.com/",
+      "description": "Hasanati is a habit tracker web app for Muslims. It allows users to track their progress in terms of Prayer, Quran, and more. The app offers stunning UI&UX designs and powerful API integrations. I'm currently re-writing the website using the latest technologies (next, react, etc..)",
+      "cover": "https://codewithalaa.netlify.app/juggle-cover.png",
+      "coverMobile": "https://codewithalaa.netlify.app/Frame4b.png",
+      "backgroundMobile": "#60a5fa",
+
+      "location": "US, CA",
+
+      "backend": true,
+      "mobile": false,
+      "images": [
+        "https://codewithalaa.netlify.app/juggle-1.png",
+        "https://codewithalaa.netlify.app/juggle-2.png",
+        "https://codewithalaa.netlify.app/juggle-3.png",
+        "https://codewithalaa.netlify.app/juggle-4.png",
+        "https://codewithalaa.netlify.app/juggle-5.png",
+        "https://codewithalaa.netlify.app/juggle-6.png",
+        "https://codewithalaa.netlify.app/juggle-7.png",
+        "https://codewithalaa.netlify.app/juggle-8.png",
+        "https://codewithalaa.netlify.app/juggle-9.png",
+        "https://codewithalaa.netlify.app/juggle-10.png",
+        "https://codewithalaa.netlify.app/juggle-11.png",
+        "https://codewithalaa.netlify.app/juggle-12.png",
+        "https://codewithalaa.netlify.app/juggle-13.png",
+        "https://codewithalaa.netlify.app/juggle-14.png",
+        "https://codewithalaa.netlify.app/juggle-15.png",
+        "https://codewithalaa.netlify.app/juggle-16.png",
+        "https://codewithalaa.netlify.app/juggle-17.png",
+        "https://codewithalaa.netlify.app/juggle-18.png",
+        "https://codewithalaa.netlify.app/juggle-19.png",
+        "https://codewithalaa.netlify.app/juggle-20.png",
+        "https://codewithalaa.netlify.app/juggle-21.png"
+      ]
+    },
+    {
       "title": "Uber Eats Clone",
       "type": "Mobile App",
       "year": "2024",
@@ -114,45 +153,6 @@
       "images": [
         "https://codewithalaa.netlify.app/hasanati-1.png",
         "https://codewithalaa.netlify.app/hasanati-2.png"
-      ]
-    },
-    {
-      "title": "Juggle",
-      "type": "Mobile App",
-      "year": "2024",
-      "subtitle": "Jun 2023 • Founder & Developer",
-      "link": "https://hasanati.com/",
-      "description": "Hasanati is a habit tracker web app for Muslims. It allows users to track their progress in terms of Prayer, Quran, and more. The app offers stunning UI&UX designs and powerful API integrations. I'm currently re-writing the website using the latest technologies (next, react, etc..)",
-      "cover": "https://codewithalaa.netlify.app/juggle-cover.png",
-      "coverMobile": "https://codewithalaa.netlify.app/Frame4b.png",
-      "backgroundMobile": "#60a5fa",
-
-      "location": "US, CA",
-
-      "backend": true,
-      "mobile": false,
-      "images": [
-        "https://codewithalaa.netlify.app/juggle-1.png",
-        "https://codewithalaa.netlify.app/juggle-2.png",
-        "https://codewithalaa.netlify.app/juggle-3.png",
-        "https://codewithalaa.netlify.app/juggle-4.png",
-        "https://codewithalaa.netlify.app/juggle-5.png",
-        "https://codewithalaa.netlify.app/juggle-6.png",
-        "https://codewithalaa.netlify.app/juggle-7.png",
-        "https://codewithalaa.netlify.app/juggle-8.png",
-        "https://codewithalaa.netlify.app/juggle-9.png",
-        "https://codewithalaa.netlify.app/juggle-10.png",
-        "https://codewithalaa.netlify.app/juggle-11.png",
-        "https://codewithalaa.netlify.app/juggle-12.png",
-        "https://codewithalaa.netlify.app/juggle-13.png",
-        "https://codewithalaa.netlify.app/juggle-14.png",
-        "https://codewithalaa.netlify.app/juggle-15.png",
-        "https://codewithalaa.netlify.app/juggle-16.png",
-        "https://codewithalaa.netlify.app/juggle-17.png",
-        "https://codewithalaa.netlify.app/juggle-18.png",
-        "https://codewithalaa.netlify.app/juggle-19.png",
-        "https://codewithalaa.netlify.app/juggle-20.png",
-        "https://codewithalaa.netlify.app/juggle-21.png"
       ]
     }
   ]
