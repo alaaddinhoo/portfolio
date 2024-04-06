@@ -21,10 +21,14 @@
   /* padding: 150px; */
   /* width: fit-content; */
   /* height: fit-content; */
-  width: 80vw;
+  width: 65vw;
   height: 80vh;
   padding: 20px 80px;
   overflow: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .overlay__close:after {

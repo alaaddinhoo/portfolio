@@ -2,7 +2,7 @@
   "list": [
     {
       "title": "Hasanati",
-         "type": "Mobile App",
+      "type": "Mobile App",
       "year": "2024",
       "subtitle": "Dec 2023 • Founder & Developer",
       "link": "https://hasanati.com/",
@@ -12,11 +12,15 @@
       "backgroundMobile": "#60a5fa",
       "location": "US, CA",
       "backend": true,
-      "mobile": false
+      "mobile": false,
+      "images": [
+        "https://codewithalaa.netlify.app/hasanati-1.png",
+        "https://codewithalaa.netlify.app/hasanati-2.png"
+      ]
     },
     {
       "title": "Uber Eats Clone",
-         "type": "Mobile App",
+      "type": "Mobile App",
       "year": "2024",
       "subtitle": "Oct 2023 • Practice",
       "link": "https://app.flutterflow.io/run/O3NqEcbLp0BLUJyOh9Ry",
@@ -28,11 +32,15 @@
       "location": "US, CA",
 
       "backend": true,
-      "mobile": true
+      "mobile": true,
+      "images": [
+        "https://codewithalaa.netlify.app/hasanati-1.png",
+        "https://codewithalaa.netlify.app/hasanati-2.png"
+      ]
     },
     {
       "title": "Vox Dashboard",
-         "type": "Mobile App",
+      "type": "Mobile App",
       "year": "2024",
       "subtitle": "Aug 2023 • Practice",
       "link": "https://vox-cinema.netlify.app/admin",
@@ -44,11 +52,15 @@
       "location": "US, CA",
 
       "backend": true,
-      "mobile": false
+      "mobile": false,
+      "images": [
+        "https://codewithalaa.netlify.app/hasanati-1.png",
+        "https://codewithalaa.netlify.app/hasanati-2.png"
+      ]
     },
     {
       "title": "Zomato Clone",
-         "type": "Mobile App",
+      "type": "Mobile App",
       "year": "2024",
       "subtitle": "Sep 2023 • Practice Project",
       "link": "https://zomato-frontend-clone.netlify.app/",
@@ -60,10 +72,14 @@
       "location": "US, CA",
 
       "backend": false,
-      "mobile": false
+      "mobile": false,
+      "images": [
+        "https://codewithalaa.netlify.app/hasanati-1.png",
+        "https://codewithalaa.netlify.app/hasanati-2.png"
+      ]
     },
     {
-      "title": "Hasanati",
+      "title": "Fore",
       "type": "Mobile App",
       "year": "2024",
       "subtitle": "Jun 2023 • Founder & Developer",
@@ -76,7 +92,11 @@
       "location": "US, CA",
 
       "backend": true,
-      "mobile": false
+      "mobile": false,
+      "images": [
+        "https://codewithalaa.netlify.app/hasanati-1.png",
+        "https://codewithalaa.netlify.app/hasanati-2.png"
+      ]
     }
   ]
 }

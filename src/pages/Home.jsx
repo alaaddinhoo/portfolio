@@ -2,6 +2,10 @@ import React, { useEffect, useState, useRef, useCallback } from "react";
 
 import Projects from "../data/projects.json";
 import { HiArrowSmallRight } from "react-icons/hi2";
+import {
+  MdOutlineKeyboardArrowLeft,
+  MdOutlineKeyboardArrowRight,
+} from "react-icons/md";
 import { AnimatePresence } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -67,9 +71,10 @@ const Home = () => {
 
   // overlay
   const [isOpen, setIsOpen] = useState(false);
-
-  const toggleOverlay = () => {
+  const [selectedProject, setSelectedProject] = useState(null);
+  const toggleOverlay = (project) => {
     setIsOpen(!isOpen);
+    setSelectedProject(project);
     toggleScroll();
   };
 
@@ -104,24 +109,11 @@ const Home = () => {
         )}
       </AnimatePresence>
 
-      <Overlay isOpen={isOpen} onClose={toggleOverlay}>
-        <div className="flex flex-row items-stretch">
-          <h1>Hasanati</h1>
-          <div onClick={toggleOverlay}>x</div>
-        </div>
-        <img
-          // width={400}
-          // height={400}
-          className="w-full"
-          src="/hasanati-1.png"
-        ></img>
-
-        <div className="w-full flex justify-end">
-          <div className="bg-[#464646]">1 of 20</div>
-        </div>
-
-        <div>Skills and deliverables</div>
-      </Overlay>
+      <Overlay
+        isOpen={isOpen}
+        onClose={toggleOverlay}
+        project={selectedProject}
+      />
 
       <div className="w-[80vw] xl:w-[75vw] 2xl:w-[65vw] flex flex-col gap-[calc(80px-5vh)] md:gap-[calc(100px-2.5vh)] 2xl:gap-[150px] sm: items-center mx-auto">
         <Navbar />
