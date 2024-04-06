@@ -1,14 +1,14 @@
 {
   "list": [
     {
-      "title": "Hasanati",
+      "title": "Hasta",
       "type": "Mobile App",
       "year": "2024",
       "subtitle": "Dec 2023 • Founder & Developer",
       "link": "https://hasanati.com/",
-      "description": "Hasanati is a habit tracker web app for Muslims. It allows users to track their progress in terms of Prayer, Quran, and more. This app was built using Flutterflow and offers stunning UI&UX designs and powerful API integrations. It is currently in test mode before production.",
+      "description": "Hasta is an in-person car auction marketplace. It is a way for buyers to see info on the cars before the day of the auction, and a way for the staff of the auction site to manage the cars and logistics. The multilanguage (French, Arabic, English) app is built using Flutterflow and is currently live as a webpage (Android + iOS releases are coming soon).",
       "cover": "https://codewithalaa.netlify.app/hasta-cover.png",
-      "coverMobile": "https://codewithalaa.netlify.app/hatsa-logo.png",
+      "coverMobile": "https://codewithalaa.netlify.app/hasta-logo.png",
       "backgroundMobile": "#60a5fa",
       "location": "US, CA",
       "backend": true,
