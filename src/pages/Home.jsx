@@ -18,7 +18,11 @@ import HoverBox from "../components/HoverBox";
 const ChildProject = React.memo(({ project, toggleOverlay }) => {
   return (
     <HoverBox key={project.title}>
-      <div data-aos="fade-up" key={project.link} onClick={toggleOverlay}>
+      <div
+        data-aos="fade-up"
+        key={project.link}
+        onClick={() => toggleOverlay(project)}
+      >
         <div className="project-cover">
           <div className="hidden sm:block">
             <img src={project.cover} className="project-cover-image" />
