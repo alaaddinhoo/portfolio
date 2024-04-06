@@ -45,7 +45,7 @@ export function Overlay({ isOpen, onClose, project }) {
                     alt={project.title}
                   />
 
-                  <div className="relative bottom-[22px] w-[130px] h-[22px] flex flex-row gap-[5px] items-center ml-auto bg-[#464646] text-[14px] text-white">
+                  <div className="relative bottom-[0px]  md:bottom-[22px] w-[130px] h-[22px] flex flex-row gap-[5px] items-center ml-auto bg-[#464646] text-[14px] text-white">
                     <MdOutlineKeyboardArrowLeft
                       onClick={handlePrevImage}
                       className="grow"
