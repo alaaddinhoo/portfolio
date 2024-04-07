@@ -13,6 +13,14 @@
       "location": "US, CA",
       "backend": true,
       "mobile": false,
+      "categories": [
+        "App Development",
+        "Mobile App",
+        "iOS",
+        "Android",
+        "Flutterflow",
+        "Firebase"
+      ],
       "images": [
         "https://codewithalaa.netlify.app/hasanati-1.png",
         "https://codewithalaa.netlify.app/hasanati-2.png",
@@ -51,6 +59,15 @@
 
       "backend": true,
       "mobile": false,
+      "categories": [
+        "App Development",
+        "Mobile App",
+        "iOS",
+        "Android",
+        "Flutterflow",
+        "Firebase"
+      ],
+
       "images": [
         "https://codewithalaa.netlify.app/juggle-1.png",
         "https://codewithalaa.netlify.app/juggle-2.png",
@@ -90,6 +107,15 @@
 
       "backend": true,
       "mobile": true,
+      "categories": [
+        "App Development",
+        "Mobile App",
+        "iOS",
+        "Android",
+        "Flutterflow",
+        "Firebase"
+      ],
+
       "images": [
         "https://codewithalaa.netlify.app/hasanati-1.png",
         "https://codewithalaa.netlify.app/hasanati-2.png"
@@ -110,6 +136,15 @@
 
       "backend": true,
       "mobile": false,
+      "categories": [
+        "App Development",
+        "Mobile App",
+        "iOS",
+        "Android",
+        "Flutterflow",
+        "Firebase"
+      ],
+
       "images": [
         "https://codewithalaa.netlify.app/hasanati-1.png",
         "https://codewithalaa.netlify.app/hasanati-2.png"
@@ -130,6 +165,15 @@
 
       "backend": false,
       "mobile": false,
+      "categories": [
+        "App Development",
+        "Mobile App",
+        "iOS",
+        "Android",
+        "Flutterflow",
+        "Firebase"
+      ],
+
       "images": [
         "https://codewithalaa.netlify.app/hasanati-1.png",
         "https://codewithalaa.netlify.app/hasanati-2.png"
@@ -150,6 +194,15 @@
 
       "backend": true,
       "mobile": false,
+      "categories": [
+        "App Development",
+        "Mobile App",
+        "iOS",
+        "Android",
+        "Flutterflow",
+        "Firebase"
+      ],
+
       "images": [
         "https://codewithalaa.netlify.app/hasanati-1.png",
         "https://codewithalaa.netlify.app/hasanati-2.png"

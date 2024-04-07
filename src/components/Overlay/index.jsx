@@ -40,7 +40,7 @@ export function Overlay({ isOpen, onClose, project }) {
               {project && project.images && (
                 <div>
                   <img
-                    className="w-full h-[450px] object-cover md:h-[500px] md:object-contain bg-[#99a4af]"
+                    className="w-full h-[450px] object-cover md:h-[500px] md:object-contain bg-[#eee]"
                     src={project.images[currentImageIndex]}
                     alt={project.title}
                   />
@@ -69,9 +69,10 @@ export function Overlay({ isOpen, onClose, project }) {
                   <div className="skills__and__deliverables">
                     App Development
                   </div>
-                  <div className="skills__and__deliverables">Mobile App</div>
-                  <div className="skills__and__deliverables">iOS</div>
-                  <div className="skills__and__deliverables">Android</div>
+
+                  {project.categories.map((category) => (
+                    <div className="skills__and__deliverables">{category}</div>
+                  ))}
                 </div>
               </div>
               <div className="flex flex-col gap-[12px]">
