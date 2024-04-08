@@ -15,13 +15,13 @@ import Overlay from "../components/Overlay";
 import HoverBox from "../components/HoverBox";
 
 // using memo to avoid re-rendering
-const ChildProject = React.memo(({ project, toggleOverlay }) => {
+const ChildProject = React.memo(({ project, toggleOverlay, index }) => {
   return (
     <HoverBox key={project.title}>
       <div
         data-aos="fade-up"
         key={project.link}
-        onClick={() => toggleOverlay(project)}
+        onClick={() => toggleOverlay(project, index)}
       >
         <div className="project-cover">
           <div className="hidden sm:block">
@@ -76,10 +76,40 @@ const Home = () => {
   // overlay
   const [isOpen, setIsOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
-  const toggleOverlay = (project) => {
+  const toggleOverlay = (project, index) => {
     setIsOpen(!isOpen);
     setSelectedProject(project);
     toggleScroll();
+
+    if (!isOpen) {
+      // Update the URL query parameter
+      const urlParams = new URLSearchParams(window.location.search);
+      urlParams.set("project", index);
+      const newUrl = `${window.location.pathname}?${urlParams.toString()}`;
+      window.history.pushState({ path: newUrl }, "", newUrl);
+    } else {
+      if (!isOpen) {
+        // Update the URL query parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        urlParams.set("project", index);
+        const newUrl = `${window.location.pathname}?${urlParams.toString()}`;
+        window.history.pushState({ path: newUrl }, "", newUrl);
+      } else {
+        // Remove the URL query parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        urlParams.delete("project");
+
+        // Construct the new URL without "?" if no other query parameters exist
+        let newUrl;
+        if (urlParams.toString() === "") {
+          newUrl = window.location.pathname;
+        } else {
+          newUrl = `${window.location.pathname}?${urlParams.toString()}`;
+        }
+
+        window.history.pushState({ path: newUrl }, "", newUrl);
+      }
+    }
   };
 
   // preloader stuff
@@ -132,11 +162,12 @@ const Home = () => {
         </div>
 
         <section className="flex flex-col gap-24 items-stretch w-full py-[30px]">
-          {Projects.list.map((project) => (
+          {Projects.list.map((project, index) => (
             <ChildProject
               key={project.title}
               project={project}
               toggleOverlay={toggleOverlay}
+              index={index}
             />
           ))}
         </section>
