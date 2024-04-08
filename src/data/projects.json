@@ -45,50 +45,6 @@
       ]
     },
     {
-      "title": "Hasanati",
-      "type": "Mobile App",
-      "year": "2024",
-      "subtitle": "Dec 2023 • Founder & Developer",
-      "link": "https://hasanati.com/",
-      "description": "Hasanati is a habit tracker web app for Muslims. It allows users to track their progress in terms of Prayer, Quran, and more. This app was built using Flutterflow and offers stunning UI&UX designs and powerful API integrations. It is currently in test mode before production and will be released soon on Playstore & Apple Store.",
-      "cover": "https://codewithalaa.netlify.app/hasta-cover.png",
-      "coverMobile": "https://codewithalaa.netlify.app/hasta-logo.png",
-      "backgroundMobile": "#60a5fa",
-      "location": "AE, AD",
-      "backend": true,
-      "mobile": false,
-      "categories": [
-        "App Development",
-        "Mobile App",
-        "iOS",
-        "Android",
-        "Flutterflow",
-        "Firebase"
-      ],
-      "images": [
-        "https://codewithalaa.netlify.app/hasanati-1.png",
-        "https://codewithalaa.netlify.app/hasanati-2.png",
-        "https://codewithalaa.netlify.app/hasanati-3.png",
-        "https://codewithalaa.netlify.app/hasanati-4.png",
-        "https://codewithalaa.netlify.app/hasanati-5.png",
-        "https://codewithalaa.netlify.app/hasanati-6.png",
-        "https://codewithalaa.netlify.app/hasanati-7.png",
-        "https://codewithalaa.netlify.app/hasanati-8.png",
-        "https://codewithalaa.netlify.app/hasanati-9.png",
-        "https://codewithalaa.netlify.app/hasanati-10.png",
-        "https://codewithalaa.netlify.app/hasanati-11.png",
-        "https://codewithalaa.netlify.app/hasanati-12.png",
-        "https://codewithalaa.netlify.app/hasanati-13.png",
-        "https://codewithalaa.netlify.app/hasanati-14.png",
-        "https://codewithalaa.netlify.app/hasanati-15.png",
-        "https://codewithalaa.netlify.app/hasanati-16.png",
-        "https://codewithalaa.netlify.app/hasanati-17.png",
-        "https://codewithalaa.netlify.app/hasanati-18.png",
-        "https://codewithalaa.netlify.app/hasanati-19.png",
-        "https://codewithalaa.netlify.app/hasanati-20.png"
-      ]
-    },
-    {
       "title": "Juggle",
       "type": "Mobile App",
       "year": "2024",
@@ -134,6 +90,140 @@
         "https://codewithalaa.netlify.app/juggle-19.png",
         "https://codewithalaa.netlify.app/juggle-20.png",
         "https://codewithalaa.netlify.app/juggle-21.png"
+      ]
+    },
+    {
+      "title": "Fore",
+      "type": "Mobile App",
+      "year": "2024",
+      "subtitle": "Jun 2023 • Founder & Developer",
+      "link": "https://hasanati.com/",
+      "description": "Hasanati is a habit tracker web app for Muslims. It allows users to track their progress in terms of Prayer, Quran, and more. The app offers stunning UI&UX designs and powerful API integrations. I'm currently re-writing the website using the latest technologies (next, react, etc..)",
+      "cover": "https://codewithalaa.netlify.app/hasanati.png",
+      "coverMobile": "https://codewithalaa.netlify.app/Frame4b.png",
+      "backgroundMobile": "#60a5fa",
+
+      "location": "US, CA",
+
+      "backend": true,
+      "mobile": false,
+      "categories": [
+        "App Development",
+        "Mobile App",
+        "iOS",
+        "Android",
+        "Flutterflow",
+        "Firebase"
+      ],
+
+      "images": [
+        "https://codewithalaa.netlify.app/fore-0.png",
+        "https://codewithalaa.netlify.app/fore-1.png",
+        "https://codewithalaa.netlify.app/fore-2.png",
+        "https://codewithalaa.netlify.app/fore-3.png",
+        "https://codewithalaa.netlify.app/fore-4.png",
+        "https://codewithalaa.netlify.app/fore-5.png",
+        "https://codewithalaa.netlify.app/fore-6.png",
+        "https://codewithalaa.netlify.app/fore-7.png",
+        "https://codewithalaa.netlify.app/fore-8.png",
+        "https://codewithalaa.netlify.app/fore-9.png",
+        "https://codewithalaa.netlify.app/fore-10.png",
+        "https://codewithalaa.netlify.app/fore-11.png",
+        "https://codewithalaa.netlify.app/fore-12.png",
+        "https://codewithalaa.netlify.app/fore-13.png",
+        "https://codewithalaa.netlify.app/fore-14.png",
+        "https://codewithalaa.netlify.app/fore-15.png",
+        "https://codewithalaa.netlify.app/fore-16.png",
+        "https://codewithalaa.netlify.app/fore-17.png",
+        "https://codewithalaa.netlify.app/fore-18.png"
+      ]
+    },
+    {
+      "title": "Fore Merchant",
+      "type": "Mobile App",
+      "year": "2024",
+      "subtitle": "Jun 2023 • Founder & Developer",
+      "link": "https://hasanati.com/",
+      "description": "Hasanati is a habit tracker web app for Muslims. It allows users to track their progress in terms of Prayer, Quran, and more. The app offers stunning UI&UX designs and powerful API integrations. I'm currently re-writing the website using the latest technologies (next, react, etc..)",
+      "cover": "https://codewithalaa.netlify.app/hasanati.png",
+      "coverMobile": "https://codewithalaa.netlify.app/Frame4b.png",
+      "backgroundMobile": "#60a5fa",
+
+      "location": "US, CA",
+
+      "backend": true,
+      "mobile": false,
+      "categories": [
+        "App Development",
+        "Mobile App",
+        "iOS",
+        "Android",
+        "Flutterflow",
+        "Firebase"
+      ],
+
+      "images": [
+        "https://codewithalaa.netlify.app/fore-m-1.png",
+        "https://codewithalaa.netlify.app/fore-m-2.png",
+        "https://codewithalaa.netlify.app/fore-m-3.png",
+        "https://codewithalaa.netlify.app/fore-m-4.png",
+        "https://codewithalaa.netlify.app/fore-m-5.png",
+        "https://codewithalaa.netlify.app/fore-m-6.png",
+        "https://codewithalaa.netlify.app/fore-m-61.png",
+        "https://codewithalaa.netlify.app/fore-m-7.png",
+        "https://codewithalaa.netlify.app/fore-m-8.png",
+        "https://codewithalaa.netlify.app/fore-m-9.png",
+        "https://codewithalaa.netlify.app/fore-m-10.png",
+        "https://codewithalaa.netlify.app/fore-m-11.png",
+        "https://codewithalaa.netlify.app/fore-m-12.png",
+        "https://codewithalaa.netlify.app/fore-m-13.png",
+        "https://codewithalaa.netlify.app/fore-m-14.png",
+        "https://codewithalaa.netlify.app/fore-m-15.png",
+        "https://codewithalaa.netlify.app/fore-m-16.png"
+      ]
+    },
+    {
+      "title": "Hasanati",
+      "type": "Mobile App",
+      "year": "2024",
+      "subtitle": "Dec 2023 • Founder & Developer",
+      "link": "https://hasanati.com/",
+      "description": "Hasanati is a habit tracker web app for Muslims. It allows users to track their progress in terms of Prayer, Quran, and more. This app was built using Flutterflow and offers stunning UI&UX designs and powerful API integrations. It is currently in test mode before production and will be released soon on Playstore & Apple Store.",
+      "cover": "https://codewithalaa.netlify.app/hasta-cover.png",
+      "coverMobile": "https://codewithalaa.netlify.app/hasta-logo.png",
+      "backgroundMobile": "#60a5fa",
+      "location": "AE, AD",
+      "backend": true,
+      "mobile": false,
+      "categories": [
+        "App Development",
+        "Mobile App",
+        "iOS",
+        "Android",
+        "Flutterflow",
+        "Firebase"
+      ],
+      "images": [
+        "https://codewithalaa.netlify.app/hasanati-1.png",
+        "https://codewithalaa.netlify.app/hasanati-2.png",
+        "https://codewithalaa.netlify.app/hasanati-3.png",
+        "https://codewithalaa.netlify.app/hasanati-4.png",
+        "https://codewithalaa.netlify.app/hasanati-5.png",
+        "https://codewithalaa.netlify.app/hasanati-6.png",
+        "https://codewithalaa.netlify.app/hasanati-7.png",
+        "https://codewithalaa.netlify.app/hasanati-8.png",
+        "https://codewithalaa.netlify.app/hasanati-9.png",
+        "https://codewithalaa.netlify.app/hasanati-10.png",
+        "https://codewithalaa.netlify.app/hasanati-11.png",
+        "https://codewithalaa.netlify.app/hasanati-12.png",
+        "https://codewithalaa.netlify.app/hasanati-13.png",
+        "https://codewithalaa.netlify.app/hasanati-14.png",
+        "https://codewithalaa.netlify.app/hasanati-15.png",
+        "https://codewithalaa.netlify.app/hasanati-16.png",
+        "https://codewithalaa.netlify.app/hasanati-17.png",
+        "https://codewithalaa.netlify.app/hasanati-18.png",
+        "https://codewithalaa.netlify.app/hasanati-19.png",
+        "https://codewithalaa.netlify.app/hasanati-20.png"
       ]
     },
     {
@@ -224,7 +314,7 @@
       ]
     },
     {
-      "title": "Fore",
+      "title": "Hasanati",
       "type": "Mobile App",
       "year": "2024",
       "subtitle": "Jun 2023 • Founder & Developer",
