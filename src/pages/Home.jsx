@@ -14,6 +14,17 @@ import Navbar from "../components/Navbar/Navbar";
 import Overlay from "../components/Overlay";
 import HoverBox from "../components/HoverBox";
 
+let words = [
+  "Hello",
+  "Bonjour",
+  "Ciao",
+  "Olà",
+  "やあ",
+  "Hallå",
+  "Guten tag",
+  "Hallo",
+];
+
 // using memo to avoid re-rendering
 const ChildProject = React.memo(({ project, toggleOverlay, index }) => {
   return (
@@ -61,6 +72,19 @@ const Home = () => {
   // slide up on intersection stuff
   useEffect(() => {
     AOS.init();
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const projectIndex = urlParams.get("project");
+
+    if (projectIndex) {
+      // Delay the execution by 2 seconds
+      const totalDelay = 1000 + (words.length - 1) * 150 + 2000;
+      setTimeout(() => {
+        const index = parseInt(projectIndex);
+        const project = Projects.list[index];
+        toggleOverlay(project, index);
+      }, totalDelay);
+    }
   }, []);
 
   // block scroll stuff
