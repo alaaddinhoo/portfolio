@@ -3,7 +3,7 @@
     {
       "title": "Hasta",
       "type": "Mobile App",
-      "year": "2024",
+      "year": "Dec-Mar 2024",
       "subtitle": "Dec 2023 • Founder & Developer",
       "link": "https://hasanati.com/",
       "description": "Hasta is an in-person car auction marketplace. It is a way for buyers to see info on the cars before the day of the auction, and a way for the staff of the auction site to manage the cars and logistics. The multilanguage (French, Arabic, English) app is built using Flutterflow and is currently live as a webpage (Android + iOS releases are coming soon).",
@@ -47,7 +47,7 @@
     {
       "title": "Juggle",
       "type": "Mobile App",
-      "year": "2024",
+      "year": "Feb-Mar 2024",
       "subtitle": "Jun 2023 • Founder & Developer",
       "link": "https://hasanati.com/",
       "description": "Juggle is an all in one solution for business management. It allows business owners to keep track of their products and services, revenue, staff performance, and much more. This app was built completely using Flutterflow.",
@@ -55,7 +55,7 @@
       "coverMobile": "https://codewithalaa.netlify.app/Frame4b.png",
       "backgroundMobile": "#60a5fa",
 
-      "location": "US, CA",
+      "location": "ZA, CT",
 
       "backend": true,
       "mobile": false,
@@ -95,11 +95,11 @@
     {
       "title": "Fore Customer",
       "type": "Mobile App",
-      "year": "2024",
+      "year": "Feb 2024",
       "subtitle": "Jun 2023 • Founder & Developer",
       "link": "https://hasanati.com/",
       "description": "Fore is a one-stop app for Golf enthusiasts where they can place bookings, order food/drinks from the golf clubhouse they registered in, provide live tracking for the driver and golf customer. The user can browse through a list of registered golf clubs, view their timings and availability and provide ratings on their experiences.",
-      "cover": "https://codewithalaa.netlify.app/hasanati.png",
+      "cover": "https://codewithalaa.netlify.app/fore-customer-cover.png",
       "coverMobile": "https://codewithalaa.netlify.app/Frame4b.png",
       "backgroundMobile": "#60a5fa",
 
@@ -141,7 +141,7 @@
     {
       "title": "Fore Merchant",
       "type": "Mobile App",
-      "year": "2024",
+      "year": "Mar 2024",
       "subtitle": "Jun 2023 • Founder & Developer",
       "link": "https://hasanati.com/",
       "description": "Hasanati is a habit tracker web app for Muslims. It allows users to track their progress in terms of Prayer, Quran, and more. The app offers stunning UI&UX designs and powerful API integrations. I'm currently re-writing the website using the latest technologies (next, react, etc..)",
@@ -183,18 +183,53 @@
       ]
     },
     {
+      "title": "Textlink",
+      "type": "Mobile App",
+      "year": "Jan-Feb 2024",
+      "description": "Textlink offers small business owners a better way to connect with their customers through SMS messages. It allows the business owner to import contacts saved on their device, create template messages that can be re-used, send SMS messages to an imported contact, read incoming SMS messages from an imported contact, and provides metrics on SMS messages received.",
+      "cover": "https://codewithalaa.netlify.app/hasanati.png",
+      "coverMobile": "https://codewithalaa.netlify.app/Frame4b.png",
+      "backgroundMobile": "#60a5fa",
+      "location": "US, TX",
+      "categories": [
+        "App Development",
+        "Mobile App",
+        "iOS",
+        "Android",
+        "Flutterflow",
+        "Firebase"
+      ],
+
+      "images": [
+        "https://codewithalaa.netlify.app/fore-m-1.png",
+        "https://codewithalaa.netlify.app/fore-m-2.png",
+        "https://codewithalaa.netlify.app/fore-m-3.png",
+        "https://codewithalaa.netlify.app/fore-m-4.png",
+        "https://codewithalaa.netlify.app/fore-m-5.png",
+        "https://codewithalaa.netlify.app/fore-m-6.png",
+        "https://codewithalaa.netlify.app/fore-m-61.png",
+        "https://codewithalaa.netlify.app/fore-m-7.png",
+        "https://codewithalaa.netlify.app/fore-m-8.png",
+        "https://codewithalaa.netlify.app/fore-m-9.png",
+        "https://codewithalaa.netlify.app/fore-m-10.png",
+        "https://codewithalaa.netlify.app/fore-m-11.png",
+        "https://codewithalaa.netlify.app/fore-m-12.png",
+        "https://codewithalaa.netlify.app/fore-m-13.png",
+        "https://codewithalaa.netlify.app/fore-m-14.png",
+        "https://codewithalaa.netlify.app/fore-m-15.png",
+        "https://codewithalaa.netlify.app/fore-m-16.png"
+      ]
+    },
+    {
       "title": "Hasanati",
       "type": "Mobile App",
-      "year": "2024",
-      "subtitle": "Dec 2023 • Founder & Developer",
-      "link": "https://hasanati.com/",
+      "year": "Dec 2023",
       "description": "Hasanati is a habit tracker web app for Muslims. It allows users to track their progress in terms of Prayer, Quran, and more. This app was built using Flutterflow and offers stunning UI&UX designs and powerful API integrations. It is currently in test mode before production and will be released soon on Playstore & Apple Store.",
       "cover": "https://codewithalaa.netlify.app/hasta-cover.png",
       "coverMobile": "https://codewithalaa.netlify.app/hasta-logo.png",
       "backgroundMobile": "#60a5fa",
-      "location": "AE, AD",
-      "backend": true,
-      "mobile": false,
+      "location": "Personal Sass",
+
       "categories": [
         "App Development",
         "Mobile App",
@@ -229,18 +264,14 @@
     {
       "title": "Uber Eats Clone",
       "type": "Mobile App",
-      "year": "2024",
-      "subtitle": "Oct 2023 • Practice",
-      "link": "https://app.flutterflow.io/run/O3NqEcbLp0BLUJyOh9Ry",
+      "year": "Nov 2023",
       "description": "Uber Eats is an online food ordering and delivery platform. This Flutterflow clone includes Auth, Geolocation, SMS code verification, search, categories, recent searches, custom filters, and cart system implemented.",
       "cover": "https://codewithalaa.netlify.app/uber-eats-cover.png",
       "coverMobile": "https://codewithalaa.netlify.app/Frame4b.png",
       "backgroundMobile": "#F9D46A",
 
-      "location": "US, CA",
+      "location": "Practice",
 
-      "backend": true,
-      "mobile": true,
       "categories": [
         "App Development",
         "Mobile App",
@@ -273,18 +304,15 @@
     {
       "title": "Vox Dashboard",
       "type": "Mobile App",
-      "year": "2024",
-      "subtitle": "Aug 2023 • Practice",
+      "year": "Aug 2023",
       "link": "https://vox-cinema.netlify.app/admin",
       "description": "Vox is the cinema arm of Majid Al Futtaim, the leading shopping malls, communities, retail and leisure pioneer across the Middle East. This MERN project offers a dashboard for VOX admins to perform CRUD operations. These operations are also reflected on the user page.",
       "cover": "https://codewithalaa.netlify.app/vox-2.png",
       "coverMobile": "https://codewithalaa.netlify.app/Frame4b.png",
       "backgroundMobile": "#60a5fa",
 
-      "location": "US, CA",
+      "location": "Practice",
 
-      "backend": true,
-      "mobile": false,
       "categories": [
         "App Development",
         "Mobile App",
@@ -302,46 +330,16 @@
     {
       "title": "Zomato Clone",
       "type": "Mobile App",
-      "year": "2024",
-      "subtitle": "Sep 2023 • Practice Project",
+      "year": "Sep 2023",
       "link": "https://zomato-frontend-clone.netlify.app/",
       "description": "Zomato is an online food service platform where users can search and discover restaurants. This clone project was built to test my React frontend skills. Includes sliders, responsive design, skeleton loading, and more.",
       "cover": "https://codewithalaa.netlify.app/zomato.png",
       "coverMobile": "https://codewithalaa.netlify.app/Frame4b.png",
       "backgroundMobile": "#60a5fa",
 
-      "location": "US, CA",
+      "location": "Practice",
 
       "backend": false,
-      "mobile": false,
-      "categories": [
-        "App Development",
-        "Mobile App",
-        "iOS",
-        "Android",
-        "Flutterflow",
-        "Firebase"
-      ],
-
-      "images": [
-        "https://codewithalaa.netlify.app/hasanati-1.png",
-        "https://codewithalaa.netlify.app/hasanati-2.png"
-      ]
-    },
-    {
-      "title": "Hasanati",
-      "type": "Mobile App",
-      "year": "2024",
-      "subtitle": "Jun 2023 • Founder & Developer",
-      "link": "https://hasanati.com/",
-      "description": "Hasanati is a habit tracker web app for Muslims. It allows users to track their progress in terms of Prayer, Quran, and more. The app offers stunning UI&UX designs and powerful API integrations. I'm currently re-writing the website using the latest technologies (next, react, etc..)",
-      "cover": "https://codewithalaa.netlify.app/hasanati.png",
-      "coverMobile": "https://codewithalaa.netlify.app/Frame4b.png",
-      "backgroundMobile": "#60a5fa",
-
-      "location": "US, CA",
-
-      "backend": true,
       "mobile": false,
       "categories": [
         "App Development",
