@@ -26,7 +26,9 @@ body {
 .project-cover-image {
   display: block;
   width: 100%;
-  max-height: 450px;
+  // max-height: 450px;
+  height: 600px;
+  max-height: 600px;
   object-position: center;
   // height: 442px;
   object-fit: cover;
