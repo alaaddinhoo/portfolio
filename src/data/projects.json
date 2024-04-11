@@ -225,7 +225,7 @@
       "type": "Mobile App",
       "year": "Dec 2023",
       "description": "Hasanati is a habit tracker web app for Muslims. It allows users to track their progress in terms of Prayer, Quran, and more. This app was built using Flutterflow and offers stunning UI&UX designs and powerful API integrations. It is currently in test mode before production and will be released soon on Playstore & Apple Store.",
-      "cover": "https://codewithalaa.netlify.app/hasta-cover.png",
+      "cover": "https://codewithalaa.netlify.app/hasanati.png",
       "coverMobile": "https://codewithalaa.netlify.app/hasta-logo.png",
       "backgroundMobile": "#60a5fa",
       "location": "Personal Sass",
@@ -323,8 +323,8 @@
       ],
 
       "images": [
-        "https://codewithalaa.netlify.app/hasanati-1.png",
-        "https://codewithalaa.netlify.app/hasanati-2.png"
+        "https://codewithalaa.netlify.app/vox-1.png",
+        "https://codewithalaa.netlify.app/vox-3.png"
       ]
     },
     {
