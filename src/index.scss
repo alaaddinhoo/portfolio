@@ -26,12 +26,13 @@ body {
 .project-cover-image {
   display: block;
   width: 100%;
-  max-height: 450px;
+  // max-height: 450px;
+  height: 70vh;
 
   object-position: center;
   // height: 442px;
   // background-color: red;
-  object-fit: cover;
+  object-fit: contain;
   // object-position: 50% 10%;
 }
 
