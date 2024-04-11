@@ -230,7 +230,7 @@
       "cover": "https://codewithalaa.netlify.app/Frame 13(1)_page-0001.jpg",
       "coverMobile": "https://codewithalaa.netlify.app/hasta-logo.png",
       "backgroundMobile": "#60a5fa",
-      "location": "Personal Sass",
+      "location": "Founder",
 
       "categories": [
         "App Development",
@@ -312,8 +312,8 @@
       "link": "https://vox-cinema.netlify.app/admin",
       "description": "Vox is the cinema arm of Majid Al Futtaim, the leading shopping malls, communities, retail and leisure pioneer across the Middle East. This MERN project offers a dashboard for VOX admins to perform CRUD operations. These operations are also reflected on the user page.",
       "cover": "https://codewithalaa.netlify.app/vox-2.png",
-      "coverMobile": "https://codewithalaa.netlify.app/Frame4b.png",
-      "backgroundMobile": "#60a5fa",
+      "coverMobile": "https://codewithalaa.netlify.app/logo1.png",
+      "backgroundMobile": "#c49d59",
 
       "location": "Practice",
 
@@ -344,18 +344,16 @@
       "cover": "https://codewithalaa.netlify.app/zomato.png",
       "coverMobile": "https://codewithalaa.netlify.app/Frame4b.png",
       "backgroundMobile": "#60a5fa",
-
       "location": "Practice",
-
       "backend": false,
       "mobile": false,
       "categories": [
         "App Development",
-        "Mobile App",
-        "iOS",
-        "Android",
-        "Flutterflow",
-        "Firebase"
+        "Website",
+        "React",
+        "MongoDB",
+        "SCSS",
+        "Github"
       ],
 
       "images": [
