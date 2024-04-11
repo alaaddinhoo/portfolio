@@ -112,27 +112,19 @@ const Home = () => {
       const newUrl = `${window.location.pathname}?${urlParams.toString()}`;
       window.history.pushState({ path: newUrl }, "", newUrl);
     } else {
-      if (!isOpen) {
-        // Update the URL query parameter
-        const urlParams = new URLSearchParams(window.location.search);
-        urlParams.set("project", index);
-        const newUrl = `${window.location.pathname}?${urlParams.toString()}`;
-        window.history.pushState({ path: newUrl }, "", newUrl);
+      // Remove the URL query parameter
+      const urlParams = new URLSearchParams(window.location.search);
+      urlParams.delete("project");
+
+      // Construct the new URL without "?" if no other query parameters exist
+      let newUrl;
+      if (urlParams.toString() === "") {
+        newUrl = window.location.pathname;
       } else {
-        // Remove the URL query parameter
-        const urlParams = new URLSearchParams(window.location.search);
-        urlParams.delete("project");
-
-        // Construct the new URL without "?" if no other query parameters exist
-        let newUrl;
-        if (urlParams.toString() === "") {
-          newUrl = window.location.pathname;
-        } else {
-          newUrl = `${window.location.pathname}?${urlParams.toString()}`;
-        }
-
-        window.history.pushState({ path: newUrl }, "", newUrl);
+        newUrl = `${window.location.pathname}?${urlParams.toString()}`;
       }
+
+      window.history.pushState({ path: newUrl }, "", newUrl);
     }
   };
 

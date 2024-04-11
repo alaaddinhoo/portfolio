@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { Fragment, useState, useEffect } from "react";
 import {
   MdOutlineKeyboardArrowLeft,
   MdOutlineKeyboardArrowRight,
@@ -24,6 +24,13 @@ export function Overlay({ isOpen, onClose, project }) {
       );
     }
   };
+
+  useEffect(() => {
+    // Reset currentImageIndex to 0 when the overlay is closed
+    if (!isOpen) {
+      setCurrentImageIndex(0);
+    }
+  }, [isOpen]);
 
   return (
     <AnimatePresence>
