@@ -100,8 +100,8 @@
       "link": "https://hasanati.com/",
       "description": "Fore is a one-stop app for Golf enthusiasts where they can place bookings, order food/drinks from the golf clubhouse they registered in, provide live tracking for the driver and golf customer. The user can browse through a list of registered golf clubs, view their timings and availability and provide ratings on their experiences.",
       "cover": "https://codewithalaa.netlify.app/Frame 7_page-0001 (1).jpg",
-      "coverMobile": "https://codewithalaa.netlify.app/Frame 7.png",
-      "backgroundMobile": "#60a5fa",
+      "coverMobile": "https://codewithalaa.netlify.app/mobile-cover.png",
+      "backgroundMobile": "#97BA9E",
 
       "location": "US, CA",
 
@@ -144,7 +144,7 @@
       "year": "Mar 2024",
       "subtitle": "Jun 2023 • Founder & Developer",
       "link": "https://hasanati.com/",
-      "description": "Hasanati is a habit tracker web app for Muslims. It allows users to track their progress in terms of Prayer, Quran, and more. The app offers stunning UI&UX designs and powerful API integrations. I'm currently re-writing the website using the latest technologies (next, react, etc..)",
+      "description": "Fore (Merchant) is an app dedicated to Golf clubs that want to attract new customers. The app allows them to register, receive orders, create and edit their menu items, and a lot more. It is built completely using Flutterflow + Firebase.",
       "cover": "https://codewithalaa.netlify.app/Frame 11_page-0001.jpg",
       "coverMobile": "https://codewithalaa.netlify.app/Frame4b.png",
       "backgroundMobile": "#60a5fa",
