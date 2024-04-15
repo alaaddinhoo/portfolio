@@ -40,11 +40,11 @@ const ChildProject = React.memo(({ project, toggleOverlay, index }) => {
           </div>
           <div
             className="block sm:hidden"
-            style={{ backgroundColor: `${project.backgroundMobile}` }}
+            // style={{ backgroundColor: `${project.backgroundMobile}` }}
           >
             <img
               src={project.coverMobile}
-              className="project-cover-image block sm:hidden"
+              className="project-cover-image block sm:hidden rounded-[10px]"
             />
           </div>
         </div>
