@@ -234,7 +234,7 @@
       "year": "Dec 2023",
       "description": "Hasanati is a habit tracker web app for Muslims. It allows users to track their progress in terms of Prayer, Quran, and more. This app was built using Flutterflow and offers stunning UI&UX designs and powerful API integrations. It is currently in test mode before production and will be released soon on Playstore & Apple Store.",
       "cover": "https://codewithalaa.netlify.app/hasanati.png",
-      "coverMobile": "https://codewithalaa.netlify.app/hasanati-logo.svg",
+      "coverMobile": "https://codewithalaa.netlify.app/hasanati (Traced).svg",
       "backgroundMobile": "#60a5fa",
       "location": "Founder",
 
@@ -277,7 +277,7 @@
       "year": "Nov 2023",
       "description": "Uber Eats is an online food ordering and delivery platform. This Flutterflow clone includes Auth, Geolocation, SMS code verification, search, categories, recent searches, custom filters, and cart system implemented.",
       "cover": "https://codewithalaa.netlify.app/uber-eats-cover.png",
-      "coverMobile": "https://codewithalaa.netlify.app/Frame4b.png",
+      "coverMobile": "https://codewithalaa.netlify.app/uber-eats-logo.svg",
       "backgroundMobile": "#F9D46A",
 
       "location": "Practice",
