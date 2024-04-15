@@ -52,7 +52,7 @@
       "link": "https://hasanati.com/",
       "description": "Juggle is an all in one solution for business management. It allows business owners to keep track of their products and services, revenue, staff performance, and much more. This app was built completely using Flutterflow.",
       "cover": "https://codewithalaa.netlify.app/test2.png",
-      "coverMobile": "https://codewithalaa.netlify.app/juggle-qr.png",
+      "coverMobile": "https://codewithalaa.netlify.app/juggle (Traced).svg",
       "backgroundMobile": "#FA86AD",
 
       "location": "ZA, CT",
@@ -188,7 +188,7 @@
       "year": "Feb 2024",
       "description": "Textlink offers small business owners a better way to connect with their customers through SMS messages. It allows the business owner to import contacts saved on their device, create template messages that can be re-used, send SMS messages to an imported contact, read incoming SMS messages from an imported contact, and provides metrics on SMS messages received.",
       "cover": "https://codewithalaa.netlify.app/Frame 14_page-0001 (2).jpg",
-      "coverMobile": "https://codewithalaa.netlify.app/textlink-mobile-logo_page-0001.jpg",
+      "coverMobile": "https://codewithalaa.netlify.app/textlink (traced).svg",
       "backgroundMobile": "#60a5fa",
       "location": "US, TX",
       "categories": [
@@ -272,7 +272,7 @@
       ]
     },
     {
-      "title": "Uber Eats Clone",
+      "title": "Uber Eats (Clone)",
       "type": "Mobile App",
       "year": "Nov 2023",
       "description": "Uber Eats is an online food ordering and delivery platform. This Flutterflow clone includes Auth, Geolocation, SMS code verification, search, categories, recent searches, custom filters, and cart system implemented.",
