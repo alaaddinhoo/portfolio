@@ -44,7 +44,7 @@ const ChildProject = React.memo(({ project, toggleOverlay, index }) => {
           >
             <img
               src={project.coverMobile}
-              className="project-cover-image block sm:hidden w-[160px] h-[160px]"
+              className="project-cover-image block sm:hidden"
             />
           </div>
         </div>
