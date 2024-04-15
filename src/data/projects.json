@@ -8,8 +8,8 @@
       "link": "https://hasanati.com/",
       "description": "Hasta is an in-person car auction marketplace. It is a way for buyers to see info on the cars before the day of the auction, and a way for the staff of the auction site to manage the cars and logistics. The multilanguage (French, Arabic, English) app is built using Flutterflow and is currently live as a webpage (Android + iOS releases are coming soon).",
       "cover": "https://codewithalaa.netlify.app/test.png",
-      "coverMobile": "https://codewithalaa.netlify.app/hasta-logo1.png",
-      "backgroundMobile": "#004aad",
+      "coverMobile": "https://codewithalaa.netlify.app/hasta-qr.png",
+      "backgroundMobile": "#60a5fa",
       "location": "US, CA",
       "backend": true,
       "mobile": false,
@@ -100,7 +100,7 @@
       "link": "https://hasanati.com/",
       "description": "Fore is a one-stop app for Golf enthusiasts where they can place bookings, order food/drinks from the golf clubhouse they registered in, provide live tracking for the driver and golf customer. The user can browse through a list of registered golf clubs, view their timings and availability and provide ratings on their experiences.",
       "cover": "https://codewithalaa.netlify.app/Frame 7(1)_page-0001.jpg",
-      "coverMobile": "https://codewithalaa.netlify.app/fore-logo.png",
+      "coverMobile": "https://codewithalaa.netlify.app/fore-logos.png",
       "backgroundMobile": "#97BA9E",
 
       "location": "US, CA",
@@ -188,7 +188,7 @@
       "year": "Feb 2024",
       "description": "Textlink offers small business owners a better way to connect with their customers through SMS messages. It allows the business owner to import contacts saved on their device, create template messages that can be re-used, send SMS messages to an imported contact, read incoming SMS messages from an imported contact, and provides metrics on SMS messages received.",
       "cover": "https://codewithalaa.netlify.app/Frame 14_page-0001 (2).jpg",
-      "coverMobile": "https://codewithalaa.netlify.app/Frame4b.png",
+      "coverMobile": "https://codewithalaa.netlify.app/textlink-logo.png",
       "backgroundMobile": "#60a5fa",
       "location": "US, TX",
       "categories": [
