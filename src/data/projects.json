@@ -329,7 +329,8 @@
         "React",
         "MongoDB",
         "SCSS",
-        "Github"
+        "Github",
+        "Netlify"
       ],
 
       "images": [
@@ -359,12 +360,18 @@
         "React",
         "MongoDB",
         "SCSS",
-        "Github"
+        "Github",
+        "Netlify"
       ],
 
       "images": [
-        "https://codewithalaa.netlify.app/hasanati-1.png",
-        "https://codewithalaa.netlify.app/hasanati-2.png"
+        "https://codewithalaa.netlify.app/zomato-0.png",
+        "https://codewithalaa.netlify.app/zomato-1.png",
+        "https://codewithalaa.netlify.app/zomato-2.png",
+        "https://codewithalaa.netlify.app/zomato-3.png",
+        "https://codewithalaa.netlify.app/zomato-4.png",
+        "https://codewithalaa.netlify.app/zomato-5.png",
+        "https://codewithalaa.netlify.app/zomato-6.png"
       ]
     }
   ]
