@@ -44,12 +44,7 @@ const Resume = () => {
 
       <div className="w-[80vw] xl:w-[75vw] 2xl:w-[65vw] flex flex-col gap-[calc(125px-2.5vh)] sm:items-center mx-auto">
         <Navbar />
-        <embed
-          src="https://codewithalaa.netlify.app/CV4.pdf"
-          width="500"
-          height="375"
-          type="application/pdf"
-        ></embed>
+        <img src="https://codewithalaa.netlify.app/Alaaeldin_CV.png"></img>
       </div>
     </div>
   );
