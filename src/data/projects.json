@@ -318,7 +318,7 @@
       "link": "https://vox-cinema.netlify.app/admin",
       "description": "Vox is the cinema arm of Majid Al Futtaim, the leading shopping malls, communities, retail and leisure pioneer across the Middle East. This MERN project offers a dashboard for VOX admins to perform CRUD operations. These operations are also reflected on the user page.",
       "cover": "https://codewithalaa.netlify.app/vox-2.png",
-      "coverMobile": "https://codewithalaa.netlify.app/vox-mobile-logo_page-0001.jpg",
+      "coverMobile": "https://codewithalaa.netlify.app/vox-logo.svg",
       "backgroundMobile": "#FFEFD3",
 
       "location": "Practice",
