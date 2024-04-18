@@ -44,7 +44,10 @@ const Resume = () => {
 
       <div className="w-[80vw] xl:w-[75vw] 2xl:w-[65vw] flex flex-col gap-[calc(125px-2.5vh)] sm:items-center mx-auto">
         <Navbar />
-        <img src="https://codewithalaa.netlify.app/Alaaeldin_CV.png"></img>
+        <img
+          src="https://codewithalaa.netlify.app/Alaaeldin_CV.png"
+          className="mb-[calc(125px-2.5vh)]"
+        ></img>
       </div>
     </div>
   );

@@ -169,8 +169,7 @@ const Home = () => {
         <Navbar />
 
         <div className="max-w-[60vw] text-light font-Baskerville text-center text-[calc(32px+1.5vw)] leading-[1.4em] hidden sm:block">
-          I build beautiful things as designer, developer, creator,
-          entrepreneur.
+          I build beautiful apps as designer, developer, creator, entrepreneur.
         </div>
 
         <div className="font-normal text-center text-[calc(26px+1.75vw)] block sm:hidden">
