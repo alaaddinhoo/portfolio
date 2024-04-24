@@ -99,7 +99,7 @@ const Navbar = () => {
                   </div>
                 </Magnetic>
 
-                <Magnetic>
+                {/* <Magnetic>
                   <div className="overflow-hidden">
                     <motion.div variants={mobileLinkVars}>
                       <a
@@ -148,7 +148,7 @@ const Navbar = () => {
                       </a>
                     </motion.div>
                   </div>
-                </Magnetic>
+                </Magnetic> */}
               </motion.div>
 
               <motion.div
