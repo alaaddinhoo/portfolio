@@ -275,7 +275,7 @@
       "title": "Uber Eats (Clone)",
       "type": "Mobile App",
       "year": "Nov 2023",
-      "description": "Uber Eats is an online food ordering and delivery platform. This Flutterflow clone includes Auth, Geolocation, SMS code verification, search, categories, recent searches, custom filters, and cart system implemented.",
+      "description": "Uber Eats is an online food ordering and delivery platform. This Flutterflow clone includes Auth, Geolocation, SMS code verification, search, categories, recent searches, custom filters, and cart system implemented. Walkthrough Link: https://www.youtube.com/watch?v=M1-WNu_0r7I",
       "cover": "https://codewithalaa.netlify.app/uber-eats-cover.png",
       "coverMobile": "https://codewithalaa.netlify.app/uber-eats-logo.svg",
       "backgroundMobile": "#F9D46A",
