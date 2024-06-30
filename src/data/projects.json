@@ -1,6 +1,48 @@
 {
   "list": [
     {
+      "title": "Hasta",
+      "type": "Mobile App",
+      "year": "Mar 2024",
+      "subtitle": "Dec 2023 • Founder & Developer",
+      "description": "Hasta is an in-person car auction marketplace. It is a way for buyers to see info on the cars before the day of the auction, and a way for the staff of the auction site to manage the cars and logistics. The multilanguage (French, Arabic, English) app is built using Flutterflow and is currently live as a webpage (Android + iOS releases are coming soon).",
+      "cover": "https://codewithalaa.netlify.app/Frame 5.png",
+      "coverMobile": "https://codewithalaa.netlify.app/Hasta (Traced).svg",
+      "backgroundMobile": "#609BD0",
+      "location": "MA, CA",
+      "backend": true,
+      "mobile": false,
+      "categories": [
+        "App Development",
+        "Mobile App",
+        "iOS",
+        "Android",
+        "Flutterflow",
+        "Firebase"
+      ],
+      "images": [
+        "https://codewithalaa.netlify.app/hasta-2.png",
+        "https://codewithalaa.netlify.app/hasta-3.png",
+        "https://codewithalaa.netlify.app/hasta-4.png",
+        "https://codewithalaa.netlify.app/hasta-5.png",
+        "https://codewithalaa.netlify.app/hasta-6.png",
+        "https://codewithalaa.netlify.app/hasta-7.png",
+        "https://codewithalaa.netlify.app/hasta-8.png",
+        "https://codewithalaa.netlify.app/hasta-9.png",
+        "https://codewithalaa.netlify.app/hasta-10.png",
+        "https://codewithalaa.netlify.app/hasta-11.png",
+        "https://codewithalaa.netlify.app/hasta-12.png",
+        "https://codewithalaa.netlify.app/hasta-13.png",
+        "https://codewithalaa.netlify.app/hasta-14.png",
+        "https://codewithalaa.netlify.app/hasta-15.png",
+        "https://codewithalaa.netlify.app/hasta-16.png",
+        "https://codewithalaa.netlify.app/hasta-17.png",
+        "https://codewithalaa.netlify.app/hasta-18.png",
+        "https://codewithalaa.netlify.app/hasta-19.png",
+        "https://codewithalaa.netlify.app/hasta-20.png"
+      ]
+    },
+    {
       "title": "Deliveroo",
       "type": "Web App",
       "year": "Jul 2024",
@@ -45,48 +87,6 @@
         "https://codewithalaa.netlify.app/deliveroo-20.png",
         "https://codewithalaa.netlify.app/deliveroo-21.png",
         "https://codewithalaa.netlify.app/deliveroo-22.png"
-      ]
-    },
-    {
-      "title": "Hasta",
-      "type": "Mobile App",
-      "year": "Mar 2024",
-      "subtitle": "Dec 2023 • Founder & Developer",
-      "description": "Hasta is an in-person car auction marketplace. It is a way for buyers to see info on the cars before the day of the auction, and a way for the staff of the auction site to manage the cars and logistics. The multilanguage (French, Arabic, English) app is built using Flutterflow and is currently live as a webpage (Android + iOS releases are coming soon).",
-      "cover": "https://codewithalaa.netlify.app/Frame 5.png",
-      "coverMobile": "https://codewithalaa.netlify.app/Hasta (Traced).svg",
-      "backgroundMobile": "#609BD0",
-      "location": "MA, CA",
-      "backend": true,
-      "mobile": false,
-      "categories": [
-        "App Development",
-        "Mobile App",
-        "iOS",
-        "Android",
-        "Flutterflow",
-        "Firebase"
-      ],
-      "images": [
-        "https://codewithalaa.netlify.app/hasta-2.png",
-        "https://codewithalaa.netlify.app/hasta-3.png",
-        "https://codewithalaa.netlify.app/hasta-4.png",
-        "https://codewithalaa.netlify.app/hasta-5.png",
-        "https://codewithalaa.netlify.app/hasta-6.png",
-        "https://codewithalaa.netlify.app/hasta-7.png",
-        "https://codewithalaa.netlify.app/hasta-8.png",
-        "https://codewithalaa.netlify.app/hasta-9.png",
-        "https://codewithalaa.netlify.app/hasta-10.png",
-        "https://codewithalaa.netlify.app/hasta-11.png",
-        "https://codewithalaa.netlify.app/hasta-12.png",
-        "https://codewithalaa.netlify.app/hasta-13.png",
-        "https://codewithalaa.netlify.app/hasta-14.png",
-        "https://codewithalaa.netlify.app/hasta-15.png",
-        "https://codewithalaa.netlify.app/hasta-16.png",
-        "https://codewithalaa.netlify.app/hasta-17.png",
-        "https://codewithalaa.netlify.app/hasta-18.png",
-        "https://codewithalaa.netlify.app/hasta-19.png",
-        "https://codewithalaa.netlify.app/hasta-20.png"
       ]
     },
     {
