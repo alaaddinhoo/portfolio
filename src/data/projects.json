@@ -52,7 +52,6 @@
       "type": "Mobile App",
       "year": "Mar 2024",
       "subtitle": "Dec 2023 • Founder & Developer",
-      "link": "https://hasanati.com/",
       "description": "Hasta is an in-person car auction marketplace. It is a way for buyers to see info on the cars before the day of the auction, and a way for the staff of the auction site to manage the cars and logistics. The multilanguage (French, Arabic, English) app is built using Flutterflow and is currently live as a webpage (Android + iOS releases are coming soon).",
       "cover": "https://codewithalaa.netlify.app/Frame 5.png",
       "coverMobile": "https://codewithalaa.netlify.app/Hasta (Traced).svg",
@@ -95,7 +94,7 @@
       "type": "Mobile App",
       "year": "Mar 2024",
       "subtitle": "Jun 2023 • Founder & Developer",
-      "link": "https://hasanati.com/",
+
       "description": "Juggle is an all in one solution for business management. It allows business owners to keep track of their products and services, revenue, staff performance, and much more. This app was built completely using Flutterflow.",
       "cover": "https://codewithalaa.netlify.app/Frame 6.png",
       "coverMobile": "https://codewithalaa.netlify.app/juggle (Traced).svg",
@@ -142,7 +141,7 @@
       "type": "Mobile App",
       "year": "Feb 2024",
       "subtitle": "Jun 2023 • Founder & Developer",
-      "link": "https://hasanati.com/",
+
       "description": "Fore is a one-stop app for Golf enthusiasts where they can place bookings, order food/drinks from the golf clubhouse they registered in, provide live tracking for the driver and golf customer. The user can browse through a list of registered golf clubs, view their timings and availability and provide ratings on their experiences.",
       "cover": "https://codewithalaa.netlify.app/Frame 7(2).png",
       "coverMobile": "https://codewithalaa.netlify.app/fore customer (Trace).svg",
@@ -188,7 +187,7 @@
       "type": "Mobile App",
       "year": "Mar 2024",
       "subtitle": "Jun 2023 • Founder & Developer",
-      "link": "https://hasanati.com/",
+
       "description": "Fore (Merchant) is an app dedicated to Golf clubs that want to attract new customers. The app allows them to register, receive orders, create and edit their menu items, and a lot more. It is built completely using Flutterflow + Firebase.",
       "cover": "https://codewithalaa.netlify.app/Frame 10.png",
       "coverMobile": "https://codewithalaa.netlify.app/fore merchant (Trace).svg",

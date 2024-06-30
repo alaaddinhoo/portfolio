@@ -164,7 +164,7 @@ const Home = () => {
         project={selectedProject}
       />
 
-      <div className="w-[80vw] xl:w-[75vw] 2xl:w-[75vw] flex flex-col gap-[calc(80px-5vh)] md:gap-[calc(100px-2.5vh)] 2xl:gap-[150px] sm: items-center mx-auto">
+      <div className="w-[80vw] xl:w-[75vw] 2xl:w-[70vw] flex flex-col gap-[calc(80px-5vh)] md:gap-[calc(100px-2.5vh)] 2xl:gap-[150px] sm: items-center mx-auto">
         <Navbar />
 
         <div className="max-w-[60vw] text-light font-Baskerville text-center text-[calc(32px+1.5vw)] leading-[1.4em] hidden sm:block">
