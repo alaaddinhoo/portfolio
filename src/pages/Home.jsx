@@ -28,43 +28,42 @@ let words = [
 // using memo to avoid re-rendering
 const ChildProject = React.memo(({ project, toggleOverlay, index }) => {
   return (
-    <HoverBox key={project.title}>
-      <div
-        data-aos="fade-up"
-        key={project.link}
-        onClick={() => toggleOverlay(project, index)}
-      >
-        <div className="project-cover">
-          <div className="hidden sm:block">
-            <img src={project.cover} className="project-cover-image" />
-          </div>
-          <div
-            className="block sm:hidden"
-            // style={{ backgroundColor: `${project.backgroundMobile}` }}
-          >
-            <img
-              src={project.coverMobile}
-              className="project-cover-image block sm:hidden rounded-[10px]"
-            />
-          </div>
+    // <HoverBox key={project.title}>
+    <div
+      data-aos="fade-up"
+      key={project.link}
+      onClick={() => toggleOverlay(project, index)}
+      className="hover:cursor-pointer"
+    >
+      <div className="project-cover">
+        <div className="hidden sm:block">
+          <img src={project.cover} className="project-cover-image" />
         </div>
-        <div className="pt-[15px] flex flex-col gap-[10px]">
-          <div className="flex justify-between">
-            <div className="text-[calc(18px+1vw)] uppercase">
-              {project.title}
-            </div>
-            <div className="text-[calc(18px+1vw)] uppercase">
-              {project.location}
-            </div>
-          </div>
-          <div className="w-full h-[1px] bg-[#dcdcdc]"></div>
-          <div className="flex justify-between">
-            <div className="text-[calc(12px+0.7vw)]">{project.type}</div>
-            <div className="text-[calc(12px+0.7vw)]">{project.year}</div>
-          </div>
+        <div
+          className="block sm:hidden"
+          // style={{ backgroundColor: `${project.backgroundMobile}` }}
+        >
+          <img
+            src={project.coverMobile}
+            className="project-cover-image block sm:hidden rounded-[10px]"
+          />
         </div>
       </div>
-    </HoverBox>
+      <div className="pt-[15px] flex flex-col gap-[10px]">
+        <div className="flex justify-between">
+          <div className="text-[calc(18px+1vw)] uppercase">{project.title}</div>
+          <div className="text-[calc(18px+1vw)] uppercase">
+            {project.location}
+          </div>
+        </div>
+        <div className="w-full h-[1px] bg-[#dcdcdc]"></div>
+        <div className="flex justify-between">
+          <div className="text-[calc(12px+0.7vw)]">{project.type}</div>
+          <div className="text-[calc(12px+0.7vw)]">{project.year}</div>
+        </div>
+      </div>
+    </div>
+    // </HoverBox>
   );
 });
 
@@ -165,7 +164,7 @@ const Home = () => {
         project={selectedProject}
       />
 
-      <div className="w-[80vw] xl:w-[75vw] 2xl:w-[65vw] flex flex-col gap-[calc(80px-5vh)] md:gap-[calc(100px-2.5vh)] 2xl:gap-[150px] sm: items-center mx-auto">
+      <div className="w-[80vw] xl:w-[75vw] 2xl:w-[75vw] flex flex-col gap-[calc(80px-5vh)] md:gap-[calc(100px-2.5vh)] 2xl:gap-[150px] sm: items-center mx-auto">
         <Navbar />
 
         <div className="max-w-[60vw] text-light font-Baskerville text-center text-[calc(32px+1.5vw)] leading-[1.4em] hidden sm:block">
