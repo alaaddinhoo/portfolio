@@ -7,7 +7,7 @@
       "subtitle": "Dec 2023 • Founder & Developer",
       "link": "https://nextjs-deliveroo-clone.netlify.app/restaurants",
       "description": "Deliveroo is the most popular British online food delivery company founded in 2013 in London, England. It has since expanded to several other countries worldwide including France, Belgium, Ireland, Italy, Singapore, Hong Kong, the United Arab Emirates, Kuwait, and Qatar. This project was built using Nextjs, React, Tailwind, Typescript (Frontend), and Firebase (backend). It includes many advanced topics such as Auth, Search, Pagination, Filtering, Cart System, and more. Note: Sign in with your Google account for now.",
-      "cover": "https://codewithalaa.netlify.app/deliveroo-logo.png",
+      "cover": "https://codewithalaa.netlify.app/deliveroo-cover.png",
       "coverMobile": "https://codewithalaa.netlify.app/deliveroo-logo.png",
       "backgroundMobile": "#609BD0",
       "location": "AD, AE",

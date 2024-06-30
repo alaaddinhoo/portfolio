@@ -88,6 +88,12 @@ export function Overlay({ isOpen, onClose, project }) {
                 </div>
                 <div>{project.description}</div>
               </div>
+              <div className="flex flex-col gap-[12px]">
+                <div className="font-medium text-[22px] ">Link</div>
+                <a href={project.link} className="underline">
+                  {project.link}
+                </a>
+              </div>
             </div>
           </div>
         </div>
