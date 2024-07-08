@@ -73,10 +73,6 @@ export function Overlay({ isOpen, onClose, project }) {
                   Skills & Deliverables
                 </div>
                 <div className="flex flex-wrap gap-2">
-                  <div className="skills__and__deliverables">
-                    App Development
-                  </div>
-
                   {project.categories.map((category) => (
                     <div className="skills__and__deliverables">{category}</div>
                   ))}
