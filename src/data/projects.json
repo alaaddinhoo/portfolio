@@ -399,15 +399,7 @@
       "location": "Practice",
       "backend": false,
       "mobile": false,
-      "categories": [
-        "App Development",
-        "Website",
-        "React",
-        "MongoDB",
-        "SCSS",
-        "Github",
-        "Netlify"
-      ],
+      "categories": ["Website", "React", "SCSS", "Github", "Netlify"],
 
       "images": [
         "https://codewithalaa.netlify.app/zomato-0.png",
